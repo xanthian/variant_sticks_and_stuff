@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.xanthian.vsas.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "RecipeManagerMixin",
+    "FishingBobberEntityMixin",
+    "FishingBobberEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

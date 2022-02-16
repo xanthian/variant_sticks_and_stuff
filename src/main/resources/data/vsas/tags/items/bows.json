@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:acacia_bow",
+    "vsas:birch_bow",
+    "vsas:crimson_bow",
+    "vsas:dark_oak_bow",
+    "vsas:jungle_bow",
+    "vsas:oak_bow",
+    "vsas:spruce_bow",
+    "vsas:warped_bow"
+  ]
+}

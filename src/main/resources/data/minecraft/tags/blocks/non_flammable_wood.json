@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "vsas:warped_ladder",
+      "required": false},
+    { "id": "vsas:crimson_ladder",
+      "required": false}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vsas:block/warped_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "vsas:block/warped_ladder"
+    },
+    "facing=south": {
+      "model": "vsas:block/warped_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "vsas:block/warped_ladder",
+      "y": 270
+    }
+  }
+}

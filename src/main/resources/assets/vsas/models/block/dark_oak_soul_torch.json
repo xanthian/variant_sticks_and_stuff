@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_torch",
+  "textures": {
+    "torch": "vsas:block/dark_oak_soul_torch"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vsas:block/wall_dark_oak_torch"
+    },
+    "facing=north": {
+      "model": "vsas:block/wall_dark_oak_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "vsas:block/wall_dark_oak_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vsas:block/wall_dark_oak_torch",
+      "y": 180
+    }
+  }
+}

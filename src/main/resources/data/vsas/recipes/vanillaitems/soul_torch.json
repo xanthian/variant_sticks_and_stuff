@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "vsas:soul_torches"
+    }
+  ],
+  "result": {
+    "item": "minecraft:soul_torch"
+  }
+}

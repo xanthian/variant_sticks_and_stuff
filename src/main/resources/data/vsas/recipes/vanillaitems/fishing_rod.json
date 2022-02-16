@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "vsas:fishing_rods"
+    }
+  ],
+  "result": {
+    "item": "minecraft:fishing_rod"
+  }
+}

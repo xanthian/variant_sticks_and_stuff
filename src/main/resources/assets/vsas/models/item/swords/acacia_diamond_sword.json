@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vsas:item/swords/acacia_diamond_sword"
+  }
+}

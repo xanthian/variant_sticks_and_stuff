@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "vsas:acacia_stick"
+    }
+  },
+  "result": {
+    "item": "vsas:acacia_ladder",
+    "count": 3
+  }
+}

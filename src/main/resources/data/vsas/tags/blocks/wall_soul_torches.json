@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:wall_acacia_soul_torch",
+    "vsas:wall_birch_soul_torch",
+    "vsas:wall_crimson_soul_torch",
+    "vsas:wall_dark_oak_soul_torch",
+    "vsas:wall_jungle_soul_torch",
+    "vsas:wall_oak_soul_torch",
+    "vsas:wall_spruce_soul_torch",
+    "vsas:wall_warped_soul_torch"
+  ]
+}
