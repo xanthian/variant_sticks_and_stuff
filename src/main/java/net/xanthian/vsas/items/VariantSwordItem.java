@@ -7,6 +7,6 @@ import net.xanthian.vsas.Group;
 
 public class VariantSwordItem extends SwordItem {
     public VariantSwordItem(ToolMaterial toolMaterial) {
-        super(toolMaterial, 3, 2.4f, new FabricItemSettings().group(Group.STICKS_AND_STUFF));
+        super(toolMaterial, 3, -2.4F, new FabricItemSettings().group(Group.STICKS_AND_STUFF));
     }
 }

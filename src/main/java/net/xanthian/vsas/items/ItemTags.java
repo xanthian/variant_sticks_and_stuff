@@ -15,6 +15,7 @@ public class ItemTags {
     public static final Tag.Identified<Item> LADDERS = create("ladders");
     public static final Tag.Identified<Item> TORCHES = create("torches");
     public static final Tag.Identified<Item> SOUL_TORCHES = create("soul_torches");
+    public static final Tag.Identified<Item> SWORDS = create("swords");
     private ItemTags() {
         return;
     }

@@ -1,6 +1,0 @@
-{
-    "parent": "vsas:item/acacia_bow",
-    "textures": {
-        "layer0": "vsas:item/acacia_bow_pulling_2"
-    }
-}

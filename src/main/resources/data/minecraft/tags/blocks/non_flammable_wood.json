@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    { "id": "vsas:warped_ladder",
+    { "id": "vsas:ladders/warped_ladder",
       "required": false},
-    { "id": "vsas:crimson_ladder",
+    { "id": "vsas:ladders/crimson_ladder",
       "required": false}
   ]
 }

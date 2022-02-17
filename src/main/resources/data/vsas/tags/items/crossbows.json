@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "vsas:acacia_crossbow",
-    "vsas:birch_crossbow",
-    "vsas:crimson_crossbow",
-    "vsas:dark_oak_crossbow",
-    "vsas:jungle_crossbow",
-    "vsas:oak_crossbow",
-    "vsas:spruce_crossbow",
-    "vsas:warped_crossbow"
+    "vsas:crossbows/acacia_crossbow",
+    "vsas:crossbows/birch_crossbow",
+    "vsas:crossbows/crimson_crossbow",
+    "vsas:crossbows/dark_oak_crossbow",
+    "vsas:crossbows/jungle_crossbow",
+    "vsas:crossbows/oak_crossbow",
+    "vsas:crossbows/spruce_crossbow",
+    "vsas:crossbows/warped_crossbow"
   ]
 }

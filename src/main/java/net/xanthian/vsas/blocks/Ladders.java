@@ -26,14 +26,14 @@ public class Ladders {
     public static final VariantLadderBlock WARPED_LADDER = new VariantLadderBlock();
 
     public static void registerLadders() {
-        registerLadderBlock("acacia_ladder", ACACIA_LADDER,true);
-        registerLadderBlock("birch_ladder", BIRCH_LADDER,true);
-        registerLadderBlock("crimson_ladder", CRIMSON_LADDER,false);
-        registerLadderBlock("dark_oak_ladder", DARK_OAK_LADDER,true);
-        registerLadderBlock("jungle_ladder", JUNGLE_LADDER,true);
-        registerLadderBlock("oak_ladder", OAK_LADDER,true);
-        registerLadderBlock("spruce_ladder", SPRUCE_LADDER,true);
-        registerLadderBlock("warped_ladder", WARPED_LADDER,false);
+        registerLadderBlock("ladders/acacia_ladder", ACACIA_LADDER,true);
+        registerLadderBlock("ladders/birch_ladder", BIRCH_LADDER,true);
+        registerLadderBlock("ladders/crimson_ladder", CRIMSON_LADDER,false);
+        registerLadderBlock("ladders/dark_oak_ladder", DARK_OAK_LADDER,true);
+        registerLadderBlock("ladders/jungle_ladder", JUNGLE_LADDER,true);
+        registerLadderBlock("ladders/oak_ladder", OAK_LADDER,true);
+        registerLadderBlock("ladders/spruce_ladder", SPRUCE_LADDER,true);
+        registerLadderBlock("ladders/warped_ladder", WARPED_LADDER,false);
     }
 
     private static void registerLadderBlock(String Id, Block block, boolean canBurn) {

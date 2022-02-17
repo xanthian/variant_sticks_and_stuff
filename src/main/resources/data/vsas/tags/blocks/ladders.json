@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "vsas:acacia_ladder",
-    "vsas:birch_ladder",
-    "vsas:crimson_ladder",
-    "vsas:dark_oak_ladder",
-    "vsas:jungle_ladder",
-    "vsas:oak_ladder",
-    "vsas:spruce_ladder",
-    "vsas:warped_ladder"
+    "vsas:ladders/acacia_ladder",
+    "vsas:ladders/birch_ladder",
+    "vsas:ladders/crimson_ladder",
+    "vsas:ladders/dark_oak_ladder",
+    "vsas:ladders/jungle_ladder",
+    "vsas:ladders/oak_ladder",
+    "vsas:ladders/spruce_ladder",
+    "vsas:ladders/warped_ladder"
   ]
 }

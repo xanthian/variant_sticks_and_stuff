@@ -12,14 +12,14 @@ import java.util.Map;
 public class Bows {
     private static final Map<Identifier, Item> ITEMS = new LinkedHashMap<>();
 
-    public static final Item ACACIA_BOW = registerItem("acacia_bow", new VariantBowItem(), true);
-    public static final Item BIRCH_BOW = registerItem("birch_bow", new VariantBowItem(), true);
-    public static final Item CRIMSON_BOW = registerItem("crimson_bow", new VariantBowItem(), false);
-    public static final Item DARK_OAK_BOW = registerItem("dark_oak_bow", new VariantBowItem(), true);
-    public static final Item JUNGLE_BOW = registerItem("jungle_bow", new VariantBowItem(), true);
-    public static final Item OAK_BOW = registerItem("oak_bow", new VariantBowItem(), true);
-    public static final Item SPRUCE_BOW = registerItem("spruce_bow", new VariantBowItem(), true);
-    public static final Item WARPED_BOW = registerItem("warped_bow", new VariantBowItem(), false);
+    public static final Item ACACIA_BOW = registerItem("bows/acacia_bow", new VariantBowItem(), true);
+    public static final Item BIRCH_BOW = registerItem("bows/birch_bow", new VariantBowItem(), true);
+    public static final Item CRIMSON_BOW = registerItem("bows/crimson_bow", new VariantBowItem(), false);
+    public static final Item DARK_OAK_BOW = registerItem("bows/dark_oak_bow", new VariantBowItem(), true);
+    public static final Item JUNGLE_BOW = registerItem("bows/jungle_bow", new VariantBowItem(), true);
+    public static final Item OAK_BOW = registerItem("bows/oak_bow", new VariantBowItem(), true);
+    public static final Item SPRUCE_BOW = registerItem("bows/spruce_bow", new VariantBowItem(), true);
+    public static final Item WARPED_BOW = registerItem("bows/warped_bow", new VariantBowItem(), false);
 
     private static Item registerItem(String name, Item item, boolean canBurn) {
         if (canBurn) FuelRegistry.INSTANCE.add(item, 300);

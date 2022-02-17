@@ -1,6 +1,7 @@
 package net.xanthian.vsas;
 
 import net.fabricmc.api.ModInitializer;
+import net.xanthian.vsas.blocks.Grindstones;
 import net.xanthian.vsas.blocks.Ladders;
 import net.xanthian.vsas.blocks.SoulTorches;
 import net.xanthian.vsas.blocks.Torches;
@@ -23,5 +24,6 @@ public class Init implements ModInitializer {
 		Torches.registerTorchBlocks();
 		SoulTorches.registerSoulTorchBlocks();
 		Swords.registerSwordItems();
+		Grindstones.registerGrindstone();
 	}
 }
