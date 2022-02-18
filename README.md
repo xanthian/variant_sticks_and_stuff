@@ -14,4 +14,10 @@
 ### Ladders
 ![image](https://user-images.githubusercontent.com/7688001/154687124-e6bdbd42-0b01-4e9a-b9fd-0e421deb6b04.png)
 
+### Campfires
+(partial implementation - no smoke particle or cooking)
+![image](https://user-images.githubusercontent.com/7688001/154688038-c9d85f48-ce39-42b8-a455-3bb325420de5.png)
+
+### Grindstones
+![image](https://user-images.githubusercontent.com/7688001/154688179-b0a7fd43-671e-4e6b-86a4-6ed8ec1005f2.png)
 
