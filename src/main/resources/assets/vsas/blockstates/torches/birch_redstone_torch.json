@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "vsas:block/torches/birch_redstone_torch_off"
+    },
+    "lit=true": {
+      "model": "vsas:block/torches/birch_redstone_torch"
+    }
+  }
+}

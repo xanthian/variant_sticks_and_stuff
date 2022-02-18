@@ -1,5 +1,6 @@
 package net.xanthian.vsas.mixin;
 
+import net.minecraft.block.GrindstoneBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.GrindstoneScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
@@ -21,6 +22,6 @@ public abstract class GrindstoneScreenHandlerMixin {
      */
     @Overwrite
     public boolean canUse(PlayerEntity player) {
-        return this.context.get((world, pos) -> world.getBlockState(pos).getBlock() instanceof VariantGrindstoneBlock, true);
+        return this.context.get((world, pos) -> world.getBlockState(pos).getBlock() instanceof GrindstoneBlock, true);
     }
 }

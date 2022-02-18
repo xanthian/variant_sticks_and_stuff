@@ -33,23 +33,23 @@ public class SoulTorches {
     public static final VariantWallSoulTorchBlock WALL_WARPED_SOUL_TORCH = new VariantWallSoulTorchBlock();
 
     public static void registerSoulTorchBlocks() {
-        initWallTorchBlock("acacia_soul_torch", ACACIA_SOUL_TORCH, WALL_ACACIA_SOUL_TORCH);
-        initWallTorchBlock("birch_soul_torch", BIRCH_SOUL_TORCH, WALL_BIRCH_SOUL_TORCH);
-        initWallTorchBlock("crimson_soul_torch", CRIMSON_SOUL_TORCH, WALL_CRIMSON_SOUL_TORCH);
-        initWallTorchBlock("dark_oak_soul_torch", DARK_OAK_SOUL_TORCH, WALL_DARK_OAK_SOUL_TORCH);
-        initWallTorchBlock("jungle_soul_torch", JUNGLE_SOUL_TORCH, WALL_JUNGLE_SOUL_TORCH);
-        initWallTorchBlock("oak_soul_torch", OAK_SOUL_TORCH, WALL_OAK_SOUL_TORCH);
-        initWallTorchBlock("spruce_soul_torch", SPRUCE_SOUL_TORCH, WALL_SPRUCE_SOUL_TORCH);
-        initWallTorchBlock("warped_soul_torch", WARPED_SOUL_TORCH, WALL_WARPED_SOUL_TORCH);
+        initTorchBlock("torches/acacia_soul_torch", ACACIA_SOUL_TORCH,"torches/wall_acacia_soul_torch", WALL_ACACIA_SOUL_TORCH);
+        initTorchBlock("torches/birch_soul_torch", BIRCH_SOUL_TORCH,"torches/wall_birch_soul_torch", WALL_BIRCH_SOUL_TORCH);
+        initTorchBlock("torches/crimson_soul_torch", CRIMSON_SOUL_TORCH,"torches/wall_crimson_soul_torch", WALL_CRIMSON_SOUL_TORCH);
+        initTorchBlock("torches/dark_oak_soul_torch", DARK_OAK_SOUL_TORCH,"torches/wall_dark_oak_soul_torch", WALL_DARK_OAK_SOUL_TORCH);
+        initTorchBlock("torches/jungle_soul_torch", JUNGLE_SOUL_TORCH,"torches/wall_jungle_soul_torch", WALL_JUNGLE_SOUL_TORCH);
+        initTorchBlock("torches/oak_soul_torch", OAK_SOUL_TORCH,"torches/wall_oak_soul_torch", WALL_OAK_SOUL_TORCH);
+        initTorchBlock("torches/spruce_soul_torch", SPRUCE_SOUL_TORCH,"torches/wall_spruce_soul_torch", WALL_SPRUCE_SOUL_TORCH);
+        initTorchBlock("torches/warped_soul_torch", WARPED_SOUL_TORCH,"torches/wall_warped_soul_torch", WALL_WARPED_SOUL_TORCH);
     }
 
-    private static void initWallTorchBlock(String id, Block block, Block wallBlock) {
-        Registry.register(Registry.BLOCK, new Identifier(Init.MOD_ID, id), block);
-        Registry.register(Registry.BLOCK, new Identifier(Init.MOD_ID, "wall_" + id), wallBlock);
-        Registry.register(Registry.ITEM, new Identifier(Init.MOD_ID, id), new WallStandingBlockItem(block, wallBlock, new FabricItemSettings().group(Group.STICKS_AND_STUFF)));
+    private static void initTorchBlock(String torchName, Block torch, String wallTorchName, Block wallTorch) {
+       Registry.register(Registry.BLOCK, new Identifier(Init.MOD_ID, torchName), torch);
+        Registry.register(Registry.BLOCK, new Identifier(Init.MOD_ID, wallTorchName), wallTorch);
+        Registry.register(Registry.ITEM, new Identifier(Init.MOD_ID, torchName), new WallStandingBlockItem(torch, wallTorch, new FabricItemSettings().group(Group.STICKS_AND_STUFF)));
 
         if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT)
-            RegisterBlockRenderLayerMap(block, wallBlock);
+            RegisterBlockRenderLayerMap(torch, wallTorch);
     }
     @Environment(EnvType.CLIENT)
     private static void RegisterBlockRenderLayerMap(Block block, Block wallBlock) {

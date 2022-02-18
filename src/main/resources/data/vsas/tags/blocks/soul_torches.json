@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "vsas:acacia_soul_torch",
-    "vsas:birch_soul_torch",
-    "vsas:crimson_soul_torch",
-    "vsas:dark_oak_soul_torch",
-    "vsas:jungle_soul_torch",
-    "vsas:oak_soul_torch",
-    "vsas:spruce_soul_torch",
-    "vsas:warped_soul_torch"
+    "vsas:torches/acacia_soul_torch",
+    "vsas:torches/birch_soul_torch",
+    "vsas:torches/crimson_soul_torch",
+    "vsas:torches/dark_oak_soul_torch",
+    "vsas:torches/jungle_soul_torch",
+    "vsas:torches/oak_soul_torch",
+    "vsas:torches/spruce_soul_torch",
+    "vsas:torches/warped_soul_torch"
   ]
 }

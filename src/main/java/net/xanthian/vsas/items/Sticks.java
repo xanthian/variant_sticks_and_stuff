@@ -13,14 +13,14 @@ public class Sticks extends Item {
         super(settings);
     }
 
-    public static final Item ACACIA_STICK = registerItem("acacia_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
-    public static final Item BIRCH_STICK = registerItem("birch_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
-    public static final Item CRIMSON_STICK = registerItem("crimson_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),false);
-    public static final Item DARK_OAK_STICK = registerItem("dark_oak_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
-    public static final Item JUNGLE_STICK = registerItem("jungle_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
-    public static final Item OAK_STICK = registerItem("oak_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
-    public static final Item SPRUCE_STICK = registerItem("spruce_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
-    public static final Item WARPED_STICK = registerItem("warped_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),false);
+    public static final Item ACACIA_STICK = registerItem("sticks/acacia_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
+    public static final Item BIRCH_STICK = registerItem("sticks/birch_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
+    public static final Item CRIMSON_STICK = registerItem("sticks/crimson_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),false);
+    public static final Item DARK_OAK_STICK = registerItem("sticks/dark_oak_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
+    public static final Item JUNGLE_STICK = registerItem("sticks/jungle_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
+    public static final Item OAK_STICK = registerItem("sticks/oak_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
+    public static final Item SPRUCE_STICK = registerItem("sticks/spruce_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
+    public static final Item WARPED_STICK = registerItem("sticks/warped_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),false);
 
     private static Item registerItem(String name, Item item, boolean canBurn) {
         if (canBurn) FuelRegistry.INSTANCE.add(item, 100);

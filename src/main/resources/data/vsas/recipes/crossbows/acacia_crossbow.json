@@ -10,7 +10,7 @@
       "item": "minecraft:string"
     },
     "#": {
-      "item": "vsas:acacia_stick"
+      "item": "vsas:sticks/acacia_stick"
     },
     "&": {
       "item": "minecraft:iron_ingot"

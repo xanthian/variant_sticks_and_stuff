@@ -10,9 +10,12 @@ public class BlockTags {
 
     public static final Tag.Identified<Block> LADDERS = create("ladders");
     public static final Tag.Identified<Block> TORCHES = create("torches");
+    public static final Tag.Identified<Block> REDSTONE_TORCHES = create("redstone_torches");
     public static final Tag.Identified<Block> SOUL_TORCHES = create("soul_torches");
     public static final Tag.Identified<Block> WALL_TORCHES = create("wall_torches");
+    public static final Tag.Identified<Block> WALL_REDSTONE_TORCHES = create("wall_redstone_torches");
     public static final Tag.Identified<Block> WALL_SOUL_TORCHES = create("wall_soul_torches");
+    public static final Tag.Identified<Block> GRINDSTONES = create("grindstones");
     private BlockTags() {
         return;
     }
