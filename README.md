@@ -1,6 +1,6 @@
 <p align="center">
-<a href="https://www.curseforge.com/minecraft/mc-mods/variant-crafting-tables-fabric"><img src="https://cf.way2muchnoise.eu/full_variant-crafting-tables-fabric_downloads.svg">
- <img src="http://cf.way2muchnoise.eu/versions/variant-crafting-tables-fabric.svg"></a>
+<a href="https://www.curseforge.com/minecraft/mc-mods/580723"><img src="https://cf.way2muchnoise.eu/full_580723_downloads.svg">
+ <img src="http://cf.way2muchnoise.eu/versions/580723.svg"></a>
  </p>
 
 <h1 align="center"> # Variant Sticks & Stuff # #
