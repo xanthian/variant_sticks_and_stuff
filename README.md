@@ -24,3 +24,31 @@
 ### Grindstones
 ![image](https://user-images.githubusercontent.com/7688001/154688179-b0a7fd43-671e-4e6b-86a4-6ed8ec1005f2.png)
 
+### Wooden Swords (textures wip)
+![image](https://user-images.githubusercontent.com/7688001/154710208-f9614084-72b4-4395-8faa-f33e10a7a684.png)
+
+### Variant Stone Swords
+![image](https://user-images.githubusercontent.com/7688001/154710380-44ebf583-102f-49ce-a511-991824cd8383.png)
+
+### Variant Iron Swords
+![image](https://user-images.githubusercontent.com/7688001/154710560-d955fdc1-4734-46a5-b2ad-9cc99ef5ec15.png)
+
+### Variant Golden Swords
+![image](https://user-images.githubusercontent.com/7688001/154710749-ee63d772-160e-4e2b-92e8-86142a97cf63.png)
+
+### Variant Diamond Swords
+![image](https://user-images.githubusercontent.com/7688001/154710887-44381566-2b98-44e9-a76c-75014b23ee48.png)
+
+### Variant Netherite Swords
+![image](https://user-images.githubusercontent.com/7688001/154711013-f87e0c17-6be0-4562-8360-2b9fcb3f8aae.png)
+
+### Fishing Rods
+![image](https://user-images.githubusercontent.com/7688001/154711138-14068778-3f97-4f74-bb21-795d9fd03c1b.png)
+
+### Bows
+![image](https://user-images.githubusercontent.com/7688001/154711305-f701c42d-291d-4ec0-8ef6-3a3b15f94a48.png)
+
+### Crossbows (textures wip)
+![image](https://user-images.githubusercontent.com/7688001/154711440-94df89d7-5a68-4bbc-922a-7a38aecf88df.png)
+
+
