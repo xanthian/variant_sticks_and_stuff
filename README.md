@@ -1,4 +1,4 @@
-# # Variant Sticks & Stuff #
+# # Variant Sticks & Stuff # #
 
 ## Implements 
 
