@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://www.curseforge.com/minecraft/mc-mods/580723"><img src="https://cf.way2muchnoise.eu/full_580723_downloads.svg">
+<a href="https://www.curseforge.com/minecraft/mc-mods/variant-sticks-stuff"><img src="https://cf.way2muchnoise.eu/full_580723_downloads.svg">
  <img src="http://cf.way2muchnoise.eu/versions/580723.svg"></a>
  </p>
 
