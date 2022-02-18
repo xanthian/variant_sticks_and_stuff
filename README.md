@@ -1,5 +1,9 @@
 <p align="center">
-# # Variant Sticks & Stuff # #
+<a href="https://www.curseforge.com/minecraft/mc-mods/variant-crafting-tables-fabric"><img src="https://cf.way2muchnoise.eu/full_variant-crafting-tables-fabric_downloads.svg">
+ <img src="http://cf.way2muchnoise.eu/versions/variant-crafting-tables-fabric.svg"></a>
+ </p>
+
+<h1 align="center"> # Variant Sticks & Stuff # #
 
 ## Implements 
 
@@ -17,6 +21,9 @@
 
 ### Ladders
 ![image](https://user-images.githubusercontent.com/7688001/154687124-e6bdbd42-0b01-4e9a-b9fd-0e421deb6b04.png)
+  
+### Levers
+![image](https://user-images.githubusercontent.com/7688001/154713882-225a4c42-faf8-4541-b664-362bb36fe125.png)
 
 ### Campfires
 (partial implementation - no smoke particle or cooking)
