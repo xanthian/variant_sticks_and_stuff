@@ -2,6 +2,9 @@
 
 ## Implements 
 
+### Sticks
+![image](https://user-images.githubusercontent.com/7688001/154689052-8a1683fd-c9c5-47b7-9040-23286c1c22fa.png)
+
 ### Torches
 ![image](https://user-images.githubusercontent.com/7688001/154686244-342fa118-bb94-4483-b56c-a2aa021036c2.png)
 
