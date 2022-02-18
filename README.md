@@ -1,3 +1,4 @@
+<p align="center">
 # # Variant Sticks & Stuff # #
 
 ## Implements 
@@ -50,5 +51,5 @@
 
 ### Crossbows (textures wip)
 ![image](https://user-images.githubusercontent.com/7688001/154711440-94df89d7-5a68-4bbc-922a-7a38aecf88df.png)
-
+</p>
 
