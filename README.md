@@ -3,7 +3,7 @@
  <img src="http://cf.way2muchnoise.eu/versions/580723.svg"></a>
  </p>
 
-<h1 align="center"> # Variant Sticks & Stuff # #
+<h1 align="center"> # Variant Sticks & Stuff # 
 
 ## Implements 
 
