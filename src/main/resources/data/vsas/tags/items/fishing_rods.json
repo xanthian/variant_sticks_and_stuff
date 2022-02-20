@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "vsas:acacia_fishing_rod",
-    "vsas:birch_fishing_rod",
-    "vsas:crimson_fishing_rod",
-    "vsas:dark_oak_fishing_rod",
-    "vsas:jungle_fishing_rod",
-    "vsas:oak_fishing_rod",
-    "vsas:spruce_fishing_rod",
-    "vsas:warped_fishing_rod"
+    "vsas:fishingrods/acacia_fishing_rod",
+    "vsas:fishingrods/birch_fishing_rod",
+    "vsas:fishingrods/crimson_fishing_rod",
+    "vsas:fishingrods/dark_oak_fishing_rod",
+    "vsas:fishingrods/jungle_fishing_rod",
+    "vsas:fishingrods/oak_fishing_rod",
+    "vsas:fishingrods/spruce_fishing_rod",
+    "vsas:fishingrods/warped_fishing_rod"
   ]
 }

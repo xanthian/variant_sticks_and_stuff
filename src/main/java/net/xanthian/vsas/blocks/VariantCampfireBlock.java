@@ -6,6 +6,6 @@ import net.minecraft.block.CampfireBlock;
 
 public class VariantCampfireBlock extends CampfireBlock {
     public VariantCampfireBlock() {
-        super(true, 1, FabricBlockSettings.copy(Blocks.CAMPFIRE));
+        super(true, 1, FabricBlockSettings.copy(Blocks.SOUL_CAMPFIRE));
     }
 }

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:campfires/acacia_campfire",
+    "vsas:campfires/birch_campfire",
+    "vsas:campfires/crimson_campfire",
+    "vsas:campfires/dark_oak_campfire",
+    "vsas:campfires/jungle_campfire",
+    "vsas:campfires/oak_campfire",
+    "vsas:campfires/spruce_campfire",
+    "vsas:campfires/warped_campfire"
+    ]
+}

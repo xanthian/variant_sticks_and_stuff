@@ -2,6 +2,7 @@ package net.xanthian.vsas;
 
 import net.fabricmc.api.ModInitializer;
 import net.xanthian.vsas.blocks.*;
+import net.xanthian.vsas.entity.EntityInit;
 import net.xanthian.vsas.items.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +14,7 @@ public class Init implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		EntityInit.init();
 		Sticks.registerStickItems();
 		Ladders.registerLadders();
 		Torches.registerTorchBlocks();
@@ -20,10 +22,13 @@ public class Init implements ModInitializer {
 		RedstoneTorches.registerRedstoneTorchBlocks();
 		Levers.registerLevers();
 		Campfires.registerCampfire();
+		SoulCampfires.registerCampfire();
 		Swords.registerSwordItems();
 		Grindstones.registerGrindstone();
 		FishingRods.registerFishingRodItems();
 		Bows.registerBowItems();
 		Crossbows.registerCrossBowItems();
+		Arrows.registerArrowItems();
+
 	}
 }
