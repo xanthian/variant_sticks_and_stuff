@@ -26,13 +26,18 @@
 ![image](https://user-images.githubusercontent.com/7688001/154713882-225a4c42-faf8-4541-b664-362bb36fe125.png)
 
 ### Campfires
-(partial implementation - no smoke particle or cooking)
+ <i>(partial implementation - no cooking)</i>
 ![image](https://user-images.githubusercontent.com/7688001/154688038-c9d85f48-ce39-42b8-a455-3bb325420de5.png)
+ 
+### Soul Campfires
+ <i>(partial implementation - no cooking)</i>
+![image](https://user-images.githubusercontent.com/7688001/154934702-b9f7188e-e832-44f9-88e2-a81bea41514c.png)
 
 ### Grindstones
 ![image](https://user-images.githubusercontent.com/7688001/154688179-b0a7fd43-671e-4e6b-86a4-6ed8ec1005f2.png)
 
-### Wooden Swords (textures wip)
+### Wooden Swords 
+<i>(textures wip)</i>
 ![image](https://user-images.githubusercontent.com/7688001/154710208-f9614084-72b4-4395-8faa-f33e10a7a684.png)
 
 ### Variant Stone Swords
@@ -56,7 +61,8 @@
 ### Bows
 ![image](https://user-images.githubusercontent.com/7688001/154711305-f701c42d-291d-4ec0-8ef6-3a3b15f94a48.png)
 
-### Crossbows (textures wip)
+### Crossbows 
+ <i>(textures wip)</i>
 ![image](https://user-images.githubusercontent.com/7688001/154711440-94df89d7-5a68-4bbc-922a-7a38aecf88df.png)
 </p>
 
