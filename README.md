@@ -58,11 +58,14 @@
 ### Fishing Rods
 ![image](https://user-images.githubusercontent.com/7688001/154711138-14068778-3f97-4f74-bb21-795d9fd03c1b.png)
 
+### Arrows
+![image](https://user-images.githubusercontent.com/7688001/154935094-ba3ffeda-da0a-4733-9216-20a180a7e0b2.png)
+ 
 ### Bows
 ![image](https://user-images.githubusercontent.com/7688001/154711305-f701c42d-291d-4ec0-8ef6-3a3b15f94a48.png)
 
 ### Crossbows 
- <i>(textures wip)</i>
+<i>(textures wip)</i>
 ![image](https://user-images.githubusercontent.com/7688001/154711440-94df89d7-5a68-4bbc-922a-7a38aecf88df.png)
 </p>
 
