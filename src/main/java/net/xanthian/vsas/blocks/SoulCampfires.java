@@ -15,14 +15,14 @@ import net.xanthian.vsas.Init;
 
 public class SoulCampfires {
 
-    public static final VariantSoulCampfireBlock ACACIA_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
-    public static final VariantSoulCampfireBlock BIRCH_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
-    public static final VariantSoulCampfireBlock CRIMSON_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
-    public static final VariantSoulCampfireBlock DARK_OAK_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
-    public static final VariantSoulCampfireBlock JUNGLE_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
-    public static final VariantSoulCampfireBlock OAK_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
-    public static final VariantSoulCampfireBlock SPRUCE_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
-    public static final VariantSoulCampfireBlock WARPED_SOUL_CAMPFIRE = new VariantSoulCampfireBlock();
+    public static final VariantSoulCampFireBlock ACACIA_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
+    public static final VariantSoulCampFireBlock BIRCH_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
+    public static final VariantSoulCampFireBlock CRIMSON_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
+    public static final VariantSoulCampFireBlock DARK_OAK_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
+    public static final VariantSoulCampFireBlock JUNGLE_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
+    public static final VariantSoulCampFireBlock OAK_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
+    public static final VariantSoulCampFireBlock SPRUCE_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
+    public static final VariantSoulCampFireBlock WARPED_SOUL_CAMPFIRE = new VariantSoulCampFireBlock();
 
     public static void registerCampfire() {
         registerSoulCampfireBlock("campfires/acacia_soul_campfire", ACACIA_SOUL_CAMPFIRE);

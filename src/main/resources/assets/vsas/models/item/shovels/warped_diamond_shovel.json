@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vsas:item/shovels/warped_diamond_shovel"
+  }
+}

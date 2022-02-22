@@ -24,6 +24,7 @@ public class Init implements ModInitializer {
 		Campfires.registerCampfire();
 		SoulCampfires.registerCampfire();
 		Swords.registerSwordItems();
+		Shovels.registerShovelItems();
 		Grindstones.registerGrindstone();
 		FishingRods.registerFishingRodItems();
 		Bows.registerBowItems();

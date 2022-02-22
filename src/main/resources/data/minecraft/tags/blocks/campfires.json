@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "#vsas:campfires",
     "#vsas:soul_campfires"
   ]
 }
