@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vsas:item/axes/diamond_axe",
+    "layer1": "vsas:item/axes/acacia_shaft"
+  }
+}

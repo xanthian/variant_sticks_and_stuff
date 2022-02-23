@@ -8,7 +8,15 @@
     {"item": "vsas:swords/jungle_golden_sword"},
     {"item": "vsas:swords/oak_golden_sword"},
     {"item": "vsas:swords/spruce_golden_sword"},
-    {"item": "vsas:swords/warped_golden_sword"}
+    {"item": "vsas:swords/warped_golden_sword"},
+    {"item": "vsas:axes/acacia_golden_axe"},
+    {"item": "vsas:axes/birch_golden_axe"},
+    {"item": "vsas:axes/crimson_golden_axe"},
+    {"item": "vsas:axes/dark_oak_golden_axe"},
+    {"item": "vsas:axes/jungle_golden_axe"},
+    {"item": "vsas:axes/oak_golden_axe"},
+    {"item": "vsas:axes/spruce_golden_axe"},
+    {"item": "vsas:axes/warped_golden_axe"}
   ],
   "result": "minecraft:gold_nugget",
   "experience": 0.1,

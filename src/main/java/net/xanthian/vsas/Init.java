@@ -23,13 +23,15 @@ public class Init implements ModInitializer {
 		Levers.registerLevers();
 		Campfires.registerCampfire();
 		SoulCampfires.registerCampfire();
-		Swords.registerSwordItems();
+		Axes.registerAxeItems();
+		Hoes.registerHoeItems();
+		Pickaxes.registerPickaxeItems();
 		Shovels.registerShovelItems();
+		Swords.registerSwordItems();
 		Grindstones.registerGrindstone();
-		FishingRods.registerFishingRodItems();
+		Arrows.registerArrowItems();
 		Bows.registerBowItems();
 		Crossbows.registerCrossBowItems();
-		Arrows.registerArrowItems();
-
+		FishingRods.registerFishingRodItems();
 	}
 }
