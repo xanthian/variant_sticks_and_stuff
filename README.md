@@ -26,11 +26,9 @@
 ![image](https://user-images.githubusercontent.com/7688001/154713882-225a4c42-faf8-4541-b664-362bb36fe125.png)
 
 ### Campfires
- <i>(partial implementation - no cooking)</i>
 ![image](https://user-images.githubusercontent.com/7688001/154688038-c9d85f48-ce39-42b8-a455-3bb325420de5.png)
  
 ### Soul Campfires
- <i>(partial implementation - no cooking)</i>
 ![image](https://user-images.githubusercontent.com/7688001/154934702-b9f7188e-e832-44f9-88e2-a81bea41514c.png)
 
 ### Grindstones

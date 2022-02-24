@@ -62,19 +62,26 @@ public abstract class RecipeManagerMixin {
         for (Pair<String, String[]> woodType : Init.woodTypes)
         {
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_arrow"), Recipes.createArrowRecipeJson(woodType.getLeft(), woodType.getRight()));
-            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_axe"), Recipes.createWoodAxeRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_bow"), Recipes.createBowRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_crossbow"), Recipes.createCrossbowRecipeJson(woodType.getLeft(), woodType.getRight()));
-            //map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_fishing_rod"), Recipes.createFishingrodRecipeJson(woodType.getLeft(), woodType.getRight()));
-            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_hoe"), Recipes.createWoodHoeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_fishing_rod"), Recipes.createFishingRodRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_ladder"), Recipes.createLadderRecipeJson(woodType.getLeft(), woodType.getRight()));
-            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_pickaxe"), Recipes.createWoodPickaxeRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_redstone_torch"), Recipes.createRedstoneTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
-            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_shovel"), Recipes.createWoodShovelRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_soul_torch"), Recipes.createSoulTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_stick"), Recipes.createStickRecipeJson(woodType.getLeft(), woodType.getRight()));
-            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_sword"), Recipes.createWoodSwordRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_torch"), Recipes.createTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
+            
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "wooden_axe"), Recipes.createWoodAxeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "wooden_hoe"), Recipes.createWoodHoeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "wooden_pickaxe"), Recipes.createWoodPickaxeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "wooden_shovel"), Recipes.createWoodShovelRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "wooden_sword"), Recipes.createWoodSwordRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "iron_axe"), Recipes.createIronAxeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "iron_hoe"), Recipes.createIronHoeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "iron_pickaxe"), Recipes.createIronPickaxeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "iron_shovel"), Recipes.createIronShovelRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "iron_sword"), Recipes.createIronSwordRecipeJson(woodType.getLeft(), woodType.getRight()));
+            
 
 
         }

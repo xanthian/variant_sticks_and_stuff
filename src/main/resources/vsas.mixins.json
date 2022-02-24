@@ -6,8 +6,11 @@
   "mixins": [
     "RecipeManagerMixin",
     "FishingBobberEntityMixin",
-    "FishingBobberEntityRendererMixin",
     "GrindstoneScreenHandlerMixin"
+  ],
+  "client": [
+    "HeldItemRendererMixin",
+    "FishingBobberEntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

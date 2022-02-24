@@ -5,15 +5,13 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.object.builder.v1.client.model.FabricModelPredicateProviderRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.CrossbowItem;
+import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import net.xanthian.vsas.items.VariantFishingRodItem;
 
 @Environment(EnvType.CLIENT)
 public class VariantItemsClientRenderer {
-
-
 
     // Bows
     public static void registerBowPredicates(Item bowItem) {
@@ -59,7 +57,7 @@ public class VariantItemsClientRenderer {
             } else {
                 boolean bl = livingEntity.getMainHandStack() == itemStack;
                 boolean bl2 = livingEntity.getOffHandStack() == itemStack;
-                if (livingEntity.getMainHandStack().getItem() instanceof VariantFishingRodItem) {
+                if (livingEntity.getMainHandStack().getItem() instanceof FishingRodItem) {
                     bl2 = false;
                 }
                 return (bl || bl2) && livingEntity instanceof PlayerEntity && ((PlayerEntity)livingEntity).fishHook != null ? 1.0F : 0.0F;

@@ -8,6 +8,7 @@ import static net.xanthian.vsas.Init.MOD_ID;
 
 public class Recipes {
 
+    // Ladder
     public static JsonObject createLadderRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -191,45 +192,6 @@ public class Recipes {
         return json;
     }
 
-    // Campfire
-    public static JsonObject createCampfireRecipeJson(String material, String[] mods) {
-        Gson gson = new Gson();
-        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
-        JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
-            JsonArray loadConditions = new JsonArray();
-            JsonObject loadCondition = new JsonObject();
-            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
-            loadCondition.add("values", modList);
-            loadConditions.add(loadCondition);
-            json.add("fabric:load_conditions", loadConditions);
-        }
-        json.addProperty("type", "minecraft:crafting_shaped");
-        JsonArray pattern = new JsonArray();
-        pattern.add(" S ");
-        pattern.add("SCS");
-        pattern.add("LLL");
-        json.add("pattern", pattern);
-        JsonObject keyList = new JsonObject();
-        JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", "minecraft:" + material + "_log");
-        keyList.add("L", iKey);
-        json.add("key", keyList);
-        iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
-        keyList.add("S", iKey);
-        iKey = new JsonObject();
-        iKey.addProperty("tag", "minecraft:coals");
-        keyList.add("C", iKey);
-        JsonObject result = new JsonObject();
-        result.addProperty("item", MOD_ID + ":campfires/" + material + "_campfire");
-        result.addProperty("count",1);
-        json.add("result", result);
-        System.out.println(json);
-        return json;
-    }
-
     // Arrow
     public static JsonObject createArrowRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
@@ -268,7 +230,7 @@ public class Recipes {
         return json;
     }
 
-    // Axe
+    // Wood Axe
     public static JsonObject createWoodAxeRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -302,7 +264,7 @@ public class Recipes {
         json.add("result", result);
         return json;
     }
-    // Sword
+    // Wood Sword
     public static JsonObject createWoodSwordRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -337,7 +299,7 @@ public class Recipes {
         return json;
     }
 
-    // Pickaxe
+    // Wood Pickaxe
     public static JsonObject createWoodPickaxeRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -372,7 +334,7 @@ public class Recipes {
         return json;
     }
 
-    // Shovel
+    // Wood Shovel
     public static JsonObject createWoodShovelRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -407,7 +369,7 @@ public class Recipes {
         return json;
     }
 
-    // Hoe
+    // Wood Hoe
     public static JsonObject createWoodHoeRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -437,6 +399,181 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_wooden_hoe");
+        result.addProperty("count",1);
+        json.add("result", result);
+        return json;
+    }
+
+
+    // Iron Axe
+    public static JsonObject createIronAxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0)
+        {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add("PS ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:iron_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":axes/" + material + "_iron_axe");
+        result.addProperty("count",1);
+        json.add("result", result);
+        return json;
+    }
+    // Iron Sword
+    public static JsonObject createIronSwordRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0)
+        {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" P ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:iron_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":swords/" + material + "_iron_sword");
+        result.addProperty("count",1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Iron Pickaxe
+    public static JsonObject createIronPickaxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0)
+        {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PPP");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:iron_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_iron_pickaxe");
+        result.addProperty("count",1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Iron Shovel
+    public static JsonObject createIronShovelRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0)
+        {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:iron_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":shovels/" + material + "_iron_shovel");
+        result.addProperty("count",1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Iron Hoe
+    public static JsonObject createIronHoeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0)
+        {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:iron_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":hoes/" + material + "_iron_hoe");
         result.addProperty("count",1);
         json.add("result", result);
         return json;
@@ -515,6 +652,41 @@ public class Recipes {
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":torches/" + material + "_soul_torch");
         result.addProperty("count",4);
+        json.add("result", result);
+        return json;
+    }
+
+    // Fishing Rod
+    public static JsonObject createFishingRodRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0)
+        {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("  V");
+        pattern.add(" VS");
+        pattern.add("V S");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:string");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        keyList.add("V", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":fishingrods/" + material + "_fishing_rod");
+        result.addProperty("count",1);
         json.add("result", result);
         return json;
     }
