@@ -7,7 +7,7 @@
   ],
   "key": {
     "L": {
-      "tag": "minecraft:logs"
+      "item": "minecraft:acacia_log"
     },
     "S": {
       "item": "vsas:sticks/acacia_stick"

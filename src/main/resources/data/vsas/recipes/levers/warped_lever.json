@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blackstone"
+    },
+    "X": {
+      "item": "vsas:sticks/warped_stick"
+    }
+  },
+  "result": {
+    "item": "vsas:levers/warped_lever"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "X": {
+      "item": "vsas:sticks/oak_stick"
+    }
+  },
+  "result": {
+    "item": "vsas:levers/oak_lever"
+  }
+}

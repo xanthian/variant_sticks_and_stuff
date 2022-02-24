@@ -12,6 +12,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -57,7 +58,7 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
         super(FabricBlockSettings.copy(Blocks.CAMPFIRE));
         this.smoke = true;
         this.fireDamage = 1;
-        this.setDefaultState(this.getDefaultState().with(LIT, true).with(SIGNAL_FIRE, Boolean.FALSE).with(WATERLOGGED, Boolean.FALSE).with(FACING, Direction.NORTH));
+        this.setDefaultState((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)this.stateManager.getDefaultState()).with(LIT, true)).with(SIGNAL_FIRE, false)).with(WATERLOGGED, false)).with(FACING, Direction.NORTH));
     }
 
     public static void extinguish(World world, BlockPos pos, BlockState state) {
@@ -180,7 +181,7 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
     }
 
     public boolean canBeLit(BlockState state, World world, BlockPos pos) {
-        return !state.get(WATERLOGGED) && !(world.isRaining() && world.isSkyVisibleAllowingSea(pos));
+        return !state.get(WATERLOGGED) ;
     }
 
     public void toggleLight(World worldIn, BlockState state, BlockPos pos) {
@@ -190,13 +191,6 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
             worldIn.playSound(null, pos, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.3f, 1.0f);
         }
         worldIn.updateNeighbors(pos, this);
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(new TranslatableText("tooltip.camp_fire"));
-        tooltip.add(new TranslatableText("tooltip.camp_fire_line1"));
-        //super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 
     @Nullable

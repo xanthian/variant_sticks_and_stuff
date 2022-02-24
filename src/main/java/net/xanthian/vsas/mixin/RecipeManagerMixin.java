@@ -1,15 +1,28 @@
 package net.xanthian.vsas.mixin;
 
+import com.google.gson.JsonElement;
+
 import net.minecraft.inventory.Inventory;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.recipe.RecipeType;
+import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import net.minecraft.world.World;
+import net.minecraft.util.profiler.Profiler;
+
+import net.xanthian.vsas.Init;
+import net.xanthian.vsas.util.Recipes;
+
+import org.apache.commons.lang3.tuple.Pair;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.*;
 
@@ -21,11 +34,12 @@ public abstract class RecipeManagerMixin {
         return null;
     }
 
-    @Shadow private Map<RecipeType<?>, Map<Identifier, Recipe<?>>> recipes;
+    @Shadow
+    private Map<RecipeType<?>, Map<Identifier, Recipe<?>>> recipes;
 
     /**
      * @author Paulevs
-    **/
+     **/
 
     @Overwrite
     public <C extends Inventory, T extends Recipe<C>> Optional<T> getFirstMatch(RecipeType<T> type, C inventory, World world) {
@@ -40,5 +54,29 @@ public abstract class RecipeManagerMixin {
         });
         return list.stream().flatMap((recipe -> Util.stream(type.match(recipe, world, inventory)))).findFirst();
 
+    }
+
+    @Inject(method = "apply", at = @At("HEAD"))
+    public void interceptApply(Map<Identifier, JsonElement> map, ResourceManager resourceManager, Profiler profiler, CallbackInfo info)
+    {
+        for (Pair<String, String[]> woodType : Init.woodTypes)
+        {
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_arrow"), Recipes.createArrowRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_axe"), Recipes.createWoodAxeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_bow"), Recipes.createBowRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_crossbow"), Recipes.createCrossbowRecipeJson(woodType.getLeft(), woodType.getRight()));
+            //map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_fishing_rod"), Recipes.createFishingrodRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_hoe"), Recipes.createWoodHoeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_ladder"), Recipes.createLadderRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_pickaxe"), Recipes.createWoodPickaxeRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_redstone_torch"), Recipes.createRedstoneTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_shovel"), Recipes.createWoodShovelRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_soul_torch"), Recipes.createSoulTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_stick"), Recipes.createStickRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_sword"), Recipes.createWoodSwordRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_torch"), Recipes.createTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
+
+
+        }
     }
 }

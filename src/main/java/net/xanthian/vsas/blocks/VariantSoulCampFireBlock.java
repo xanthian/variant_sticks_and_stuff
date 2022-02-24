@@ -181,7 +181,7 @@ public class VariantSoulCampFireBlock extends Block implements Waterloggable, Bl
     }
 
     public boolean canBeLit(BlockState state, World world, BlockPos pos) {
-        return !state.get(WATERLOGGED) && !(world.isRaining() && world.isSkyVisibleAllowingSea(pos));
+        return !state.get(WATERLOGGED);
     }
 
     public void toggleLight(World worldIn, BlockState state, BlockPos pos) {
@@ -191,13 +191,6 @@ public class VariantSoulCampFireBlock extends Block implements Waterloggable, Bl
             worldIn.playSound(null, pos, SoundEvents.BLOCK_FIRE_EXTINGUISH, SoundCategory.BLOCKS, 0.3f, 1.0f);
         }
         worldIn.updateNeighbors(pos, this);
-    }
-
-    @Override
-    public void appendTooltip(ItemStack stack, @Nullable BlockView world, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(new TranslatableText("tooltip.camp_fire"));
-        tooltip.add(new TranslatableText("tooltip.camp_fire_line1"));
-        //super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 
     @Nullable

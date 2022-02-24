@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "vsas:item/swords/acacia_iron_sword"
+    "layer0": "vsas:item/swords/iron_sword",
+    "layer1": "vsas:item/swords/acacia_hilt"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I-I",
+    "# #"
+  ],
+  "key": {
+    "I": {
+      "item": "vsas:sticks/jungle_stick"
+    },
+    "-": {
+      "item": "minecraft:stone_slab"
+    },
+    "#": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "result": {
+    "item": "vsas:grindstones/jungle_grindstone"
+  }
+}

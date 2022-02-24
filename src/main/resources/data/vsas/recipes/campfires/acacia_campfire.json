@@ -1,22 +1,23 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
+  "type":"minecraft:crafting_shaped",
+  "pattern":[
     " S ",
     "SCS",
     "LLL"
   ],
-  "key": {
-    "L": {
-      "tag": "minecraft:logs"
+  "key":{
+    "L":{
+      "item":"minecraft:acacia_log"
     },
-    "S": {
-      "item": "vsas:sticks/acacia_stick"
+    "S":{
+      "item":"vsas:sticks/acacia_stick"
     },
-    "C": {
-      "tag": "minecraft:coals"
+    "C":{
+      "tag":"minecraft:coals"
     }
   },
-  "result": {
-    "item": "vsas:campfires/acacia_campfire"
+  "result":{
+    "item":"vsas:campfires/acacia_campfire",
+    "count":1
   }
 }
