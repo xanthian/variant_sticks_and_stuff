@@ -83,7 +83,7 @@
 ### Diamond Tools
 ![image](https://user-images.githubusercontent.com/7688001/155626870-6fbec7a5-b7be-4358-a3df-9cee57303700.png)
 ![image](https://user-images.githubusercontent.com/7688001/155807640-b43fa6cd-a28a-4f32-b1c9-23b0f95a991d.png)
-![image](https://user-images.githubusercontent.com/7688001/155807721-60519887-f5a8-4d6f-a9e5-a518c253e9da.png)
+![image](https://user-images.githubusercontent.com/7688001/155808745-0a1a6ccb-b495-4dd6-8b03-f9a133563667.png)
 ![image](https://user-images.githubusercontent.com/7688001/155807964-f8734841-dc34-48fd-bf34-f56f58d9d353.png)
 ![image](https://user-images.githubusercontent.com/7688001/154710887-44381566-2b98-44e9-a76c-75014b23ee48.png)
 
