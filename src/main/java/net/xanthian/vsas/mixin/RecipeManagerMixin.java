@@ -70,6 +70,8 @@ public abstract class RecipeManagerMixin {
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_soul_torch"), Recipes.createSoulTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_stick"), Recipes.createStickRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_torch"), Recipes.createTorchRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_warped_fungus_on_a_stick"), Recipes.createFungusOnAStickRecipeJson(woodType.getLeft(), woodType.getRight()));
+            map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_carrot_on_a_stick"), Recipes.createCarrotOnAStickRecipeJson(woodType.getLeft(), woodType.getRight()));
             
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_wooden_axe"), Recipes.createWoodAxeRecipeJson(woodType.getLeft(), woodType.getRight()));
             map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_wooden_hoe"), Recipes.createWoodHoeRecipeJson(woodType.getLeft(), woodType.getRight()));

@@ -11,9 +11,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.xanthian.vsas.Init;
 import net.xanthian.vsas.blocks.Campfires;
-import net.xanthian.vsas.blocks.SoulCampfires;
 import net.xanthian.vsas.entity.arrows.*;
-
 
 public class EntityInit {
 
@@ -27,10 +25,8 @@ public class EntityInit {
     public static EntityType<WarpedArrowEntity> WARPED_ARROW;
     public static BlockEntityType<CampFireBlockEntity> VARIANT_CAMPFIRE;
 
-
     private static <T extends Entity> EntityType<T> register(String item, EntityType<T> entityType) {
         return Registry.register(Registry.ENTITY_TYPE, Init.MOD_ID + ":" + item, entityType);
-
     }
 
     private static <T extends Entity> EntityType<T> createArrowEntityType(EntityType.EntityFactory<T> factory) {
@@ -51,9 +47,7 @@ public class EntityInit {
                     FabricBlockEntityTypeBuilder.create(CampFireBlockEntity::new,
                             Campfires.ACACIA_CAMPFIRE,Campfires.BIRCH_CAMPFIRE,Campfires.CRIMSON_CAMPFIRE,Campfires.DARK_OAK_CAMPFIRE,
                             Campfires.JUNGLE_CAMPFIRE,Campfires.OAK_CAMPFIRE,Campfires.SPRUCE_CAMPFIRE,Campfires.WARPED_CAMPFIRE,
-                            SoulCampfires.ACACIA_SOUL_CAMPFIRE,SoulCampfires.BIRCH_SOUL_CAMPFIRE,SoulCampfires.CRIMSON_SOUL_CAMPFIRE,SoulCampfires.DARK_OAK_SOUL_CAMPFIRE,
-                            SoulCampfires.JUNGLE_SOUL_CAMPFIRE,SoulCampfires.OAK_SOUL_CAMPFIRE,SoulCampfires.SPRUCE_SOUL_CAMPFIRE,SoulCampfires.WARPED_SOUL_CAMPFIRE).build());
-
+                            Campfires.ACACIA_SOUL_CAMPFIRE,Campfires.BIRCH_SOUL_CAMPFIRE,Campfires.CRIMSON_SOUL_CAMPFIRE,Campfires.DARK_OAK_SOUL_CAMPFIRE,
+                            Campfires.JUNGLE_SOUL_CAMPFIRE,Campfires.OAK_SOUL_CAMPFIRE,Campfires.SPRUCE_SOUL_CAMPFIRE,Campfires.WARPED_SOUL_CAMPFIRE).build());
         }
-
     }

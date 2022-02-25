@@ -148,7 +148,6 @@ public class Recipes {
         keyList.add("T", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":crossbows/" + material + "_crossbow");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -182,7 +181,6 @@ public class Recipes {
         keyList.add("V", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":bows/" + material + "_bow");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -253,7 +251,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":axes/" + material + "_wooden_axe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -287,7 +284,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":swords/" + material + "_wooden_sword");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -321,7 +317,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_wooden_pickaxe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -355,7 +350,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":shovels/" + material + "_wooden_shovel");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -389,7 +383,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_wooden_hoe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -423,7 +416,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":axes/" + material + "_iron_axe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -457,7 +449,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":swords/" + material + "_iron_sword");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -491,7 +482,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_iron_pickaxe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -525,7 +515,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":shovels/" + material + "_iron_shovel");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -559,7 +548,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_iron_hoe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -593,7 +581,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":axes/" + material + "_golden_axe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -627,7 +614,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":swords/" + material + "_golden_sword");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -661,7 +647,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_golden_pickaxe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -695,7 +680,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":shovels/" + material + "_golden_shovel");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -729,11 +713,9 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_golden_hoe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
-
 
     // Diamond Axe
     public static JsonObject createDiamondAxeRecipeJson(String material, String[] mods) {
@@ -764,7 +746,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":axes/" + material + "_diamond_axe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -798,7 +779,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":swords/" + material + "_diamond_sword");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -832,7 +812,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_diamond_pickaxe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -866,7 +845,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":shovels/" + material + "_diamond_shovel");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -900,7 +878,6 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_diamond_hoe");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -933,7 +910,6 @@ public class Recipes {
         keyList.add("S", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":torches/" + material + "_redstone_torch");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -1009,10 +985,74 @@ public class Recipes {
         keyList.add("V", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":fishingrods/" + material + "_fishing_rod");
-        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
+
+    // Carrot on a Stick
+    public static JsonObject createCarrotOnAStickRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("F ");
+        pattern.add(" C");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:carrot");
+        keyList.add("C", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":fishingrods/" + material + "_fishing_rod");
+        keyList.add("F", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":onastick/" + material + "_carrot_on_a_stick");
+        json.add("result", result);
+        return json;
+    }
+
+    // Fungus on a Stick
+    public static JsonObject createFungusOnAStickRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("F ");
+        pattern.add(" W");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:warped_fungus");
+        keyList.add("W", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":fishingrods/" + material + "_fishing_rod");
+        keyList.add("F", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":onastick/" + material + "_warped_fungus_on_a_stick");
+        json.add("result", result);
+        return json;
+    }
+
     //                                   //
     // Netherite Smithing Tools & Weapons//
     //                                   //

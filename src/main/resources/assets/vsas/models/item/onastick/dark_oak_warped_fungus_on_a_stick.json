@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "vsas:item/onastick/dark_oak_warped_fungus_on_a_stick"
+  }
+}

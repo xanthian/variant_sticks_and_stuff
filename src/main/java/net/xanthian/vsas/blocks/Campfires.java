@@ -15,14 +15,23 @@ import net.xanthian.vsas.Init;
 
 public class Campfires {
 
-    public static final VariantCampFireBlock ACACIA_CAMPFIRE = new VariantCampFireBlock();
-    public static final VariantCampFireBlock BIRCH_CAMPFIRE = new VariantCampFireBlock();
-    public static final VariantCampFireBlock CRIMSON_CAMPFIRE = new VariantCampFireBlock();
-    public static final VariantCampFireBlock DARK_OAK_CAMPFIRE = new VariantCampFireBlock();
-    public static final VariantCampFireBlock JUNGLE_CAMPFIRE = new VariantCampFireBlock();
-    public static final VariantCampFireBlock OAK_CAMPFIRE = new VariantCampFireBlock();
-    public static final VariantCampFireBlock SPRUCE_CAMPFIRE = new VariantCampFireBlock();
-    public static final VariantCampFireBlock WARPED_CAMPFIRE = new VariantCampFireBlock();
+    public static final VariantCampFireBlock ACACIA_CAMPFIRE = new VariantCampFireBlock(1);
+    public static final VariantCampFireBlock BIRCH_CAMPFIRE = new VariantCampFireBlock(1);
+    public static final VariantCampFireBlock CRIMSON_CAMPFIRE = new VariantCampFireBlock(1);
+    public static final VariantCampFireBlock DARK_OAK_CAMPFIRE = new VariantCampFireBlock(1);
+    public static final VariantCampFireBlock JUNGLE_CAMPFIRE = new VariantCampFireBlock(1);
+    public static final VariantCampFireBlock OAK_CAMPFIRE = new VariantCampFireBlock(1);
+    public static final VariantCampFireBlock SPRUCE_CAMPFIRE = new VariantCampFireBlock(1);
+    public static final VariantCampFireBlock WARPED_CAMPFIRE = new VariantCampFireBlock(1);
+
+    public static final VariantCampFireBlock ACACIA_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
+    public static final VariantCampFireBlock BIRCH_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
+    public static final VariantCampFireBlock CRIMSON_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
+    public static final VariantCampFireBlock DARK_OAK_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
+    public static final VariantCampFireBlock JUNGLE_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
+    public static final VariantCampFireBlock OAK_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
+    public static final VariantCampFireBlock SPRUCE_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
+    public static final VariantCampFireBlock WARPED_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
 
     public static void registerCampfire() {
         registerCampfireBlock("campfires/acacia_campfire", ACACIA_CAMPFIRE);
@@ -33,6 +42,15 @@ public class Campfires {
         registerCampfireBlock("campfires/oak_campfire", OAK_CAMPFIRE);
         registerCampfireBlock("campfires/spruce_campfire", SPRUCE_CAMPFIRE);
         registerCampfireBlock("campfires/warped_campfire", WARPED_CAMPFIRE);
+
+        registerCampfireBlock("campfires/acacia_soul_campfire", ACACIA_SOUL_CAMPFIRE);
+        registerCampfireBlock("campfires/birch_soul_campfire", BIRCH_SOUL_CAMPFIRE);
+        registerCampfireBlock("campfires/crimson_soul_campfire", CRIMSON_SOUL_CAMPFIRE);
+        registerCampfireBlock("campfires/dark_oak_soul_campfire", DARK_OAK_SOUL_CAMPFIRE);
+        registerCampfireBlock("campfires/jungle_soul_campfire", JUNGLE_SOUL_CAMPFIRE);
+        registerCampfireBlock("campfires/oak_soul_campfire", OAK_SOUL_CAMPFIRE);
+        registerCampfireBlock("campfires/spruce_soul_campfire", SPRUCE_SOUL_CAMPFIRE);
+        registerCampfireBlock("campfires/warped_soul_campfire", WARPED_SOUL_CAMPFIRE);
     }
 
     private static void registerCampfireBlock(String Id, Block block) {

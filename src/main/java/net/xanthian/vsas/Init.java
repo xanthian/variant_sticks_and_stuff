@@ -38,7 +38,6 @@ public class Init implements ModInitializer {
 		RedstoneTorches.registerRedstoneTorchBlocks();
 		Levers.registerLevers();
 		Campfires.registerCampfire();
-		SoulCampfires.registerCampfire();
 		Axes.registerAxeItems();
 		Hoes.registerHoeItems();
 		Pickaxes.registerPickaxeItems();

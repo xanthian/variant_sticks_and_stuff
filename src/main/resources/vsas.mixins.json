@@ -6,7 +6,9 @@
   "mixins": [
     "RecipeManagerMixin",
     "FishingBobberEntityMixin",
-    "GrindstoneScreenHandlerMixin"
+    "GrindstoneScreenHandlerMixin",
+    "PigEntityMixin",
+    "StriderEntityMixin"
   ],
   "client": [
     "HeldItemRendererMixin",

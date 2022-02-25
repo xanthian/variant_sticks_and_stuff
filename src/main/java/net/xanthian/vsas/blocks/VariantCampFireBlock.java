@@ -5,14 +5,12 @@ import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityTicker;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluids;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
@@ -22,12 +20,6 @@ import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
-import net.minecraft.state.StateManager;
-import net.minecraft.state.property.BooleanProperty;
-import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.state.property.Properties;
-import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
@@ -41,24 +33,17 @@ import net.xanthian.vsas.entity.CampFireBlockEntity;
 
 import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
-public class VariantCampFireBlock extends Block implements Waterloggable, BlockEntityProvider {
-    protected static final VoxelShape SHAPE = Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 7.0D, 16.0D);
-    public static final BooleanProperty LIT = Properties.LIT;
-    public static final BooleanProperty SIGNAL_FIRE = Properties.SIGNAL_FIRE;
-    public static final BooleanProperty WATERLOGGED = Properties.WATERLOGGED;
-    public static final DirectionProperty FACING = Properties.HORIZONTAL_FACING;
+public class VariantCampFireBlock extends CampfireBlock implements Waterloggable {
     private final boolean smoke;
     private final int fireDamage;
 
-    public VariantCampFireBlock() {
-        super(FabricBlockSettings.copy(Blocks.CAMPFIRE));
+    public VariantCampFireBlock(int fireDamage) {
+        super(true, fireDamage , FabricBlockSettings.copyOf(Blocks.CAMPFIRE));
         this.smoke = true;
-        this.fireDamage = 1;
-        this.setDefaultState((BlockState)((BlockState)((BlockState)((BlockState)((BlockState)this.stateManager.getDefaultState()).with(LIT, true)).with(SIGNAL_FIRE, false)).with(WATERLOGGED, false)).with(FACING, Direction.NORTH));
+        this.fireDamage = fireDamage;
     }
 
     public static void extinguish(World world, BlockPos pos, BlockState state) {
@@ -67,14 +52,12 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
                 spawnSmokeParticles(world, pos, state.get(SIGNAL_FIRE), true);
             }
             world.setBlockState(pos, state.with(LIT, false), 3);
-            //world.updateNeighbors(pos, state.getBlock());
+            world.updateNeighbors(pos, state.getBlock());
         }
-
         BlockEntity tileentity = world.getBlockEntity(pos);
         if (tileentity instanceof CampFireBlockEntity te) {
             te.dropAllItems();
         }
-
     }
 
     public static void spawnSmokeParticles(World worldIn, BlockPos pos, boolean isSignalFire, boolean spawnExtraSmoke) {
@@ -88,7 +71,7 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
 
     @Override
     public ActionResult onUse(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockHitResult hit) {
-           BlockEntity tileentity = worldIn.getBlockEntity(pos);
+        BlockEntity tileentity = worldIn.getBlockEntity(pos);
         if (tileentity instanceof CampFireBlockEntity campFireBlockEntity) {
             ItemStack itemstack = player.getStackInHand(handIn);
             Optional<CampfireCookingRecipe> optional = campFireBlockEntity.findMatchingRecipe(itemstack);
@@ -97,11 +80,9 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
                     player.increaseStat(Stats.INTERACT_WITH_CAMPFIRE, 1);
                     return ActionResult.SUCCESS;
                 }
-
                 return ActionResult.CONSUME;
             }
         }
-
         return ActionResult.PASS;
     }
 
@@ -139,9 +120,6 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
 
     @Override
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {
-        if (state.get(WATERLOGGED)) {
-            return Blocks.AIR.getDefaultState();
-        }
         if (direction == Direction.DOWN) {
             return state.with(SIGNAL_FIRE, this.isHayBlock(neighborState));
         }
@@ -164,19 +142,15 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
             extinguish(worldIn, pos, stateIn);
             worldIn.updateListeners(pos, stateIn, stateIn, 3);
         }
-
         if (stateIn.get(LIT)) {
-
             if (rand.nextInt(10) == 0) {
                 worldIn.playSound((double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, SoundEvents.BLOCK_CAMPFIRE_CRACKLE, SoundCategory.BLOCKS, 0.5F + rand.nextFloat(), rand.nextFloat() * 0.7F + 0.6F, false);
             }
-
             if (this.smoke && rand.nextInt(5) == 0) {
                 for (int i = 0; i < rand.nextInt(1) + 1; ++i) {
                     worldIn.addParticle(ParticleTypes.LAVA, (double) pos.getX() + 0.5D, (double) pos.getY() + 0.5D, (double) pos.getZ() + 0.5D, rand.nextFloat() / 2.0F, 5.0E-5D, rand.nextFloat() / 2.0F);
                 }
             }
-
         }
     }
 
@@ -215,11 +189,5 @@ public class VariantCampFireBlock extends Block implements Waterloggable, BlockE
 
     public RenderLayer getCustomRenderType() {
         return RenderLayer.getCutoutMipped();
-    }
-
-    @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(LIT, SIGNAL_FIRE, WATERLOGGED, FACING);
-        super.appendProperties(builder);
     }
 }
