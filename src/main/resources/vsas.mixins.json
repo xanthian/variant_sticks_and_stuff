@@ -10,7 +10,8 @@
   ],
   "client": [
     "HeldItemRendererMixin",
-    "FishingBobberEntityRendererMixin"
+    "FishingBobberEntityRendererMixin",
+    "PlayerEntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -49,5 +49,6 @@ public class Init implements ModInitializer {
 		Bows.registerBowItems();
 		Crossbows.registerCrossBowItems();
 		FishingRods.registerFishingRodItems();
+		OnAStick.registerOnAStickItems();
 	}
 }

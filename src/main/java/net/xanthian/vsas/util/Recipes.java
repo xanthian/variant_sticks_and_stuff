@@ -15,8 +15,7 @@ public class Recipes {
         // Loot condition
         JsonObject json = new JsonObject();
         //If modded item
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -35,13 +34,13 @@ public class Recipes {
         // Keys
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         // Result
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":ladders/" + material + "_ladder");
-        result.addProperty("count",3);
+        result.addProperty("count", 3);
         json.add("result", result);
         return json;
     }
@@ -51,8 +50,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -72,7 +70,7 @@ public class Recipes {
         json.add("key", keyList);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
-        result.addProperty("count",4);
+        result.addProperty("count", 4);
         json.add("result", result);
         return json;
     }
@@ -82,8 +80,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -107,11 +104,11 @@ public class Recipes {
         keyList.add("C", items);
         json.add("key", keyList);
         iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":torches/" + material + "_torch");
-        result.addProperty("count",4);
+        result.addProperty("count", 4);
         json.add("result", result);
         return json;
     }
@@ -121,8 +118,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -142,7 +138,7 @@ public class Recipes {
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("V", iKey);
         iKey = new JsonObject();
         iKey.addProperty("item", "minecraft:iron_ingot");
@@ -152,7 +148,7 @@ public class Recipes {
         keyList.add("T", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":crossbows/" + material + "_crossbow");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -162,8 +158,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -183,11 +178,11 @@ public class Recipes {
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("V", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":bows/" + material + "_bow");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -197,8 +192,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -214,7 +208,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -225,7 +219,7 @@ public class Recipes {
         keyList.add("F", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":arrows/" + material + "_arrow");
-        result.addProperty("count",4);
+        result.addProperty("count", 4);
         json.add("result", result);
         return json;
     }
@@ -235,8 +229,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -252,7 +245,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -260,17 +253,17 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":axes/" + material + "_wooden_axe");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
+
     // Wood Sword
     public static JsonObject createWoodSwordRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -286,7 +279,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -294,7 +287,7 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":swords/" + material + "_wooden_sword");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -304,8 +297,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -321,7 +313,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -329,7 +321,7 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_wooden_pickaxe");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -339,8 +331,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -356,7 +347,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -364,7 +355,7 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":shovels/" + material + "_wooden_shovel");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -374,8 +365,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -391,7 +381,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -399,19 +389,17 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_wooden_hoe");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
-
 
     // Iron Axe
     public static JsonObject createIronAxeRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -427,7 +415,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -435,17 +423,17 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":axes/" + material + "_iron_axe");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
+
     // Iron Sword
     public static JsonObject createIronSwordRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -461,7 +449,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -469,7 +457,7 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":swords/" + material + "_iron_sword");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -479,8 +467,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -496,7 +483,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -504,7 +491,7 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_iron_pickaxe");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -514,8 +501,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -531,7 +517,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -539,7 +525,7 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":shovels/" + material + "_iron_shovel");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -549,8 +535,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -566,7 +551,7 @@ public class Recipes {
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
@@ -574,7 +559,348 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_iron_hoe");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Golden Axe
+    public static JsonObject createGoldenAxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add("PS ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:gold_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":axes/" + material + "_golden_axe");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Golden Sword
+    public static JsonObject createGoldenSwordRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" P ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:gold_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":swords/" + material + "_golden_sword");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Golden Pickaxe
+    public static JsonObject createGoldenPickaxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PPP");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:gold_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_golden_pickaxe");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Golden Shovel
+    public static JsonObject createGoldenShovelRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:gold_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":shovels/" + material + "_golden_shovel");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Golden Hoe
+    public static JsonObject createGoldenHoeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:gold_ingot");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":hoes/" + material + "_golden_hoe");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+
+    // Diamond Axe
+    public static JsonObject createDiamondAxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add("PS ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:diamond");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":axes/" + material + "_diamond_axe");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Diamond Sword
+    public static JsonObject createDiamondSwordRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" P ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:diamond");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":swords/" + material + "_diamond_sword");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Diamond Pickaxe
+    public static JsonObject createDiamondPickaxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PPP");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:diamond");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_diamond_pickaxe");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Diamond Shovel
+    public static JsonObject createDiamondShovelRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:diamond");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":shovels/" + material + "_diamond_shovel");
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+
+    // Diamond Hoe
+    public static JsonObject createDiamondHoeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:diamond");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":hoes/" + material + "_diamond_hoe");
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -584,8 +910,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -604,11 +929,11 @@ public class Recipes {
         keyList.add("R", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":torches/" + material + "_redstone_torch");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
         json.add("result", result);
         return json;
     }
@@ -618,8 +943,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -644,14 +968,14 @@ public class Recipes {
         keyList.add("C", items);
         json.add("key", keyList);
         iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
         iKey = new JsonObject();
         iKey.addProperty("tag", "minecraft:soul_fire_base_blocks");
         keyList.add("F", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":torches/" + material + "_soul_torch");
-        result.addProperty("count",4);
+        result.addProperty("count", 4);
         json.add("result", result);
         return json;
     }
@@ -661,8 +985,7 @@ public class Recipes {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
         JsonObject json = new JsonObject();
-        if (modList.size() > 0)
-        {
+        if (modList.size() > 0) {
             JsonArray loadConditions = new JsonArray();
             JsonObject loadCondition = new JsonObject();
             loadCondition.addProperty("condition", "fabric:all_mods_loaded");
@@ -682,11 +1005,139 @@ public class Recipes {
         keyList.add("S", iKey);
         json.add("key", keyList);
         iKey = new JsonObject();
-        iKey.addProperty("item", MOD_ID +":sticks/" + material + "_stick");
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("V", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":fishingrods/" + material + "_fishing_rod");
-        result.addProperty("count",1);
+        result.addProperty("count", 1);
+        json.add("result", result);
+        return json;
+    }
+    //                                   //
+    // Netherite Smithing Tools & Weapons//
+    //                                   //
+
+    public static JsonObject createNetheriteAxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:smithing");
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":axes/" + material + "_diamond_axe");
+        json.add("base", iKey);
+        JsonObject iKey2 = new JsonObject();
+        iKey2.addProperty("item", "minecraft:netherite_ingot");
+        json.add("addition", iKey2);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":axes/" + material + "_netherite_axe");
+        json.add("result", result);
+        return json;
+    }
+
+    public static JsonObject createNetheriteHoeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:smithing");
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":hoes/" + material + "_diamond_hoe");
+        json.add("base", iKey);
+        JsonObject iKey2 = new JsonObject();
+        iKey2.addProperty("item", "minecraft:netherite_ingot");
+        json.add("addition", iKey2);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":hoes/" + material + "_netherite_hoe");
+        json.add("result", result);
+        return json;
+    }
+
+    public static JsonObject createNetheritePickaxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:smithing");
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":pickaxes/" + material + "_diamond_pickaxe");
+        json.add("base", iKey);
+        JsonObject iKey2 = new JsonObject();
+        iKey2.addProperty("item", "minecraft:netherite_ingot");
+        json.add("addition", iKey2);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_netherite_pickaxe");
+        json.add("result", result);
+        return json;
+    }
+
+    public static JsonObject createNetheriteShovelRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:smithing");
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":shovels/" + material + "_diamond_shovel");
+        json.add("base", iKey);
+        JsonObject iKey2 = new JsonObject();
+        iKey2.addProperty("item", "minecraft:netherite_ingot");
+        json.add("addition", iKey2);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":shovels/" + material + "_netherite_shovel");
+        json.add("result", result);
+        return json;
+    }
+
+    public static JsonObject createNetheriteSwordRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:smithing");
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":swords/" + material + "_diamond_sword");
+        json.add("base", iKey);
+        JsonObject iKey2 = new JsonObject();
+        iKey2.addProperty("item", "minecraft:netherite_ingot");
+        json.add("addition", iKey2);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":swords/" + material + "_netherite_sword");
         json.add("result", result);
         return json;
     }
