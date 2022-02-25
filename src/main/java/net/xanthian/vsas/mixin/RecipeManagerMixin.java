@@ -44,7 +44,12 @@ public abstract class RecipeManagerMixin {
     @Overwrite
     public <C extends Inventory, T extends Recipe<C>> Optional<T> getFirstMatch(RecipeType<T> type, C inventory, World world) {
 
-        Collection<Recipe<C>> values = getAllOfType(type).values();
+        Map<Identifier, Recipe<C>> typeMap = getAllOfType(type);
+        if (typeMap == null)
+        {
+            return null;
+        }
+        Collection<Recipe<C>> values = typeMap.values();
         List<Recipe<C>> list = new ArrayList<>(values);
         String mc = new Identifier("").getNamespace();
 

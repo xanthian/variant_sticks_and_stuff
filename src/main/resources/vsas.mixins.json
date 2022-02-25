@@ -8,7 +8,8 @@
     "FishingBobberEntityMixin",
     "GrindstoneScreenHandlerMixin",
     "PigEntityMixin",
-    "StriderEntityMixin"
+    "StriderEntityMixin",
+    "PointOfInterestTypeMixin"
   ],
   "client": [
     "HeldItemRendererMixin",

@@ -5,7 +5,6 @@ import net.fabricmc.api.ModInitializer;
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.entity.EntityInit;
 import net.xanthian.vsas.items.*;
-import net.xanthian.vsas.util.Recipes;
 import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

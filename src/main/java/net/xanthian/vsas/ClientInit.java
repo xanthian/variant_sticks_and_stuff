@@ -11,7 +11,6 @@ import net.xanthian.vsas.items.Bows;
 import net.xanthian.vsas.items.Crossbows;
 import net.xanthian.vsas.items.FishingRods;
 import net.xanthian.vsas.renderer.CampFireRenderer;
-import net.xanthian.vsas.renderer.VariantItemsClientRenderer;
 import net.xanthian.vsas.renderer.arrows.*;
 
 import static net.xanthian.vsas.renderer.VariantItemsClientRenderer.*;

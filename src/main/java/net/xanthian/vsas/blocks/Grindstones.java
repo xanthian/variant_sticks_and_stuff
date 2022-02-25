@@ -4,7 +4,6 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
@@ -44,7 +43,6 @@ public class Grindstones {
 
         if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT)
             RegisterBlockRenderLayerMap(block);
-//        PointOfInterestHelper.register(new Identifier("weaponsmith"),1,1, ACACIA_GRINDSTONE,BIRCH_GRINDSTONE);
     }
 
     @Environment(EnvType.CLIENT)
