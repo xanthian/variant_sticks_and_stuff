@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "#vsas:arrows"
-  ]
+  "values": ["#vsas:arrows"]
 }

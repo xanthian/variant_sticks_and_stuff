@@ -1,6 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "#vsas:ladders"
-  ]
+  "values": ["#vsas:ladders"]
 }

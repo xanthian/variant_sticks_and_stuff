@@ -1,8 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "#vsas:torches",
-    "#vsas:redstone_torches",
-    "#vsas:soul_torches"
-  ]
+  "values": ["#vsas:torches", "#vsas:redstone_torches", "#vsas:soul_torches"]
 }

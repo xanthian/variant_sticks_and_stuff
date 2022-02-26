@@ -8,6 +8,6 @@ import net.xanthian.vsas.Group;
 
 public class VariantCarrotOnAStickItem extends OnAStickItem<PigEntity> {
     public VariantCarrotOnAStickItem() {
-        super(new FabricItemSettings().group(Group.STICKS_AND_STUFF), EntityType.PIG,7);
+        super(new FabricItemSettings().group(Group.STICKS_AND_STUFF).maxDamage(25), EntityType.PIG, 7);
     }
 }

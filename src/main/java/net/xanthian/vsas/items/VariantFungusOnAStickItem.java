@@ -8,6 +8,6 @@ import net.xanthian.vsas.Group;
 
 public class VariantFungusOnAStickItem extends OnAStickItem<StriderEntity> {
     public VariantFungusOnAStickItem() {
-        super(new FabricItemSettings().group(Group.STICKS_AND_STUFF), EntityType.STRIDER, 1);
+        super(new FabricItemSettings().group(Group.STICKS_AND_STUFF).maxDamage(100), EntityType.STRIDER, 1);
     }
 }

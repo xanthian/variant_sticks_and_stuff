@@ -167,9 +167,9 @@ public class Recipes {
         }
         json.addProperty("type", "minecraft:crafting_shaped");
         JsonArray pattern = new JsonArray();
-        pattern.add(" SV");
-        pattern.add("S V");
-        pattern.add(" SV");
+        pattern.add(" VS");
+        pattern.add("V S");
+        pattern.add(" VS");
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
@@ -200,8 +200,8 @@ public class Recipes {
         }
         json.addProperty("type", "minecraft:crafting_shaped");
         JsonArray pattern = new JsonArray();
-        pattern.add("S");
         pattern.add("L");
+        pattern.add("S");
         pattern.add("F");
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
@@ -383,6 +383,171 @@ public class Recipes {
         keyList.add("P", iKey);
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":hoes/" + material + "_wooden_hoe");
+        json.add("result", result);
+        return json;
+    }
+
+    // Stone Axe
+    public static JsonObject createStoneAxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add("PS ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("tag", "minecraft:stone_tool_materials");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":axes/" + material + "_stone_axe");
+        json.add("result", result);
+        return json;
+    }
+
+    // Stone Sword
+    public static JsonObject createStoneSwordRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" P ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("tag", "minecraft:stone_tool_materials");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":swords/" + material + "_stone_sword");
+        json.add("result", result);
+        return json;
+    }
+
+    // Stone Pickaxe
+    public static JsonObject createStonePickaxeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PPP");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("tag", "minecraft:stone_tool_materials");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":pickaxes/" + material + "_stone_pickaxe");
+        json.add("result", result);
+        return json;
+    }
+
+    // Stone Shovel
+    public static JsonObject createStoneShovelRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add(" P ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("tag", "minecraft:stone_tool_materials");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":shovels/" + material + "_stone_shovel");
+        json.add("result", result);
+        return json;
+    }
+
+    // Stone Hoe
+    public static JsonObject createStoneHoeRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("PP ");
+        pattern.add(" S ");
+        pattern.add(" S ");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("tag", "minecraft:stone_tool_materials");
+        keyList.add("P", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":hoes/" + material + "_stone_hoe");
         json.add("result", result);
         return json;
     }
