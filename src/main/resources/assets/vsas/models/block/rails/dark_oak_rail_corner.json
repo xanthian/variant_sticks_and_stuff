@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/rail_curved",
+  "textures": {
+    "rail": "vsas:block/rails/dark_oak_rail_corner"
+  }
+}

@@ -1218,6 +1218,39 @@ public class Recipes {
         return json;
     }
 
+    public static JsonObject createRailRecipeJson(String material, String[] mods) {
+        Gson gson = new Gson();
+        JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
+        JsonObject json = new JsonObject();
+        if (modList.size() > 0) {
+            JsonArray loadConditions = new JsonArray();
+            JsonObject loadCondition = new JsonObject();
+            loadCondition.addProperty("condition", "fabric:all_mods_loaded");
+            loadCondition.add("values", modList);
+            loadConditions.add(loadCondition);
+            json.add("fabric:load_conditions", loadConditions);
+        }
+        json.addProperty("type", "minecraft:crafting_shaped");
+        JsonArray pattern = new JsonArray();
+        pattern.add("I I");
+        pattern.add("ISI");
+        pattern.add("I I");
+        json.add("pattern", pattern);
+        JsonObject keyList = new JsonObject();
+        JsonObject iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:iron_ingot");
+        keyList.add("I", iKey);
+        json.add("key", keyList);
+        iKey = new JsonObject();
+        iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
+        keyList.add("S", iKey);
+        JsonObject result = new JsonObject();
+        result.addProperty("item", MOD_ID + ":rails/" + material + "_rail");
+        json.add("result", result);
+        result.addProperty("count", 16);
+        return json;
+    }
+
     //                                   //
     // Netherite Smithing Tools & Weapons//
     //                                   //

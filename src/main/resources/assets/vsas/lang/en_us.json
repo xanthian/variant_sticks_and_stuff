@@ -459,5 +459,15 @@
   "block.vsas.grindstones.jungle_grindstone": "Jungle Grindstone",
   "block.vsas.grindstones.oak_grindstone": "Oak Grindstone",
   "block.vsas.grindstones.spruce_grindstone": "Spruce Grindstone",
-  "block.vsas.grindstones.warped_grindstone": "Warped Grindstone"
+  "block.vsas.grindstones.warped_grindstone": "Warped Grindstone",
+
+  "_rails": "Rails",
+  "block.vsas.rails.acacia_rail": "Acacia Rail",
+  "block.vsas.rails.birch_rail": "Birch Rail",
+  "block.vsas.rails.crimson_rail": "Crimson Rail",
+  "block.vsas.rails.dark_oak_rail": "Dark Oak Rail",
+  "block.vsas.rails.jungle_rail": "Jungle Rail",
+  "block.vsas.rails.oak_rail": "Oak Rail",
+  "block.vsas.rails.spruce_rail": "Spruce Rail",
+  "block.vsas.rails.warped_rail": "Warped Rail"
 }

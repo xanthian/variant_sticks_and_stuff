@@ -18,7 +18,6 @@ public class HeldItemRendererMixin {
     /**
      * @author Grend
      **/
-
     @Redirect(method = "renderFirstPersonItem", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z", ordinal = 1))
     boolean redirectIsOf(ItemStack instance, Item item) {
         if (item == Items.CROSSBOW) {

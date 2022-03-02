@@ -4,16 +4,16 @@
   "package": "net.xanthian.vsas.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "RecipeManagerMixin",
     "FishingBobberEntityMixin",
     "GrindstoneScreenHandlerMixin",
     "PigEntityMixin",
-    "StriderEntityMixin",
-    "PointOfInterestTypeMixin"
+    "PointOfInterestTypeMixin",
+    "RecipeManagerMixin",
+    "StriderEntityMixin"
   ],
   "client": [
-    "HeldItemRendererMixin",
     "FishingBobberEntityRendererMixin",
+    "HeldItemRendererMixin",
     "PlayerEntityRendererMixin"
   ],
   "injectors": {

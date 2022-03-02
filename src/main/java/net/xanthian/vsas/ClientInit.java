@@ -3,9 +3,12 @@ package net.xanthian.vsas;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 
+import net.minecraft.client.render.RenderLayer;
+import net.xanthian.vsas.blocks.Rails;
 import net.xanthian.vsas.entity.EntityInit;
 import net.xanthian.vsas.items.Bows;
 import net.xanthian.vsas.items.Crossbows;
@@ -63,6 +66,7 @@ public class ClientInit implements ClientModInitializer {
         EntityRendererRegistry.register(EntityInit.WARPED_ARROW, WarpedArrowRender::new);
 
         BlockEntityRendererRegistry.register(EntityInit.VARIANT_CAMPFIRE, CampFireRenderer::new);
+
     }
 
 }
