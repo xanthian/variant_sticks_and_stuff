@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
+import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -14,7 +15,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.xanthian.vsas.Group;
 
-public class VariantFishingRodItem extends net.minecraft.item.FishingRodItem {
+public class VariantFishingRodItem extends FishingRodItem {
     public VariantFishingRodItem() {
         super(new FabricItemSettings().group(Group.STICKS_AND_STUFF).maxDamage(64));
     }

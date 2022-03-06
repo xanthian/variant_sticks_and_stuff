@@ -5,24 +5,16 @@
 
   "name": "Variant Sticks and Stuff",
   "description": "Variant Sticks to make variant items",
-  "authors": [
-    "Xanthian"
-  ],
+  "authors": ["Xanthian"],
   "license": "CC0-1.0",
   "icon": "assets/vsas/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.xanthian.vsas.Init"
-    ],
-    "client": [
-      "net.xanthian.vsas.ClientInit"
-    ]
+    "main": ["net.xanthian.vsas.Init"],
+    "client": ["net.xanthian.vsas.ClientInit"]
   },
-  "mixins": [
-    "vsas.mixins.json"
-  ],
+  "mixins": ["vsas.mixins.json"],
   "depends": {
     "fabricloader": ">=0.13.0",
     "fabric": ">=0.46.0",

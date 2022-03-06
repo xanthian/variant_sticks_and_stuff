@@ -469,5 +469,35 @@
   "block.vsas.rails.jungle_rail": "Jungle Rail",
   "block.vsas.rails.oak_rail": "Oak Rail",
   "block.vsas.rails.spruce_rail": "Spruce Rail",
-  "block.vsas.rails.warped_rail": "Warped Rail"
+  "block.vsas.rails.warped_rail": "Warped Rail",
+
+  "_activator_rails": "Activator Rails",
+  "block.vsas.rails.acacia_activator_rail": "Acacia Activator Rail",
+  "block.vsas.rails.birch_activator_rail": "Birch Activator Rail",
+  "block.vsas.rails.crimson_activator_rail": "Crimson Activator Rail",
+  "block.vsas.rails.dark_oak_activator_rail": "Dark Oak Activator Rail",
+  "block.vsas.rails.jungle_activator_rail": "Jungle Activator Rail",
+  "block.vsas.rails.oak_activator_rail": "Oak Activator Rail",
+  "block.vsas.rails.spruce_activator_rail": "Spruce Activator Rail",
+  "block.vsas.rails.warped_activator_rail": "Warped Activator Rail",
+  
+  "_powered_rails": "Powered Rails",
+  "block.vsas.rails.acacia_powered_rail": "Acacia Powered Rail",
+  "block.vsas.rails.birch_powered_rail": "Birch Powered Rail",
+  "block.vsas.rails.crimson_powered_rail": "Crimson Powered Rail",
+  "block.vsas.rails.dark_oak_powered_rail": "Dark Oak Powered Rail",
+  "block.vsas.rails.jungle_powered_rail": "Jungle Powered Rail",
+  "block.vsas.rails.oak_powered_rail": "Oak Powered Rail",
+  "block.vsas.rails.spruce_powered_rail": "Spruce Powered Rail",
+  "block.vsas.rails.warped_powered_rail": "Warped Powered Rail",
+
+  "_detector_rails": "Detector Rails",
+  "block.vsas.rails.acacia_detector_rail": "Acacia Detector Rail",
+  "block.vsas.rails.birch_detector_rail": "Birch Detector Rail",
+  "block.vsas.rails.crimson_detector_rail": "Crimson Detector Rail",
+  "block.vsas.rails.dark_oak_detector_rail": "Dark Oak Detector Rail",
+  "block.vsas.rails.jungle_detector_rail": "Jungle Detector Rail",
+  "block.vsas.rails.oak_detector_rail": "Oak Detector Rail",
+  "block.vsas.rails.spruce_detector_rail": "Spruce Detector Rail",
+  "block.vsas.rails.warped_detector_rail": "Warped Detector Rail"
 }

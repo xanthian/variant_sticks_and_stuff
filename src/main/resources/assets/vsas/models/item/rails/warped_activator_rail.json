@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vsas:block/rails/warped_activator_rail"
+  }
+}

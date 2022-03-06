@@ -35,7 +35,7 @@ public abstract class PigEntityMixin extends PassiveEntity {
     @Inject(method = "initGoals", at = @At("TAIL"))
     private void addFeederGoal(CallbackInfo ci) {
         this.goalSelector.add(4, new TemptGoal(this, 1.2D, Ingredient.ofItems
-                (OnAStick.ACACIA_CARROT_ON_A_STICK,OnAStick.BIRCH_CARROT_ON_A_STICK,OnAStick.CRIMSON_CARROT_ON_A_STICK, OnAStick.DARK_OAK_CARROT_ON_A_STICK,
-                        OnAStick.JUNGLE_CARROT_ON_A_STICK,OnAStick.OAK_CARROT_ON_A_STICK,OnAStick.SPRUCE_CARROT_ON_A_STICK,OnAStick.WARPED_CARROT_ON_A_STICK), false));
+                (OnAStick.ACACIA_CARROT_ON_A_STICK, OnAStick.BIRCH_CARROT_ON_A_STICK, OnAStick.CRIMSON_CARROT_ON_A_STICK, OnAStick.DARK_OAK_CARROT_ON_A_STICK,
+                        OnAStick.JUNGLE_CARROT_ON_A_STICK, OnAStick.OAK_CARROT_ON_A_STICK, OnAStick.SPRUCE_CARROT_ON_A_STICK, OnAStick.WARPED_CARROT_ON_A_STICK), false));
     }
 }
