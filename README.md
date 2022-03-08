@@ -97,6 +97,12 @@
 ### Rails
 ![image](https://user-images.githubusercontent.com/7688001/156275500-eeb8afe2-7b55-4537-85ec-8a321f99db00.png)
 
+### Activator Rails
+ ![image](https://user-images.githubusercontent.com/7688001/157265485-20879aa6-713f-4e8d-aeea-ea369da3e876.png)
+
+### Powered Rails
+![image](https://user-images.githubusercontent.com/7688001/157265870-980ad12f-8e1b-4c29-8cfc-822921e5586f.png)
+
 
 </p>
 
