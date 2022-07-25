@@ -61,6 +61,6 @@ public class Init implements ModInitializer {
 		//Rails.registerDetectorRails();
 		Rails.registerPoweredRails();
 		LootTableModifiers.modifyLootTables();
-		VillagerTrades.registerTrades();
+		//VillagerTrades.registerTrades();
 	}
 }

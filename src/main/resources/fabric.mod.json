@@ -16,9 +16,9 @@
   },
   "mixins": ["vsas.mixins.json"],
   "depends": {
-    "fabricloader": ">=0.13.0",
-    "fabric": ">=0.46.0",
-    "minecraft": "1.18.x",
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
     "java": ">=17"
   }
 }

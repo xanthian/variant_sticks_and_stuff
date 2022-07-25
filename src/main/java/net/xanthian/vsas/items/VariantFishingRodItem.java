@@ -33,7 +33,7 @@ public class VariantFishingRodItem extends FishingRodItem {
             }
 
             world.playSound((PlayerEntity)null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_FISHING_BOBBER_RETRIEVE, SoundCategory.NEUTRAL, 1.0F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
-            world.emitGameEvent(user, GameEvent.FISHING_ROD_REEL_IN, user);
+            user.emitGameEvent(GameEvent.ITEM_INTERACT_FINISH);
         } else {
             world.playSound((PlayerEntity)null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_FISHING_BOBBER_THROW, SoundCategory.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
             if (!world.isClient) {
@@ -43,7 +43,7 @@ public class VariantFishingRodItem extends FishingRodItem {
             }
 
             user.incrementStat(Stats.USED.getOrCreateStat(this));
-            world.emitGameEvent(user, GameEvent.FISHING_ROD_CAST, user);
+            user.emitGameEvent(GameEvent.ITEM_INTERACT_START);
         }
 
         return TypedActionResult.success(itemStack, world.isClient());

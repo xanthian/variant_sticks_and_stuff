@@ -61,7 +61,7 @@ public class VariantCampFireBlock extends CampfireBlock implements Waterloggable
     }
 
     public static void spawnSmokeParticles(World worldIn, BlockPos pos, boolean isSignalFire, boolean spawnExtraSmoke) {
-        Random random = worldIn.getRandom();
+        net.minecraft.util.math.random.Random random = worldIn.getRandom();
         DefaultParticleType basicparticletype = isSignalFire ? ParticleTypes.CAMPFIRE_SIGNAL_SMOKE : ParticleTypes.CAMPFIRE_COSY_SMOKE;
         worldIn.addParticle(basicparticletype, true, (double) pos.getX() + 0.5D + random.nextDouble() / 3.0D * (double) (random.nextBoolean() ? 1 : -1), (double) pos.getY() + random.nextDouble() + random.nextDouble(), (double) pos.getZ() + 0.5D + random.nextDouble() / 3.0D * (double) (random.nextBoolean() ? 1 : -1), 0.0D, 0.07D, 0.0D);
         if (spawnExtraSmoke) {
@@ -136,7 +136,6 @@ public class VariantCampFireBlock extends CampfireBlock implements Waterloggable
         return BlockRenderType.MODEL;
     }
 
-    @Override
     public void randomDisplayTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
         if (!canBeLit(stateIn, worldIn, pos)) {
             extinguish(worldIn, pos, stateIn);

@@ -24,7 +24,7 @@ public abstract class StriderEntityMixin extends PassiveEntity {
         super(entityType, world);
     }
 
-    @Redirect(method = "canBeControlledByRider", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
+    @Redirect(method = "canEntityControl", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
     boolean redirectIsOf(ItemStack instance, Item item) {
         if (item == Items.WARPED_FUNGUS_ON_A_STICK) {
             return instance.isOf(item) || instance.getItem() instanceof VariantFungusOnAStickItem;

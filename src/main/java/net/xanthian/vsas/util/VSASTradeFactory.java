@@ -14,8 +14,13 @@ public class VSASTradeFactory implements TradeOffers.Factory {
         this.offer = offer;
     }
 
-    @Override
     public TradeOffer create(Entity entity, Random random) {
         return new TradeOffer(this.offer.toNbt());
+    }
+
+    @Nullable
+    @Override
+    public TradeOffer create(Entity entity, net.minecraft.util.math.random.Random random) {
+        return null;
     }
 }

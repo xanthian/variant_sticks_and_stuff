@@ -18,11 +18,11 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import net.xanthian.vsas.blocks.VariantCampFireBlock;
 
 import java.util.Optional;
-import java.util.Random;
 
 public class CampFireBlockEntity extends BlockEntity implements Clearable {
 
