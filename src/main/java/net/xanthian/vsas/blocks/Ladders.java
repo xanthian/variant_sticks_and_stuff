@@ -22,6 +22,7 @@ public class Ladders {
     public static final VariantLadderBlock DARK_OAK_LADDER = new VariantLadderBlock();
     public static final VariantLadderBlock JUNGLE_LADDER = new VariantLadderBlock();
     public static final VariantLadderBlock OAK_LADDER = new VariantLadderBlock();
+    public static final VariantLadderBlock MANGROVE_LADDER = new VariantLadderBlock();
     public static final VariantLadderBlock SPRUCE_LADDER = new VariantLadderBlock();
     public static final VariantLadderBlock WARPED_LADDER = new VariantLadderBlock();
 
@@ -32,6 +33,7 @@ public class Ladders {
         registerLadderBlock("ladders/dark_oak_ladder", DARK_OAK_LADDER,true);
         registerLadderBlock("ladders/jungle_ladder", JUNGLE_LADDER,true);
         registerLadderBlock("ladders/oak_ladder", OAK_LADDER,true);
+        registerLadderBlock("ladders/mangrove_ladder", MANGROVE_LADDER,true);
         registerLadderBlock("ladders/spruce_ladder", SPRUCE_LADDER,true);
         registerLadderBlock("ladders/warped_ladder", WARPED_LADDER,false);
     }

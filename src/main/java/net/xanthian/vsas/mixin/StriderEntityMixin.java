@@ -37,6 +37,7 @@ public abstract class StriderEntityMixin extends PassiveEntity {
         this.goalSelector.add(4, new TemptGoal(this, 1.2D, Ingredient.ofItems
                 (OnAStick.ACACIA_WARPED_FUNGUS_ON_A_STICK,OnAStick.BIRCH_WARPED_FUNGUS_ON_A_STICK,OnAStick.CRIMSON_WARPED_FUNGUS_ON_A_STICK,
                         OnAStick.DARK_OAK_WARPED_FUNGUS_ON_A_STICK, OnAStick.JUNGLE_WARPED_FUNGUS_ON_A_STICK,OnAStick.OAK_WARPED_FUNGUS_ON_A_STICK,
-                        OnAStick.SPRUCE_WARPED_FUNGUS_ON_A_STICK,OnAStick.WARPED_WARPED_FUNGUS_ON_A_STICK), false));
+                        OnAStick.MANGROVE_WARPED_FUNGUS_ON_A_STICK, OnAStick.SPRUCE_WARPED_FUNGUS_ON_A_STICK,OnAStick.WARPED_WARPED_FUNGUS_ON_A_STICK),
+                false));
     }
 }

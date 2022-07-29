@@ -22,6 +22,8 @@ public class LootTableModifiers {
             = new Identifier("minecraft", "blocks/jungle_leaves");
     private static final Identifier OAK_LEAVES_ID
             = new Identifier("minecraft", "blocks/oak_leaves");
+    private static final Identifier MANGROVE_LEAVES_ID
+            = new Identifier("minecraft", "blocks/mangrove_leaves");
     private static final Identifier SPRUCE_LEAVES_ID
             = new Identifier("minecraft", "blocks/spruce_leaves");
 
@@ -79,6 +81,13 @@ public class LootTableModifiers {
                         .with(ItemEntry.builder(Sticks.OAK_STICK));
                 tableBuilder.pool(poolBuilder);
             }
+            if (MANGROVE_LEAVES_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.02f))
+                        .with(ItemEntry.builder(Sticks.MANGROVE_STICK));
+                tableBuilder.pool(poolBuilder);
+            }
             if (SPRUCE_LEAVES_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
@@ -94,6 +103,7 @@ public class LootTableModifiers {
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
+                        .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
                         .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
                 tableBuilder.pool(poolBuilder);
             }
@@ -105,6 +115,7 @@ public class LootTableModifiers {
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
+                        .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
                         .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
                 tableBuilder.pool(poolBuilder);
             }
@@ -116,6 +127,7 @@ public class LootTableModifiers {
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
+                        .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
                         .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
                 tableBuilder.pool(poolBuilder);
             }
@@ -127,6 +139,7 @@ public class LootTableModifiers {
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
+                        .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
                         .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
                 tableBuilder.pool(poolBuilder);
             }
@@ -138,6 +151,7 @@ public class LootTableModifiers {
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
+                        .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
                         .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
                 tableBuilder.pool(poolBuilder);
             }

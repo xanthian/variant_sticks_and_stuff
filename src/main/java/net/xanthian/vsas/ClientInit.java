@@ -32,6 +32,7 @@ public class ClientInit implements ClientModInitializer {
         registerBowPredicates(Bows.DARK_OAK_BOW);
         registerBowPredicates(Bows.JUNGLE_BOW);
         registerBowPredicates(Bows.OAK_BOW);
+        registerBowPredicates(Bows.MANGROVE_BOW);
         registerBowPredicates(Bows.SPRUCE_BOW);
         registerBowPredicates(Bows.WARPED_BOW);
 
@@ -42,6 +43,7 @@ public class ClientInit implements ClientModInitializer {
         registerRodPredicates(FishingRods.DARK_OAK_FISHING_ROD);
         registerRodPredicates(FishingRods.JUNGLE_FISHING_ROD);
         registerRodPredicates(FishingRods.OAK_FISHING_ROD);
+        registerRodPredicates(FishingRods.MANGROVE_FISHING_ROD);
         registerRodPredicates(FishingRods.SPRUCE_FISHING_ROD);
         registerRodPredicates(FishingRods.WARPED_FISHING_ROD);
 
@@ -52,6 +54,7 @@ public class ClientInit implements ClientModInitializer {
         registerCrossbowPredicates(Crossbows.DARK_OAK_CROSSBOW);
         registerCrossbowPredicates(Crossbows.JUNGLE_CROSSBOW);
         registerCrossbowPredicates(Crossbows.OAK_CROSSBOW);
+        registerCrossbowPredicates(Crossbows.MANGROVE_CROSSBOW);
         registerCrossbowPredicates(Crossbows.SPRUCE_CROSSBOW);
         registerCrossbowPredicates(Crossbows.WARPED_CROSSBOW);
 
@@ -62,6 +65,7 @@ public class ClientInit implements ClientModInitializer {
         EntityRendererRegistry.register(EntityInit.DARK_OAK_ARROW, DarkOakArrowRender::new);
         EntityRendererRegistry.register(EntityInit.JUNGLE_ARROW, JungleArrowRender::new);
         EntityRendererRegistry.register(EntityInit.OAK_ARROW, OakArrowRender::new);
+        EntityRendererRegistry.register(EntityInit.MANGROVE_ARROW, MangroveArrowRender::new);
         EntityRendererRegistry.register(EntityInit.SPRUCE_ARROW, SpruceArrowRender::new);
         EntityRendererRegistry.register(EntityInit.WARPED_ARROW, WarpedArrowRender::new);
 

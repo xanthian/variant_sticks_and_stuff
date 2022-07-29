@@ -27,6 +27,8 @@ public class Torches {
     public static final VariantWallTorchBlock WALL_JUNGLE_TORCH = new VariantWallTorchBlock();
     public static final VariantTorchBlock OAK_TORCH = new VariantTorchBlock();
     public static final VariantWallTorchBlock WALL_OAK_TORCH = new VariantWallTorchBlock();
+    public static final VariantTorchBlock MANGROVE_TORCH = new VariantTorchBlock();
+    public static final VariantWallTorchBlock WALL_MANGROVE_TORCH = new VariantWallTorchBlock();
     public static final VariantTorchBlock SPRUCE_TORCH = new VariantTorchBlock();
     public static final VariantWallTorchBlock WALL_SPRUCE_TORCH = new VariantWallTorchBlock();
     public static final VariantTorchBlock WARPED_TORCH = new VariantTorchBlock();
@@ -39,6 +41,7 @@ public class Torches {
         initTorchBlock("torches/dark_oak_torch", DARK_OAK_TORCH,"torches/wall_dark_oak_torch", WALL_DARK_OAK_TORCH);
         initTorchBlock("torches/jungle_torch", JUNGLE_TORCH,"torches/wall_jungle_torch", WALL_JUNGLE_TORCH);
         initTorchBlock("torches/oak_torch", OAK_TORCH,"torches/wall_oak_torch", WALL_OAK_TORCH);
+        initTorchBlock("torches/mangrove_torch", MANGROVE_TORCH,"torches/wall_mangrove_torch", WALL_MANGROVE_TORCH);
         initTorchBlock("torches/spruce_torch", SPRUCE_TORCH,"torches/wall_spruce_torch", WALL_SPRUCE_TORCH);
         initTorchBlock("torches/warped_torch", WARPED_TORCH,"torches/wall_warped_torch", WALL_WARPED_TORCH);
     }

@@ -39,11 +39,10 @@ public abstract class PointOfInterestTypeMixin{
                 Grindstones.DARK_OAK_GRINDSTONE,
                 Grindstones.JUNGLE_GRINDSTONE,
                 Grindstones.OAK_GRINDSTONE,
+                Grindstones.MANGROVE_GRINDSTONE,
                 Grindstones.SPRUCE_GRINDSTONE,
                 Grindstones.WARPED_GRINDSTONE
-        ).stream().flatMap((block) -> {
-            return block.getStateManager().getStates().stream();
-        }).collect(ImmutableSet.toImmutableSet());
+        ).stream().flatMap((block) -> block.getStateManager().getStates().stream()).collect(ImmutableSet.toImmutableSet());
 
         Set<BlockState> newWeaponsmithStates = new HashSet<>();
         newWeaponsmithStates.addAll(originalWeaponsmithStates);

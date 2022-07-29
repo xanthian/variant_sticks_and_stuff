@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vsas:item/swords/mangrove_wooden_sword"
+  }
+}

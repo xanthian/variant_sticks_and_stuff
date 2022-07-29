@@ -18,6 +18,7 @@ public class Bows {
     public static final Item DARK_OAK_BOW = registerItem("bows/dark_oak_bow", new VariantBowItem(), true);
     public static final Item JUNGLE_BOW = registerItem("bows/jungle_bow", new VariantBowItem(), true);
     public static final Item OAK_BOW = registerItem("bows/oak_bow", new VariantBowItem(), true);
+    public static final Item MANGROVE_BOW = registerItem("bows/mangrove_bow", new VariantBowItem(), true);
     public static final Item SPRUCE_BOW = registerItem("bows/spruce_bow", new VariantBowItem(), true);
     public static final Item WARPED_BOW = registerItem("bows/warped_bow", new VariantBowItem(), false);
 

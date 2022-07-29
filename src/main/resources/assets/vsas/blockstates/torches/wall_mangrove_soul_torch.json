@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "vsas:block/torches/wall_mangrove_soul_torch"
+    },
+    "facing=north": {
+      "model": "vsas:block/torches/wall_mangrove_soul_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "vsas:block/torches/wall_mangrove_soul_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "vsas:block/torches/wall_mangrove_soul_torch",
+      "y": 180
+    }
+  }
+}

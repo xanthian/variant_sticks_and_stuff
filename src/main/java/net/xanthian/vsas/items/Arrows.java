@@ -19,6 +19,7 @@ public class Arrows {
     public static final Item DARK_OAK_ARROW_ITEM = registerItem("arrows/dark_oak_arrow", new DarkOakArrowItem());
     public static final Item JUNGLE_ARROW_ITEM = registerItem("arrows/jungle_arrow", new JungleArrowItem());
     public static final Item OAK_ARROW_ITEM = registerItem("arrows/oak_arrow", new OakArrowItem());
+    public static final Item MANGROVE_ARROW_ITEM = registerItem("arrows/mangrove_arrow", new MangroveArrowItem());
     public static final Item SPRUCE_ARROW_ITEM = registerItem("arrows/spruce_arrow", new SpruceArrowItem());
     public static final Item WARPED_ARROW_ITEM = registerItem("arrows/warped_arrow", new WarpedArrowItem());
 

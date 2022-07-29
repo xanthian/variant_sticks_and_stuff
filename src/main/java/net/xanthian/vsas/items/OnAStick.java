@@ -19,6 +19,7 @@ public class OnAStick {
     public static final Item DARK_OAK_CARROT_ON_A_STICK = registerItem("onastick/dark_oak_carrot_on_a_stick", new VariantCarrotOnAStickItem());
     public static final Item JUNGLE_CARROT_ON_A_STICK = registerItem("onastick/jungle_carrot_on_a_stick", new VariantCarrotOnAStickItem());
     public static final Item OAK_CARROT_ON_A_STICK = registerItem("onastick/oak_carrot_on_a_stick", new VariantCarrotOnAStickItem());
+    public static final Item MANGROVE_CARROT_ON_A_STICK = registerItem("onastick/mangrove_carrot_on_a_stick", new VariantCarrotOnAStickItem());
     public static final Item SPRUCE_CARROT_ON_A_STICK = registerItem("onastick/spruce_carrot_on_a_stick", new VariantCarrotOnAStickItem());
     public static final Item WARPED_CARROT_ON_A_STICK = registerItem("onastick/warped_carrot_on_a_stick", new VariantCarrotOnAStickItem());
 
@@ -28,6 +29,7 @@ public class OnAStick {
     public static final Item DARK_OAK_WARPED_FUNGUS_ON_A_STICK = registerItem("onastick/dark_oak_warped_fungus_on_a_stick", new VariantFungusOnAStickItem());
     public static final Item JUNGLE_WARPED_FUNGUS_ON_A_STICK = registerItem("onastick/jungle_warped_fungus_on_a_stick", new VariantFungusOnAStickItem());
     public static final Item OAK_WARPED_FUNGUS_ON_A_STICK = registerItem("onastick/oak_warped_fungus_on_a_stick", new VariantFungusOnAStickItem());
+    public static final Item MANGROVE_WARPED_FUNGUS_ON_A_STICK = registerItem("onastick/mangrove_warped_fungus_on_a_stick", new VariantFungusOnAStickItem());
     public static final Item SPRUCE_WARPED_FUNGUS_ON_A_STICK = registerItem("onastick/spruce_warped_fungus_on_a_stick", new VariantFungusOnAStickItem());
     public static final Item WARPED_WARPED_FUNGUS_ON_A_STICK = registerItem("onastick/warped_warped_fungus_on_a_stick", new VariantFungusOnAStickItem());
 

@@ -19,6 +19,7 @@ public class Sticks extends Item {
     public static final Item DARK_OAK_STICK = registerItem("sticks/dark_oak_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
     public static final Item JUNGLE_STICK = registerItem("sticks/jungle_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
     public static final Item OAK_STICK = registerItem("sticks/oak_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
+    public static final Item MANGROVE_STICK = registerItem("sticks/mangrove_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
     public static final Item SPRUCE_STICK = registerItem("sticks/spruce_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),true);
     public static final Item WARPED_STICK = registerItem("sticks/warped_stick", new Sticks(new FabricItemSettings().group(Group.STICKS_AND_STUFF)),false);
 

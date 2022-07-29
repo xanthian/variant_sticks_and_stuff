@@ -18,6 +18,7 @@ public class FishingRods {
     public static final Item DARK_OAK_FISHING_ROD = registerItem("fishingrods/dark_oak_fishing_rod", new VariantFishingRodItem(),true);
     public static final Item JUNGLE_FISHING_ROD = registerItem("fishingrods/jungle_fishing_rod", new VariantFishingRodItem(),true);
     public static final Item OAK_FISHING_ROD = registerItem("fishingrods/oak_fishing_rod", new VariantFishingRodItem(),true);
+    public static final Item MANGROVE_FISHING_ROD = registerItem("fishingrods/mangrove_fishing_rod", new VariantFishingRodItem(),true);
     public static final Item SPRUCE_FISHING_ROD = registerItem("fishingrods/spruce_fishing_rod", new VariantFishingRodItem(),true);
     public static final Item WARPED_FISHING_ROD = registerItem("fishingrods/warped_fishing_rod", new VariantFishingRodItem(),false);
 

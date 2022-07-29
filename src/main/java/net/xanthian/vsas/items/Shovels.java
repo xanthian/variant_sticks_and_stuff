@@ -17,6 +17,7 @@ public class Shovels {
     public static final Item DARK_OAK_WOODEN_SHOVEL = registerItem("shovels/dark_oak_wooden_shovel", new VariantShovelItem(VariantMaterials.DARK_OAK_PLANK),true);
     public static final Item JUNGLE_WOODEN_SHOVEL = registerItem("shovels/jungle_wooden_shovel", new VariantShovelItem(VariantMaterials.JUNGLE_PLANK),true);
     public static final Item OAK_WOODEN_SHOVEL = registerItem("shovels/oak_wooden_shovel", new VariantShovelItem(VariantMaterials.OAK_PLANK),true);
+    public static final Item MANGROVE_WOODEN_SHOVEL = registerItem("shovels/mangrove_wooden_shovel", new VariantShovelItem(VariantMaterials.MANGROVE_PLANK),true);
     public static final Item SPRUCE_WOODEN_SHOVEL = registerItem("shovels/spruce_wooden_shovel", new VariantShovelItem(VariantMaterials.SPRUCE_PLANK),true);
     public static final Item WARPED_WOODEN_SHOVEL = registerItem("shovels/warped_wooden_shovel", new VariantShovelItem(VariantMaterials.WARPED_PLANK),false);
     
@@ -27,6 +28,7 @@ public class Shovels {
     public static final Item DARK_OAK_STONE_SHOVEL = registerItem("shovels/dark_oak_stone_shovel", new VariantShovelItem(ToolMaterials.STONE),false);
     public static final Item JUNGLE_STONE_SHOVEL = registerItem("shovels/jungle_stone_shovel", new VariantShovelItem(ToolMaterials.STONE),false);
     public static final Item OAK_STONE_SHOVEL = registerItem("shovels/oak_stone_shovel", new VariantShovelItem(ToolMaterials.STONE),false);
+    public static final Item MANGROVE_STONE_SHOVEL = registerItem("shovels/mangrove_stone_shovel", new VariantShovelItem(ToolMaterials.STONE),false);
     public static final Item SPRUCE_STONE_SHOVEL = registerItem("shovels/spruce_stone_shovel", new VariantShovelItem(ToolMaterials.STONE),false);
     public static final Item WARPED_STONE_SHOVEL = registerItem("shovels/warped_stone_shovel", new VariantShovelItem(ToolMaterials.STONE),false);
 
@@ -37,6 +39,7 @@ public class Shovels {
     public static final Item DARK_OAK_IRON_SHOVEL = registerItem("shovels/dark_oak_iron_shovel", new VariantShovelItem(ToolMaterials.IRON),false);
     public static final Item JUNGLE_IRON_SHOVEL = registerItem("shovels/jungle_iron_shovel", new VariantShovelItem(ToolMaterials.IRON),false);
     public static final Item OAK_IRON_SHOVEL = registerItem("shovels/oak_iron_shovel", new VariantShovelItem(ToolMaterials.IRON),false);
+    public static final Item MANGROVE_IRON_SHOVEL = registerItem("shovels/mangrove_iron_shovel", new VariantShovelItem(ToolMaterials.IRON),false);
     public static final Item SPRUCE_IRON_SHOVEL = registerItem("shovels/spruce_iron_shovel", new VariantShovelItem(ToolMaterials.IRON),false);
     public static final Item WARPED_IRON_SHOVEL = registerItem("shovels/warped_iron_shovel", new VariantShovelItem(ToolMaterials.IRON),false);
     // Golden
@@ -46,6 +49,7 @@ public class Shovels {
     public static final Item DARK_OAK_GOLDEN_SHOVEL = registerItem("shovels/dark_oak_golden_shovel", new VariantShovelItem(ToolMaterials.GOLD),false);
     public static final Item JUNGLE_GOLDEN_SHOVEL = registerItem("shovels/jungle_golden_shovel", new VariantShovelItem(ToolMaterials.GOLD),false);
     public static final Item OAK_GOLDEN_SHOVEL = registerItem("shovels/oak_golden_shovel", new VariantShovelItem(ToolMaterials.GOLD),false);
+    public static final Item MANGROVE_GOLDEN_SHOVEL = registerItem("shovels/mangrove_golden_shovel", new VariantShovelItem(ToolMaterials.GOLD),false);
     public static final Item SPRUCE_GOLDEN_SHOVEL = registerItem("shovels/spruce_golden_shovel", new VariantShovelItem(ToolMaterials.GOLD),false);
     public static final Item WARPED_GOLDEN_SHOVEL = registerItem("shovels/warped_golden_shovel", new VariantShovelItem(ToolMaterials.GOLD),false);
     // Diamond
@@ -55,6 +59,7 @@ public class Shovels {
     public static final Item DARK_OAK_DIAMOND_SHOVEL = registerItem("shovels/dark_oak_diamond_shovel", new VariantShovelItem(ToolMaterials.DIAMOND),false);
     public static final Item JUNGLE_DIAMOND_SHOVEL = registerItem("shovels/jungle_diamond_shovel", new VariantShovelItem(ToolMaterials.DIAMOND),false);
     public static final Item OAK_DIAMOND_SHOVEL = registerItem("shovels/oak_diamond_shovel", new VariantShovelItem(ToolMaterials.DIAMOND),false);
+    public static final Item MANGROVE_DIAMOND_SHOVEL = registerItem("shovels/mangrove_diamond_shovel", new VariantShovelItem(ToolMaterials.DIAMOND),false);
     public static final Item SPRUCE_DIAMOND_SHOVEL = registerItem("shovels/spruce_diamond_shovel", new VariantShovelItem(ToolMaterials.DIAMOND),false);
     public static final Item WARPED_DIAMOND_SHOVEL = registerItem("shovels/warped_diamond_shovel", new VariantShovelItem(ToolMaterials.DIAMOND),false);
     // Netherite
@@ -64,6 +69,7 @@ public class Shovels {
     public static final Item DARK_OAK_NETHERITE_SHOVEL = registerItem("shovels/dark_oak_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE),false);
     public static final Item JUNGLE_NETHERITE_SHOVEL = registerItem("shovels/jungle_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE),false);
     public static final Item OAK_NETHERITE_SHOVEL = registerItem("shovels/oak_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE),false);
+    public static final Item MANGROVE_NETHERITE_SHOVEL = registerItem("shovels/mangrove_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE),false);
     public static final Item SPRUCE_NETHERITE_SHOVEL = registerItem("shovels/spruce_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE),false);
     public static final Item WARPED_NETHERITE_SHOVEL = registerItem("shovels/warped_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE),false);
     

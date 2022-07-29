@@ -21,6 +21,7 @@ public class EntityInit {
     public static EntityType<DarkOakArrowEntity> DARK_OAK_ARROW;
     public static EntityType<JungleArrowEntity> JUNGLE_ARROW;
     public static EntityType<OakArrowEntity> OAK_ARROW;
+    public static EntityType<MangroveArrowEntity> MANGROVE_ARROW;
     public static EntityType<SpruceArrowEntity> SPRUCE_ARROW;
     public static EntityType<WarpedArrowEntity> WARPED_ARROW;
     public static BlockEntityType<CampFireBlockEntity> VARIANT_CAMPFIRE;
@@ -40,14 +41,15 @@ public class EntityInit {
             DARK_OAK_ARROW = register("dark_oak_arrow", createArrowEntityType(DarkOakArrowEntity::new));
             JUNGLE_ARROW = register("jungle_arrow", createArrowEntityType(JungleArrowEntity::new));
             OAK_ARROW = register("oak_arrow", createArrowEntityType(OakArrowEntity::new));
+            MANGROVE_ARROW = register("mangrove_arrow", createArrowEntityType(MangroveArrowEntity::new));
             SPRUCE_ARROW = register("spruce_arrow", createArrowEntityType(SpruceArrowEntity::new));
             WARPED_ARROW = register("warped_arrow", createArrowEntityType(WarpedArrowEntity::new));
 
             VARIANT_CAMPFIRE = Registry.register(Registry.BLOCK_ENTITY_TYPE, new Identifier(Init.MOD_ID, "campfire"),
                     FabricBlockEntityTypeBuilder.create(CampFireBlockEntity::new,
                             Campfires.ACACIA_CAMPFIRE,Campfires.BIRCH_CAMPFIRE,Campfires.CRIMSON_CAMPFIRE,Campfires.DARK_OAK_CAMPFIRE,
-                            Campfires.JUNGLE_CAMPFIRE,Campfires.OAK_CAMPFIRE,Campfires.SPRUCE_CAMPFIRE,Campfires.WARPED_CAMPFIRE,
+                            Campfires.JUNGLE_CAMPFIRE,Campfires.OAK_CAMPFIRE,Campfires.MANGROVE_CAMPFIRE,Campfires.SPRUCE_CAMPFIRE,Campfires.WARPED_CAMPFIRE,
                             Campfires.ACACIA_SOUL_CAMPFIRE,Campfires.BIRCH_SOUL_CAMPFIRE,Campfires.CRIMSON_SOUL_CAMPFIRE,Campfires.DARK_OAK_SOUL_CAMPFIRE,
-                            Campfires.JUNGLE_SOUL_CAMPFIRE,Campfires.OAK_SOUL_CAMPFIRE,Campfires.SPRUCE_SOUL_CAMPFIRE,Campfires.WARPED_SOUL_CAMPFIRE).build());
+                            Campfires.JUNGLE_SOUL_CAMPFIRE,Campfires.OAK_SOUL_CAMPFIRE,Campfires.MANGROVE_SOUL_CAMPFIRE,Campfires.SPRUCE_SOUL_CAMPFIRE,Campfires.WARPED_SOUL_CAMPFIRE).build());
         }
     }

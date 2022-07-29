@@ -1,0 +1,6 @@
+{
+    "parent": "vsas:item/fishingrods/mangrove_fishing_rod",
+    "textures": {
+        "layer0": "vsas:item/fishingrods/mangrove_fishing_rod_cast"
+    }
+}

@@ -27,6 +27,8 @@ public class SoulTorches {
     public static final VariantWallSoulTorchBlock WALL_JUNGLE_SOUL_TORCH = new VariantWallSoulTorchBlock();
     public static final VariantSoulTorchBlock OAK_SOUL_TORCH = new VariantSoulTorchBlock();
     public static final VariantWallSoulTorchBlock WALL_OAK_SOUL_TORCH = new VariantWallSoulTorchBlock();
+    public static final VariantSoulTorchBlock MANGROVE_SOUL_TORCH = new VariantSoulTorchBlock();
+    public static final VariantWallSoulTorchBlock WALL_MANGROVE_SOUL_TORCH = new VariantWallSoulTorchBlock();
     public static final VariantSoulTorchBlock SPRUCE_SOUL_TORCH = new VariantSoulTorchBlock();
     public static final VariantWallSoulTorchBlock WALL_SPRUCE_SOUL_TORCH = new VariantWallSoulTorchBlock();
     public static final VariantSoulTorchBlock WARPED_SOUL_TORCH = new VariantSoulTorchBlock();
@@ -39,6 +41,7 @@ public class SoulTorches {
         initTorchBlock("torches/dark_oak_soul_torch", DARK_OAK_SOUL_TORCH,"torches/wall_dark_oak_soul_torch", WALL_DARK_OAK_SOUL_TORCH);
         initTorchBlock("torches/jungle_soul_torch", JUNGLE_SOUL_TORCH,"torches/wall_jungle_soul_torch", WALL_JUNGLE_SOUL_TORCH);
         initTorchBlock("torches/oak_soul_torch", OAK_SOUL_TORCH,"torches/wall_oak_soul_torch", WALL_OAK_SOUL_TORCH);
+        initTorchBlock("torches/mangrove_soul_torch", MANGROVE_SOUL_TORCH,"torches/wall_mangrove_soul_torch", WALL_MANGROVE_SOUL_TORCH);
         initTorchBlock("torches/spruce_soul_torch", SPRUCE_SOUL_TORCH,"torches/wall_spruce_soul_torch", WALL_SPRUCE_SOUL_TORCH);
         initTorchBlock("torches/warped_soul_torch", WARPED_SOUL_TORCH,"torches/wall_warped_soul_torch", WALL_WARPED_SOUL_TORCH);
     }

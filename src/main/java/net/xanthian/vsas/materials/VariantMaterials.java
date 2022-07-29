@@ -10,14 +10,15 @@ import java.util.function.Supplier;
 public enum VariantMaterials implements ToolMaterial {
 
     // Wood
-    ACACIA_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.ACACIA_PLANKS);}),
-    BIRCH_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.BIRCH_PLANKS);}),
-    CRIMSON_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.CRIMSON_PLANKS);}),
-    DARK_OAK_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.DARK_OAK_PLANKS);}),
-    JUNGLE_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.JUNGLE_PLANKS);}),
-    OAK_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.OAK_PLANKS);}),
-    SPRUCE_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.SPRUCE_PLANKS);}),
-    WARPED_PLANK(0, 59, 2.0F, 0.0F, 15, () -> {return Ingredient.ofItems(Items.WARPED_PLANKS);});
+    ACACIA_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.ACACIA_PLANKS)),
+    BIRCH_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.BIRCH_PLANKS)),
+    CRIMSON_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.CRIMSON_PLANKS)),
+    DARK_OAK_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.DARK_OAK_PLANKS)),
+    JUNGLE_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.JUNGLE_PLANKS)),
+    OAK_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.OAK_PLANKS)),
+    MANGROVE_PLANK(0, 59, 2.0F, 0.0F, 15, () ->  Ingredient.ofItems(Items.MANGROVE_PLANKS)),
+    SPRUCE_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.SPRUCE_PLANKS)),
+    WARPED_PLANK(0, 59, 2.0F, 0.0F, 15, () -> Ingredient.ofItems(Items.WARPED_PLANKS));
 
     private final int miningLevel;
     private final int itemDurability;

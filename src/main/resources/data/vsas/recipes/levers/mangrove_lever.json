@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "X": {
+      "item": "vsas:sticks/mangrove_stick"
+    }
+  },
+  "result": {
+    "item": "vsas:levers/mangrove_lever"
+  }
+}

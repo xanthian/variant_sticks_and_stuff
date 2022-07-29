@@ -16,6 +16,7 @@ public class Swords {
     public static final Item DARK_OAK_WOODEN_SWORD = registerItem("swords/dark_oak_wooden_sword", new VariantSwordItem(VariantMaterials.DARK_OAK_PLANK),true);
     public static final Item JUNGLE_WOODEN_SWORD = registerItem("swords/jungle_wooden_sword", new VariantSwordItem(VariantMaterials.JUNGLE_PLANK),true);
     public static final Item OAK_WOODEN_SWORD = registerItem("swords/oak_wooden_sword", new VariantSwordItem(VariantMaterials.OAK_PLANK),true);
+    public static final Item MANGROVE_WOODEN_SWORD = registerItem("swords/mangrove_wooden_sword", new VariantSwordItem(VariantMaterials.MANGROVE_PLANK),true);
     public static final Item SPRUCE_WOODEN_SWORD = registerItem("swords/spruce_wooden_sword", new VariantSwordItem(VariantMaterials.SPRUCE_PLANK),true);
     public static final Item WARPED_WOODEN_SWORD = registerItem("swords/warped_wooden_sword", new VariantSwordItem(VariantMaterials.WARPED_PLANK),false);
     
@@ -26,6 +27,7 @@ public class Swords {
     public static final Item DARK_OAK_STONE_SWORD = registerItem("swords/dark_oak_stone_sword", new VariantSwordItem(ToolMaterials.STONE),false);
     public static final Item JUNGLE_STONE_SWORD = registerItem("swords/jungle_stone_sword", new VariantSwordItem(ToolMaterials.STONE),false);
     public static final Item OAK_STONE_SWORD = registerItem("swords/oak_stone_sword", new VariantSwordItem(ToolMaterials.STONE),false);
+    public static final Item MANGROVE_STONE_SWORD = registerItem("swords/mangrove_stone_sword", new VariantSwordItem(ToolMaterials.STONE),false);
     public static final Item SPRUCE_STONE_SWORD = registerItem("swords/spruce_stone_sword", new VariantSwordItem(ToolMaterials.STONE),false);
     public static final Item WARPED_STONE_SWORD = registerItem("swords/warped_stone_sword", new VariantSwordItem(ToolMaterials.STONE),false);
 
@@ -36,6 +38,7 @@ public class Swords {
     public static final Item DARK_OAK_IRON_SWORD = registerItem("swords/dark_oak_iron_sword", new VariantSwordItem(ToolMaterials.IRON),false);
     public static final Item JUNGLE_IRON_SWORD = registerItem("swords/jungle_iron_sword", new VariantSwordItem(ToolMaterials.IRON),false);
     public static final Item OAK_IRON_SWORD = registerItem("swords/oak_iron_sword", new VariantSwordItem(ToolMaterials.IRON),false);
+    public static final Item MANGROVE_IRON_SWORD = registerItem("swords/mangrove_iron_sword", new VariantSwordItem(ToolMaterials.IRON),false);
     public static final Item SPRUCE_IRON_SWORD = registerItem("swords/spruce_iron_sword", new VariantSwordItem(ToolMaterials.IRON),false);
     public static final Item WARPED_IRON_SWORD = registerItem("swords/warped_iron_sword", new VariantSwordItem(ToolMaterials.IRON),false);
     // Golden
@@ -45,6 +48,7 @@ public class Swords {
     public static final Item DARK_OAK_GOLDEN_SWORD = registerItem("swords/dark_oak_golden_sword", new VariantSwordItem(ToolMaterials.GOLD),false);
     public static final Item JUNGLE_GOLDEN_SWORD = registerItem("swords/jungle_golden_sword", new VariantSwordItem(ToolMaterials.GOLD),false);
     public static final Item OAK_GOLDEN_SWORD = registerItem("swords/oak_golden_sword", new VariantSwordItem(ToolMaterials.GOLD),false);
+    public static final Item MANGROVE_GOLDEN_SWORD = registerItem("swords/mangrove_golden_sword", new VariantSwordItem(ToolMaterials.GOLD),false);
     public static final Item SPRUCE_GOLDEN_SWORD = registerItem("swords/spruce_golden_sword", new VariantSwordItem(ToolMaterials.GOLD),false);
     public static final Item WARPED_GOLDEN_SWORD = registerItem("swords/warped_golden_sword", new VariantSwordItem(ToolMaterials.GOLD),false);
     // Diamond
@@ -54,6 +58,7 @@ public class Swords {
     public static final Item DARK_OAK_DIAMOND_SWORD = registerItem("swords/dark_oak_diamond_sword", new VariantSwordItem(ToolMaterials.DIAMOND),false);
     public static final Item JUNGLE_DIAMOND_SWORD = registerItem("swords/jungle_diamond_sword", new VariantSwordItem(ToolMaterials.DIAMOND),false);
     public static final Item OAK_DIAMOND_SWORD = registerItem("swords/oak_diamond_sword", new VariantSwordItem(ToolMaterials.DIAMOND),false);
+    public static final Item MANGROVE_DIAMOND_SWORD = registerItem("swords/mangrove_diamond_sword", new VariantSwordItem(ToolMaterials.DIAMOND),false);
     public static final Item SPRUCE_DIAMOND_SWORD = registerItem("swords/spruce_diamond_sword", new VariantSwordItem(ToolMaterials.DIAMOND),false);
     public static final Item WARPED_DIAMOND_SWORD = registerItem("swords/warped_diamond_sword", new VariantSwordItem(ToolMaterials.DIAMOND),false);
     // Netherite
@@ -63,6 +68,7 @@ public class Swords {
     public static final Item DARK_OAK_NETHERITE_SWORD = registerItem("swords/dark_oak_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE),false);
     public static final Item JUNGLE_NETHERITE_SWORD = registerItem("swords/jungle_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE),false);
     public static final Item OAK_NETHERITE_SWORD = registerItem("swords/oak_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE),false);
+    public static final Item MANGROVE_NETHERITE_SWORD = registerItem("swords/mangrove_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE),false);
     public static final Item SPRUCE_NETHERITE_SWORD = registerItem("swords/spruce_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE),false);
     public static final Item WARPED_NETHERITE_SWORD = registerItem("swords/warped_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE),false);
     

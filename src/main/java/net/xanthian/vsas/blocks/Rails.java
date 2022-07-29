@@ -23,6 +23,7 @@ public class Rails {
     public static final VariantRailBlock DARK_OAK_RAIL = new VariantRailBlock();
     public static final VariantRailBlock JUNGLE_RAIL = new VariantRailBlock();
     public static final VariantRailBlock OAK_RAIL = new VariantRailBlock();
+    public static final VariantRailBlock MANGROVE_RAIL = new VariantRailBlock();
     public static final VariantRailBlock SPRUCE_RAIL = new VariantRailBlock();
     public static final VariantRailBlock WARPED_RAIL = new VariantRailBlock();
 
@@ -32,6 +33,7 @@ public class Rails {
     public static final VariantActivatorRailBlock DARK_OAK_ACTIVATOR_RAIL = new VariantActivatorRailBlock();
     public static final VariantActivatorRailBlock JUNGLE_ACTIVATOR_RAIL = new VariantActivatorRailBlock();
     public static final VariantActivatorRailBlock OAK_ACTIVATOR_RAIL = new VariantActivatorRailBlock();
+    public static final VariantActivatorRailBlock MANGROVE_ACTIVATOR_RAIL = new VariantActivatorRailBlock();
     public static final VariantActivatorRailBlock SPRUCE_ACTIVATOR_RAIL = new VariantActivatorRailBlock();
     public static final VariantActivatorRailBlock WARPED_ACTIVATOR_RAIL = new VariantActivatorRailBlock();
 
@@ -41,6 +43,7 @@ public class Rails {
     //public static final VariantDetectorRailBlock DARK_OAK_DETECTOR_RAIL = new VariantDetectorRailBlock();
     //public static final VariantDetectorRailBlock JUNGLE_DETECTOR_RAIL = new VariantDetectorRailBlock();
     //public static final VariantDetectorRailBlock OAK_DETECTOR_RAIL = new VariantDetectorRailBlock();
+    //public static final VariantDetectorRailBlock MANGROVE_DETECTOR_RAIL = new VariantDetectorRailBlock();
     //public static final VariantDetectorRailBlock SPRUCE_DETECTOR_RAIL = new VariantDetectorRailBlock();
     //public static final VariantDetectorRailBlock WARPED_DETECTOR_RAIL = new VariantDetectorRailBlock();
 
@@ -50,6 +53,7 @@ public class Rails {
     public static final VariantPoweredRailBlock DARK_OAK_POWERED_RAIL = new VariantPoweredRailBlock();
     public static final VariantPoweredRailBlock JUNGLE_POWERED_RAIL = new VariantPoweredRailBlock();
     public static final VariantPoweredRailBlock OAK_POWERED_RAIL = new VariantPoweredRailBlock();
+    public static final VariantPoweredRailBlock MANGROVE_POWERED_RAIL = new VariantPoweredRailBlock();
     public static final VariantPoweredRailBlock SPRUCE_POWERED_RAIL = new VariantPoweredRailBlock();
     public static final VariantPoweredRailBlock WARPED_POWERED_RAIL = new VariantPoweredRailBlock();
 
@@ -60,6 +64,7 @@ public class Rails {
         registerRailBlock("rails/dark_oak_rail", DARK_OAK_RAIL);
         registerRailBlock("rails/jungle_rail", JUNGLE_RAIL);
         registerRailBlock("rails/oak_rail", OAK_RAIL);
+        registerRailBlock("rails/mangrove_rail", MANGROVE_RAIL);
         registerRailBlock("rails/spruce_rail", SPRUCE_RAIL);
         registerRailBlock("rails/warped_rail", WARPED_RAIL);
     }
@@ -70,6 +75,7 @@ public class Rails {
         registerRailBlock("rails/dark_oak_activator_rail", DARK_OAK_ACTIVATOR_RAIL);
         registerRailBlock("rails/jungle_activator_rail", JUNGLE_ACTIVATOR_RAIL);
         registerRailBlock("rails/oak_activator_rail", OAK_ACTIVATOR_RAIL);
+        registerRailBlock("rails/mangrove_activator_rail", MANGROVE_ACTIVATOR_RAIL);
         registerRailBlock("rails/spruce_activator_rail", SPRUCE_ACTIVATOR_RAIL);
         registerRailBlock("rails/warped_activator_rail", WARPED_ACTIVATOR_RAIL);
     }
@@ -80,6 +86,7 @@ public class Rails {
         //registerRailBlock("rails/dark_oak_detector_rail", DARK_OAK_DETECTOR_RAIL);
         //registerRailBlock("rails/jungle_detector_rail", JUNGLE_DETECTOR_RAIL);
         //registerRailBlock("rails/oak_detector_rail", OAK_DETECTOR_RAIL);
+        //registerRailBlock("rails/mangrove_detector_rail", MANGROVE_DETECTOR_RAIL);
         //registerRailBlock("rails/spruce_detector_rail", SPRUCE_DETECTOR_RAIL);
         //registerRailBlock("rails/warped_detector_rail", WARPED_DETECTOR_RAIL);
 
@@ -90,6 +97,7 @@ public class Rails {
         registerRailBlock("rails/dark_oak_powered_rail", DARK_OAK_POWERED_RAIL);
         registerRailBlock("rails/jungle_powered_rail", JUNGLE_POWERED_RAIL);
         registerRailBlock("rails/oak_powered_rail", OAK_POWERED_RAIL);
+        registerRailBlock("rails/mangrove_powered_rail", MANGROVE_POWERED_RAIL);
         registerRailBlock("rails/spruce_powered_rail", SPRUCE_POWERED_RAIL);
         registerRailBlock("rails/warped_powered_rail", WARPED_POWERED_RAIL);
     }

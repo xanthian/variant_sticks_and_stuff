@@ -18,6 +18,7 @@ public class Crossbows {
     public static final VariantCrossbowItem DARK_OAK_CROSSBOW = registerItem("crossbows/dark_oak_crossbow", new VariantCrossbowItem(), true);
     public static final VariantCrossbowItem JUNGLE_CROSSBOW = registerItem("crossbows/jungle_crossbow", new VariantCrossbowItem(), true);
     public static final VariantCrossbowItem OAK_CROSSBOW = registerItem("crossbows/oak_crossbow", new VariantCrossbowItem(), true);
+    public static final VariantCrossbowItem MANGROVE_CROSSBOW = registerItem("crossbows/mangrove_crossbow", new VariantCrossbowItem(), true);
     public static final VariantCrossbowItem SPRUCE_CROSSBOW = registerItem("crossbows/spruce_crossbow", new VariantCrossbowItem(), true);
     public static final VariantCrossbowItem WARPED_CROSSBOW = registerItem("crossbows/warped_crossbow", new VariantCrossbowItem(), false);
 

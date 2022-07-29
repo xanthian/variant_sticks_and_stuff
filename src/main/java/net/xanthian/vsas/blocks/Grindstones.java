@@ -22,6 +22,7 @@ public class Grindstones {
     public static final VariantGrindstoneBlock DARK_OAK_GRINDSTONE = new VariantGrindstoneBlock();
     public static final VariantGrindstoneBlock JUNGLE_GRINDSTONE = new VariantGrindstoneBlock();
     public static final VariantGrindstoneBlock OAK_GRINDSTONE = new VariantGrindstoneBlock();
+    public static final VariantGrindstoneBlock MANGROVE_GRINDSTONE = new VariantGrindstoneBlock();
     public static final VariantGrindstoneBlock SPRUCE_GRINDSTONE = new VariantGrindstoneBlock();
     public static final VariantGrindstoneBlock WARPED_GRINDSTONE = new VariantGrindstoneBlock();
 
@@ -32,6 +33,7 @@ public class Grindstones {
         registerGrindstoneBlock("grindstones/dark_oak_grindstone", DARK_OAK_GRINDSTONE);
         registerGrindstoneBlock("grindstones/jungle_grindstone", JUNGLE_GRINDSTONE);
         registerGrindstoneBlock("grindstones/oak_grindstone", OAK_GRINDSTONE);
+        registerGrindstoneBlock("grindstones/mangrove_grindstone", MANGROVE_GRINDSTONE);
         registerGrindstoneBlock("grindstones/spruce_grindstone", SPRUCE_GRINDSTONE);
         registerGrindstoneBlock("grindstones/warped_grindstone", WARPED_GRINDSTONE);
     }

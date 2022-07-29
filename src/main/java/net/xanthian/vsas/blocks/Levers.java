@@ -21,6 +21,7 @@ import net.xanthian.vsas.Init;
         public static final VariantLeverBlock DARK_OAK_LEVER = new VariantLeverBlock();
         public static final VariantLeverBlock JUNGLE_LEVER = new VariantLeverBlock();
         public static final VariantLeverBlock OAK_LEVER = new VariantLeverBlock();
+        public static final VariantLeverBlock MANGROVE_LEVER = new VariantLeverBlock();
         public static final VariantLeverBlock SPRUCE_LEVER = new VariantLeverBlock();
         public static final VariantLeverBlock WARPED_LEVER = new VariantLeverBlock();
 
@@ -31,6 +32,7 @@ import net.xanthian.vsas.Init;
             registerLeverBlock("levers/dark_oak_lever", DARK_OAK_LEVER);
             registerLeverBlock("levers/jungle_lever", JUNGLE_LEVER);
             registerLeverBlock("levers/oak_lever", OAK_LEVER);
+            registerLeverBlock("levers/mangrove_lever", MANGROVE_LEVER);
             registerLeverBlock("levers/spruce_lever", SPRUCE_LEVER);
             registerLeverBlock("levers/warped_lever", WARPED_LEVER);
         }

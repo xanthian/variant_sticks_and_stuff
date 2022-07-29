@@ -8,6 +8,7 @@
   "item.vsas.sticks.dark_oak_stick": "Dark Oak Stick",
   "item.vsas.sticks.jungle_stick": "Jungle Stick",
   "item.vsas.sticks.oak_stick": "Oak Stick",
+  "item.vsas.sticks.mangrove_stick": "Mangrove Stick",
   "item.vsas.sticks.spruce_stick": "Spruce Stick",
   "item.vsas.sticks.warped_stick": "Warped Stick",
 
@@ -18,6 +19,7 @@
   "item.vsas.arrows.dark_oak_arrow": "Dark Oak Arrow",
   "item.vsas.arrows.jungle_arrow": "Jungle Arrow",
   "item.vsas.arrows.oak_arrow": "Oak Arrow",
+  "item.vsas.arrows.mangrove_arrow": "Mangrove Arrow",
   "item.vsas.arrows.spruce_arrow": "Spruce Arrow",
   "item.vsas.arrows.warped_arrow": "Warped Arrow",
   
@@ -28,6 +30,7 @@
   "entity.vsas.dark_oak_arrow": "Dark Oak Arrow",
   "entity.vsas.jungle_arrow": "Jungle Arrow",
   "entity.vsas.oak_arrow": "Oak Arrow",
+  "entity.vsas.mangrove_arrow": "Mangrove Arrow",
   "entity.vsas.spruce_arrow": "Spruce Arrow",
   "entity.vsas.warped_arrow": "Warped Arrow",
   
@@ -38,6 +41,7 @@
   "item.vsas.bows.dark_oak_bow": "Dark Oak Bow",
   "item.vsas.bows.jungle_bow": "Jungle Bow",
   "item.vsas.bows.oak_bow": "Oak Bow",
+  "item.vsas.bows.mangrove_bow": "Mangrove Bow",
   "item.vsas.bows.spruce_bow": "Spruce Bow",
   "item.vsas.bows.warped_bow": "Warped Bow",
 
@@ -48,6 +52,7 @@
   "item.vsas.crossbows.dark_oak_crossbow": "Dark Oak Crossbow",
   "item.vsas.crossbows.jungle_crossbow": "Jungle Crossbow",
   "item.vsas.crossbows.oak_crossbow": "Oak Crossbow",
+  "item.vsas.crossbows.mangrove_crossbow": "Mangrove Crossbow",
   "item.vsas.crossbows.spruce_crossbow": "Spruce Crossbow",
   "item.vsas.crossbows.warped_crossbow": "Warped Crossbow",
 
@@ -58,6 +63,7 @@
   "item.vsas.fishingrods.dark_oak_fishing_rod": "Dark Oak Fishing Rod",
   "item.vsas.fishingrods.jungle_fishing_rod": "Jungle Fishing Rod",
   "item.vsas.fishingrods.oak_fishing_rod": "Oak Fishing Rod",
+  "item.vsas.fishingrods.mangrove_fishing_rod": "Mangrove Fishing Rod",
   "item.vsas.fishingrods.spruce_fishing_rod": "Spruce Fishing Rod",
   "item.vsas.fishingrods.warped_fishing_rod": "Warped Fishing Rod",
 
@@ -68,6 +74,7 @@
   "item.vsas.onastick.dark_oak_carrot_on_a_stick": "Dark Oak Carrot on a Stick",
   "item.vsas.onastick.jungle_carrot_on_a_stick": "Jungle Carrot on a Stick",
   "item.vsas.onastick.oak_carrot_on_a_stick": "Oak Carrot on a Stick",
+  "item.vsas.onastick.mangrove_carrot_on_a_stick": "Mangrove Carrot on a Stick",
   "item.vsas.onastick.spruce_carrot_on_a_stick": "Spruce Carrot on a Stick",
   "item.vsas.onastick.warped_carrot_on_a_stick": "Warped Carrot on a Stick",
 
@@ -78,6 +85,7 @@
   "item.vsas.onastick.dark_oak_warped_fungus_on_a_stick": "Dark Oak Warped Fungus on a Stick",
   "item.vsas.onastick.jungle_warped_fungus_on_a_stick": "Jungle Warped Fungus on a Stick",
   "item.vsas.onastick.oak_warped_fungus_on_a_stick": "Oak Warped Fungus on a Stick",
+  "item.vsas.onastick.mangrove_warped_fungus_on_a_stick": "Mangrove Warped Fungus on a Stick",
   "item.vsas.onastick.spruce_warped_fungus_on_a_stick": "Spruce Warped Fungus on a Stick",
   "item.vsas.onastick.warped_warped_fungus_on_a_stick": "Warped Warped Fungus on a Stick",
 
@@ -88,6 +96,7 @@
   "item.vsas.swords.dark_oak_wooden_sword": "Dark Oak Wooden Sword",
   "item.vsas.swords.jungle_wooden_sword": "Jungle Wooden Sword",
   "item.vsas.swords.oak_wooden_sword": "Oak Wooden Sword",
+  "item.vsas.swords.mangrove_wooden_sword": "Mangrove Wooden Sword",
   "item.vsas.swords.spruce_wooden_sword": "Spruce Wooden Sword",
   "item.vsas.swords.warped_wooden_sword": "Warped Wooden Sword",
 
@@ -98,6 +107,7 @@
   "item.vsas.swords.dark_oak_stone_sword": "Stone Sword",
   "item.vsas.swords.jungle_stone_sword": "Stone Sword",
   "item.vsas.swords.oak_stone_sword": "Stone Sword",
+  "item.vsas.swords.mangrove_stone_sword": "Stone Sword",
   "item.vsas.swords.spruce_stone_sword": "Stone Sword",
   "item.vsas.swords.warped_stone_sword": "Stone Sword",
 
@@ -108,6 +118,7 @@
   "item.vsas.swords.dark_oak_iron_sword": "Iron Sword",
   "item.vsas.swords.jungle_iron_sword": "Iron Sword",
   "item.vsas.swords.oak_iron_sword": "Iron Sword",
+  "item.vsas.swords.mangrove_iron_sword": "Iron Sword",
   "item.vsas.swords.spruce_iron_sword": "Iron Sword",
   "item.vsas.swords.warped_iron_sword": "Iron Sword",
 
@@ -118,6 +129,7 @@
   "item.vsas.swords.dark_oak_golden_sword": "Golden Sword",
   "item.vsas.swords.jungle_golden_sword": "Golden Sword",
   "item.vsas.swords.oak_golden_sword": "Golden Sword",
+  "item.vsas.swords.mangrove_golden_sword": "Golden Sword",
   "item.vsas.swords.spruce_golden_sword": "Golden Sword",
   "item.vsas.swords.warped_golden_sword": "Golden Sword",
 
@@ -128,6 +140,7 @@
   "item.vsas.swords.dark_oak_diamond_sword": "Diamond Sword",
   "item.vsas.swords.jungle_diamond_sword": "Diamond Sword",
   "item.vsas.swords.oak_diamond_sword": "Diamond Sword",
+  "item.vsas.swords.mangrove_diamond_sword": "Diamond Sword",
   "item.vsas.swords.spruce_diamond_sword": "Diamond Sword",
   "item.vsas.swords.warped_diamond_sword": "Diamond Sword",
 
@@ -138,6 +151,7 @@
   "item.vsas.swords.dark_oak_netherite_sword": "Netherite Sword",
   "item.vsas.swords.jungle_netherite_sword": "Netherite Sword",
   "item.vsas.swords.oak_netherite_sword": "Netherite Sword",
+  "item.vsas.swords.mangrove_netherite_sword": "Netherite Sword",
   "item.vsas.swords.spruce_netherite_sword": "Netherite Sword",
   "item.vsas.swords.warped_netherite_sword": "Netherite Sword",
 
@@ -148,6 +162,7 @@
   "item.vsas.shovels.dark_oak_wooden_shovel": "Dark Oak Wooden Shovel",
   "item.vsas.shovels.jungle_wooden_shovel": "Jungle Wooden Shovel",
   "item.vsas.shovels.oak_wooden_shovel": "Oak Wooden Shovel",
+  "item.vsas.shovels.mangrove_wooden_shovel": "Mangrove Wooden Shovel",
   "item.vsas.shovels.spruce_wooden_shovel": "Spruce Wooden Shovel",
   "item.vsas.shovels.warped_wooden_shovel": "Warped Wooden Shovel",
 
@@ -158,6 +173,7 @@
   "item.vsas.shovels.dark_oak_stone_shovel": "Stone Shovel",
   "item.vsas.shovels.jungle_stone_shovel": "Stone Shovel",
   "item.vsas.shovels.oak_stone_shovel": "Stone Shovel",
+  "item.vsas.shovels.mangrove_stone_shovel": "Stone Shovel",
   "item.vsas.shovels.spruce_stone_shovel": "Stone Shovel",
   "item.vsas.shovels.warped_stone_shovel": "Stone Shovel",
 
@@ -168,6 +184,7 @@
   "item.vsas.shovels.dark_oak_iron_shovel": "Iron Shovel",
   "item.vsas.shovels.jungle_iron_shovel": "Iron Shovel",
   "item.vsas.shovels.oak_iron_shovel": "Iron Shovel",
+  "item.vsas.shovels.mangrove_iron_shovel": "Iron Shovel",
   "item.vsas.shovels.spruce_iron_shovel": "Iron Shovel",
   "item.vsas.shovels.warped_iron_shovel": "Iron Shovel",
 
@@ -178,6 +195,7 @@
   "item.vsas.shovels.dark_oak_golden_shovel": "Golden Shovel",
   "item.vsas.shovels.jungle_golden_shovel": "Golden Shovel",
   "item.vsas.shovels.oak_golden_shovel": "Golden Shovel",
+  "item.vsas.shovels.mangrove_golden_shovel": "Golden Shovel",
   "item.vsas.shovels.spruce_golden_shovel": "Golden Shovel",
   "item.vsas.shovels.warped_golden_shovel": "Golden Shovel",
 
@@ -188,6 +206,7 @@
   "item.vsas.shovels.dark_oak_diamond_shovel": "Diamond Shovel",
   "item.vsas.shovels.jungle_diamond_shovel": "Diamond Shovel",
   "item.vsas.shovels.oak_diamond_shovel": "Diamond Shovel",
+  "item.vsas.shovels.mangrove_diamond_shovel": "Diamond Shovel",
   "item.vsas.shovels.spruce_diamond_shovel": "Diamond Shovel",
   "item.vsas.shovels.warped_diamond_shovel": "Diamond Shovel",
 
@@ -198,6 +217,7 @@
   "item.vsas.shovels.dark_oak_netherite_shovel": "Netherite Shovel",
   "item.vsas.shovels.jungle_netherite_shovel": "Netherite Shovel",
   "item.vsas.shovels.oak_netherite_shovel": "Netherite Shovel",
+  "item.vsas.shovels.mangrove_netherite_shovel": "Netherite Shovel",
   "item.vsas.shovels.spruce_netherite_shovel": "Netherite Shovel",
   "item.vsas.shovels.warped_netherite_shovel": "Netherite Shovel",
 
@@ -208,6 +228,7 @@
   "item.vsas.axes.dark_oak_wooden_axe": "Dark Oak Wooden Axe",
   "item.vsas.axes.jungle_wooden_axe": "Jungle Wooden Axe",
   "item.vsas.axes.oak_wooden_axe": "Oak Wooden Axe",
+  "item.vsas.axes.mangrove_wooden_axe": "Mangrove Wooden Axe",
   "item.vsas.axes.spruce_wooden_axe": "Spruce Wooden Axe",
   "item.vsas.axes.warped_wooden_axe": "Warped Wooden Axe",
 
@@ -218,6 +239,7 @@
   "item.vsas.axes.dark_oak_stone_axe": "Stone Axe",
   "item.vsas.axes.jungle_stone_axe": "Stone Axe",
   "item.vsas.axes.oak_stone_axe": "Stone Axe",
+  "item.vsas.axes.mangrove_stone_axe": "Stone Axe",
   "item.vsas.axes.spruce_stone_axe": "Stone Axe",
   "item.vsas.axes.warped_stone_axe": "Stone Axe",
 
@@ -228,6 +250,7 @@
   "item.vsas.axes.dark_oak_iron_axe": "Iron Axe",
   "item.vsas.axes.jungle_iron_axe": "Iron Axe",
   "item.vsas.axes.oak_iron_axe": "Iron Axe",
+  "item.vsas.axes.mangrove_iron_axe": "Iron Axe",
   "item.vsas.axes.spruce_iron_axe": "Iron Axe",
   "item.vsas.axes.warped_iron_axe": "Iron Axe",
 
@@ -238,6 +261,7 @@
   "item.vsas.axes.dark_oak_golden_axe": "Golden Axe",
   "item.vsas.axes.jungle_golden_axe": "Golden Axe",
   "item.vsas.axes.oak_golden_axe": "Golden Axe",
+  "item.vsas.axes.mangrove_golden_axe": "Golden Axe",
   "item.vsas.axes.spruce_golden_axe": "Golden Axe",
   "item.vsas.axes.warped_golden_axe": "Golden Axe",
 
@@ -248,6 +272,7 @@
   "item.vsas.axes.dark_oak_diamond_axe": "Diamond Axe",
   "item.vsas.axes.jungle_diamond_axe": "Diamond Axe",
   "item.vsas.axes.oak_diamond_axe": "Diamond Axe",
+  "item.vsas.axes.mangrove_diamond_axe": "Diamond Axe",
   "item.vsas.axes.spruce_diamond_axe": "Diamond Axe",
   "item.vsas.axes.warped_diamond_axe": "Diamond Axe",
 
@@ -258,6 +283,7 @@
   "item.vsas.axes.dark_oak_netherite_axe": "Netherite Axe",
   "item.vsas.axes.jungle_netherite_axe": "Netherite Axe",
   "item.vsas.axes.oak_netherite_axe": "Netherite Axe",
+  "item.vsas.axes.mangrove_netherite_axe": "Netherite Axe",
   "item.vsas.axes.spruce_netherite_axe": "Netherite Axe",
   "item.vsas.axes.warped_netherite_axe": "Netherite Axe",
 
@@ -268,6 +294,7 @@
   "item.vsas.hoes.dark_oak_wooden_hoe": "Dark Oak Wooden Hoe",
   "item.vsas.hoes.jungle_wooden_hoe": "Jungle Wooden Hoe",
   "item.vsas.hoes.oak_wooden_hoe": "Oak Wooden Hoe",
+  "item.vsas.hoes.mangrove_wooden_hoe": "Mangrove Wooden Hoe",
   "item.vsas.hoes.spruce_wooden_hoe": "Spruce Wooden Hoe",
   "item.vsas.hoes.warped_wooden_hoe": "Warped Wooden Hoe",
 
@@ -278,6 +305,7 @@
   "item.vsas.hoes.dark_oak_stone_hoe": "Stone Hoe",
   "item.vsas.hoes.jungle_stone_hoe": "Stone Hoe",
   "item.vsas.hoes.oak_stone_hoe": "Stone Hoe",
+  "item.vsas.hoes.mangrove_stone_hoe": "Stone Hoe",
   "item.vsas.hoes.spruce_stone_hoe": "Stone Hoe",
   "item.vsas.hoes.warped_stone_hoe": "Stone Hoe",
 
@@ -288,6 +316,7 @@
   "item.vsas.hoes.dark_oak_iron_hoe": "Iron Hoe",
   "item.vsas.hoes.jungle_iron_hoe": "Iron Hoe",
   "item.vsas.hoes.oak_iron_hoe": "Iron Hoe",
+  "item.vsas.hoes.mangrove_iron_hoe": "Iron Hoe",
   "item.vsas.hoes.spruce_iron_hoe": "Iron Hoe",
   "item.vsas.hoes.warped_iron_hoe": "Iron Hoe",
 
@@ -298,6 +327,7 @@
   "item.vsas.hoes.dark_oak_golden_hoe": "Golden Hoe",
   "item.vsas.hoes.jungle_golden_hoe": "Golden Hoe",
   "item.vsas.hoes.oak_golden_hoe": "Golden Hoe",
+  "item.vsas.hoes.mangrove_golden_hoe": "Golden Hoe",
   "item.vsas.hoes.spruce_golden_hoe": "Golden Hoe",
   "item.vsas.hoes.warped_golden_hoe": "Golden Hoe",
 
@@ -308,6 +338,7 @@
   "item.vsas.hoes.dark_oak_diamond_hoe": "Diamond Hoe",
   "item.vsas.hoes.jungle_diamond_hoe": "Diamond Hoe",
   "item.vsas.hoes.oak_diamond_hoe": "Diamond Hoe",
+  "item.vsas.hoes.mangrove_diamond_hoe": "Diamond Hoe",
   "item.vsas.hoes.spruce_diamond_hoe": "Diamond Hoe",
   "item.vsas.hoes.warped_diamond_hoe": "Diamond Hoe",
 
@@ -318,6 +349,7 @@
   "item.vsas.hoes.dark_oak_netherite_hoe": "Netherite Hoe",
   "item.vsas.hoes.jungle_netherite_hoe": "Netherite Hoe",
   "item.vsas.hoes.oak_netherite_hoe": "Netherite Hoe",
+  "item.vsas.hoes.mangrove_netherite_hoe": "Netherite Hoe",
   "item.vsas.hoes.spruce_netherite_hoe": "Netherite Hoe",
   "item.vsas.hoes.warped_netherite_hoe": "Netherite Hoe",
 
@@ -328,6 +360,7 @@
   "item.vsas.pickaxes.dark_oak_wooden_pickaxe": "Dark Oak Wooden Pickaxe",
   "item.vsas.pickaxes.jungle_wooden_pickaxe": "Jungle Wooden Pickaxe",
   "item.vsas.pickaxes.oak_wooden_pickaxe": "Oak Wooden Pickaxe",
+  "item.vsas.pickaxes.mangrove_wooden_pickaxe": "Mangrove Wooden Pickaxe",
   "item.vsas.pickaxes.spruce_wooden_pickaxe": "Spruce Wooden Pickaxe",
   "item.vsas.pickaxes.warped_wooden_pickaxe": "Warped Wooden Pickaxe",
 
@@ -338,6 +371,7 @@
   "item.vsas.pickaxes.dark_oak_stone_pickaxe": "Stone Pickaxe",
   "item.vsas.pickaxes.jungle_stone_pickaxe": "Stone Pickaxe",
   "item.vsas.pickaxes.oak_stone_pickaxe": "Stone Pickaxe",
+  "item.vsas.pickaxes.mangrove_stone_pickaxe": "Stone Pickaxe",
   "item.vsas.pickaxes.spruce_stone_pickaxe": "Stone Pickaxe",
   "item.vsas.pickaxes.warped_stone_pickaxe": "Stone Pickaxe",
 
@@ -348,6 +382,7 @@
   "item.vsas.pickaxes.dark_oak_iron_pickaxe": "Iron Pickaxe",
   "item.vsas.pickaxes.jungle_iron_pickaxe": "Iron Pickaxe",
   "item.vsas.pickaxes.oak_iron_pickaxe": "Iron Pickaxe",
+  "item.vsas.pickaxes.mangrove_iron_pickaxe": "Iron Pickaxe",
   "item.vsas.pickaxes.spruce_iron_pickaxe": "Iron Pickaxe",
   "item.vsas.pickaxes.warped_iron_pickaxe": "Iron Pickaxe",
 
@@ -358,6 +393,7 @@
   "item.vsas.pickaxes.dark_oak_golden_pickaxe": "Golden Pickaxe",
   "item.vsas.pickaxes.jungle_golden_pickaxe": "Golden Pickaxe",
   "item.vsas.pickaxes.oak_golden_pickaxe": "Golden Pickaxe",
+  "item.vsas.pickaxes.mangrove_golden_pickaxe": "Golden Pickaxe",
   "item.vsas.pickaxes.spruce_golden_pickaxe": "Golden Pickaxe",
   "item.vsas.pickaxes.warped_golden_pickaxe": "Golden Pickaxe",
 
@@ -368,6 +404,7 @@
   "item.vsas.pickaxes.dark_oak_diamond_pickaxe": "Diamond Pickaxe",
   "item.vsas.pickaxes.jungle_diamond_pickaxe": "Diamond Pickaxe",
   "item.vsas.pickaxes.oak_diamond_pickaxe": "Diamond Pickaxe",
+  "item.vsas.pickaxes.mangrove_diamond_pickaxe": "Diamond Pickaxe",
   "item.vsas.pickaxes.spruce_diamond_pickaxe": "Diamond Pickaxe",
   "item.vsas.pickaxes.warped_diamond_pickaxe": "Diamond Pickaxe",
 
@@ -378,6 +415,7 @@
   "item.vsas.pickaxes.dark_oak_netherite_pickaxe": "Netherite Pickaxe",
   "item.vsas.pickaxes.jungle_netherite_pickaxe": "Netherite Pickaxe",
   "item.vsas.pickaxes.oak_netherite_pickaxe": "Netherite Pickaxe",
+  "item.vsas.pickaxes.mangrove_netherite_pickaxe": "Netherite Pickaxe",
   "item.vsas.pickaxes.spruce_netherite_pickaxe": "Netherite Pickaxe",
   "item.vsas.pickaxes.warped_netherite_pickaxe": "Netherite Pickaxe",
   
@@ -388,6 +426,7 @@
   "block.vsas.ladders.dark_oak_ladder": "Dark Oak Ladder",
   "block.vsas.ladders.jungle_ladder": "Jungle Ladder",
   "block.vsas.ladders.oak_ladder": "Oak Ladder",
+  "block.vsas.ladders.mangrove_ladder": "Mangrove Ladder",
   "block.vsas.ladders.spruce_ladder": "Spruce Ladder",
   "block.vsas.ladders.warped_ladder": "Warped Ladder",
   
@@ -398,6 +437,7 @@
   "block.vsas.torches.dark_oak_torch": "Dark Oak Torch",
   "block.vsas.torches.jungle_torch": "Jungle Torch",
   "block.vsas.torches.oak_torch": "Oak Torch",
+  "block.vsas.torches.mangrove_torch": "Mangrove Torch",
   "block.vsas.torches.spruce_torch": "Spruce Torch",
   "block.vsas.torches.warped_torch": "Warped Torch",
   
@@ -408,6 +448,7 @@
   "block.vsas.torches.dark_oak_soul_torch": "Dark Oak Soul Torch",
   "block.vsas.torches.jungle_soul_torch": "Jungle Soul Torch",
   "block.vsas.torches.oak_soul_torch": "Oak Soul Torch",
+  "block.vsas.torches.mangrove_soul_torch": "Mangrove Soul Torch",
   "block.vsas.torches.spruce_soul_torch": "Spruce Soul Torch",
   "block.vsas.torches.warped_soul_torch": "Warped Soul Torch",
 
@@ -418,6 +459,7 @@
   "block.vsas.torches.dark_oak_redstone_torch": "Dark Oak Redstone Torch",
   "block.vsas.torches.jungle_redstone_torch": "Jungle Redstone Torch",
   "block.vsas.torches.oak_redstone_torch": "Oak Redstone Torch",
+  "block.vsas.torches.mangrove_redstone_torch": "Mangrove Redstone Torch",
   "block.vsas.torches.spruce_redstone_torch": "Spruce Redstone Torch",
   "block.vsas.torches.warped_redstone_torch": "Warped Redstone Torch",
 
@@ -428,6 +470,7 @@
   "block.vsas.levers.dark_oak_lever": "Dark Oak Lever",
   "block.vsas.levers.jungle_lever": "Jungle Lever",
   "block.vsas.levers.oak_lever": "Oak Lever",
+  "block.vsas.levers.mangrove_lever": "Mangrove Lever",
   "block.vsas.levers.spruce_lever": "Spruce Lever",
   "block.vsas.levers.warped_lever": "Warped Lever",
 
@@ -438,6 +481,7 @@
   "block.vsas.campfires.dark_oak_campfire": "Dark Oak Campfire",
   "block.vsas.campfires.jungle_campfire": "Jungle Campfire",
   "block.vsas.campfires.oak_campfire": "Oak Campfire",
+  "block.vsas.campfires.mangrove_campfire": "Mangrove Campfire",
   "block.vsas.campfires.spruce_campfire": "Spruce Campfire",
   "block.vsas.campfires.warped_campfire": "Warped Campfire",
 
@@ -448,6 +492,7 @@
   "block.vsas.campfires.dark_oak_soul_campfire": "Dark Oak Soul Campfire",
   "block.vsas.campfires.jungle_soul_campfire": "Jungle Soul Campfire",
   "block.vsas.campfires.oak_soul_campfire": "Oak Soul Campfire",
+  "block.vsas.campfires.mangrove_soul_campfire": "Mangrove Soul Campfire",
   "block.vsas.campfires.spruce_soul_campfire": "Spruce Soul Campfire",
   "block.vsas.campfires.warped_soul_campfire": "Warped Soul Campfire",
 
@@ -458,6 +503,7 @@
   "block.vsas.grindstones.dark_oak_grindstone": "Dark Oak Grindstone",
   "block.vsas.grindstones.jungle_grindstone": "Jungle Grindstone",
   "block.vsas.grindstones.oak_grindstone": "Oak Grindstone",
+  "block.vsas.grindstones.mangrove_grindstone": "Mangrove Grindstone",
   "block.vsas.grindstones.spruce_grindstone": "Spruce Grindstone",
   "block.vsas.grindstones.warped_grindstone": "Warped Grindstone",
 
@@ -468,6 +514,7 @@
   "block.vsas.rails.dark_oak_rail": "Dark Oak Rail",
   "block.vsas.rails.jungle_rail": "Jungle Rail",
   "block.vsas.rails.oak_rail": "Oak Rail",
+  "block.vsas.rails.mangrove_rail": "Mangrove Rail",
   "block.vsas.rails.spruce_rail": "Spruce Rail",
   "block.vsas.rails.warped_rail": "Warped Rail",
 
@@ -478,6 +525,7 @@
   "block.vsas.rails.dark_oak_activator_rail": "Dark Oak Activator Rail",
   "block.vsas.rails.jungle_activator_rail": "Jungle Activator Rail",
   "block.vsas.rails.oak_activator_rail": "Oak Activator Rail",
+  "block.vsas.rails.mangrove_activator_rail": "Mangrove Activator Rail",
   "block.vsas.rails.spruce_activator_rail": "Spruce Activator Rail",
   "block.vsas.rails.warped_activator_rail": "Warped Activator Rail",
   
@@ -488,6 +536,7 @@
   "block.vsas.rails.dark_oak_powered_rail": "Dark Oak Powered Rail",
   "block.vsas.rails.jungle_powered_rail": "Jungle Powered Rail",
   "block.vsas.rails.oak_powered_rail": "Oak Powered Rail",
+  "block.vsas.rails.mangrove_powered_rail": "Mangrove Powered Rail",
   "block.vsas.rails.spruce_powered_rail": "Spruce Powered Rail",
   "block.vsas.rails.warped_powered_rail": "Warped Powered Rail",
 
@@ -498,6 +547,7 @@
   "block.vsas.rails.dark_oak_detector_rail": "Dark Oak Detector Rail",
   "block.vsas.rails.jungle_detector_rail": "Jungle Detector Rail",
   "block.vsas.rails.oak_detector_rail": "Oak Detector Rail",
+  "block.vsas.rails.mangrove_detector_rail": "Mangrove Detector Rail",
   "block.vsas.rails.spruce_detector_rail": "Spruce Detector Rail",
   "block.vsas.rails.warped_detector_rail": "Warped Detector Rail"
 }

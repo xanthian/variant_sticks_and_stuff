@@ -17,6 +17,7 @@ public class Axes {
     public static final Item DARK_OAK_WOODEN_AXE = registerItem("axes/dark_oak_wooden_axe", new VariantAxeItem(VariantMaterials.DARK_OAK_PLANK,6F,-3.2F),true);
     public static final Item JUNGLE_WOODEN_AXE = registerItem("axes/jungle_wooden_axe", new VariantAxeItem(VariantMaterials.JUNGLE_PLANK,6F,-3.2F),true);
     public static final Item OAK_WOODEN_AXE = registerItem("axes/oak_wooden_axe", new VariantAxeItem(VariantMaterials.OAK_PLANK,6F,-3.2F),true);
+    public static final Item MANGROVE_WOODEN_AXE = registerItem("axes/mangrove_wooden_axe", new VariantAxeItem(VariantMaterials.MANGROVE_PLANK,6F,-3.2F),true);
     public static final Item SPRUCE_WOODEN_AXE = registerItem("axes/spruce_wooden_axe", new VariantAxeItem(VariantMaterials.SPRUCE_PLANK,6F,-3.2F),true);
     public static final Item WARPED_WOODEN_AXE = registerItem("axes/warped_wooden_axe", new VariantAxeItem(VariantMaterials.WARPED_PLANK,6F,-3.2F),false);
     
@@ -27,6 +28,7 @@ public class Axes {
     public static final Item DARK_OAK_STONE_AXE = registerItem("axes/dark_oak_stone_axe", new VariantAxeItem(ToolMaterials.STONE,7F,-3.2F),false);
     public static final Item JUNGLE_STONE_AXE = registerItem("axes/jungle_stone_axe", new VariantAxeItem(ToolMaterials.STONE,7F,-3.2F),false);
     public static final Item OAK_STONE_AXE = registerItem("axes/oak_stone_axe", new VariantAxeItem(ToolMaterials.STONE,7F,-3.2F),false);
+    public static final Item MANGROVE_STONE_AXE = registerItem("axes/mangrove_stone_axe", new VariantAxeItem(ToolMaterials.STONE,7F,-3.2F),false);
     public static final Item SPRUCE_STONE_AXE = registerItem("axes/spruce_stone_axe", new VariantAxeItem(ToolMaterials.STONE,7F,-3.2F),false);
     public static final Item WARPED_STONE_AXE = registerItem("axes/warped_stone_axe", new VariantAxeItem(ToolMaterials.STONE,7F,-3.2F),false);
 
@@ -37,6 +39,7 @@ public class Axes {
     public static final Item DARK_OAK_IRON_AXE = registerItem("axes/dark_oak_iron_axe", new VariantAxeItem(ToolMaterials.IRON,6F,-3.1F),false);
     public static final Item JUNGLE_IRON_AXE = registerItem("axes/jungle_iron_axe", new VariantAxeItem(ToolMaterials.IRON,6F,-3.1F),false);
     public static final Item OAK_IRON_AXE = registerItem("axes/oak_iron_axe", new VariantAxeItem(ToolMaterials.IRON,6F,-3.1F),false);
+    public static final Item MANGROVE_IRON_AXE = registerItem("axes/mangrove_iron_axe", new VariantAxeItem(ToolMaterials.IRON,6F,-3.1F),false);
     public static final Item SPRUCE_IRON_AXE = registerItem("axes/spruce_iron_axe", new VariantAxeItem(ToolMaterials.IRON,6F,-3.1F),false);
     public static final Item WARPED_IRON_AXE = registerItem("axes/warped_iron_axe", new VariantAxeItem(ToolMaterials.IRON,6F,-3.1F),false);
     // Golden
@@ -46,6 +49,7 @@ public class Axes {
     public static final Item DARK_OAK_GOLDEN_AXE = registerItem("axes/dark_oak_golden_axe", new VariantAxeItem(ToolMaterials.GOLD,6F,-3F),false);
     public static final Item JUNGLE_GOLDEN_AXE = registerItem("axes/jungle_golden_axe", new VariantAxeItem(ToolMaterials.GOLD,6F,-3F),false);
     public static final Item OAK_GOLDEN_AXE = registerItem("axes/oak_golden_axe", new VariantAxeItem(ToolMaterials.GOLD,6F,-3F),false);
+    public static final Item MANGROVE_GOLDEN_AXE = registerItem("axes/mangrove_golden_axe", new VariantAxeItem(ToolMaterials.GOLD,6F,-3F),false);
     public static final Item SPRUCE_GOLDEN_AXE = registerItem("axes/spruce_golden_axe", new VariantAxeItem(ToolMaterials.GOLD,6F,-3F),false);
     public static final Item WARPED_GOLDEN_AXE = registerItem("axes/warped_golden_axe", new VariantAxeItem(ToolMaterials.GOLD,6F,-3F),false);
     // Diamond
@@ -55,6 +59,7 @@ public class Axes {
     public static final Item DARK_OAK_DIAMOND_AXE = registerItem("axes/dark_oak_diamond_axe", new VariantAxeItem(ToolMaterials.DIAMOND,5F,-3F),false);
     public static final Item JUNGLE_DIAMOND_AXE = registerItem("axes/jungle_diamond_axe", new VariantAxeItem(ToolMaterials.DIAMOND,5F,-3F),false);
     public static final Item OAK_DIAMOND_AXE = registerItem("axes/oak_diamond_axe", new VariantAxeItem(ToolMaterials.DIAMOND,5F,-3F),false);
+    public static final Item MANGROVE_DIAMOND_AXE = registerItem("axes/mangrove_diamond_axe", new VariantAxeItem(ToolMaterials.DIAMOND,5F,-3F),false);
     public static final Item SPRUCE_DIAMOND_AXE = registerItem("axes/spruce_diamond_axe", new VariantAxeItem(ToolMaterials.DIAMOND,5F,-3F),false);
     public static final Item WARPED_DIAMOND_AXE = registerItem("axes/warped_diamond_axe", new VariantAxeItem(ToolMaterials.DIAMOND,5F,-3F),false);
     // Netherite
@@ -64,6 +69,7 @@ public class Axes {
     public static final Item DARK_OAK_NETHERITE_AXE = registerItem("axes/dark_oak_netherite_axe", new VariantAxeItem(ToolMaterials.NETHERITE,5F,-3F),false);
     public static final Item JUNGLE_NETHERITE_AXE = registerItem("axes/jungle_netherite_axe", new VariantAxeItem(ToolMaterials.NETHERITE,5F,-3F),false);
     public static final Item OAK_NETHERITE_AXE = registerItem("axes/oak_netherite_axe", new VariantAxeItem(ToolMaterials.NETHERITE,5F,-3F),false);
+    public static final Item MANGROVE_NETHERITE_AXE = registerItem("axes/mangrove_netherite_axe", new VariantAxeItem(ToolMaterials.NETHERITE,5F,-3F),false);
     public static final Item SPRUCE_NETHERITE_AXE = registerItem("axes/spruce_netherite_axe", new VariantAxeItem(ToolMaterials.NETHERITE,5F,-3F),false);
     public static final Item WARPED_NETHERITE_AXE = registerItem("axes/warped_netherite_axe", new VariantAxeItem(ToolMaterials.NETHERITE,5F,-3F),false);
     

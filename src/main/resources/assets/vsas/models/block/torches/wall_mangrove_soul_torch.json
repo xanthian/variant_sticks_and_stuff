@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_torch_wall",
+  "textures": {
+    "torch": "vsas:block/torches/mangrove_soul_torch"
+  }
+}

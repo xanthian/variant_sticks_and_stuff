@@ -27,6 +27,8 @@ public class RedstoneTorches {
     public static final VariantWallRedstoneTorchBlock WALL_JUNGLE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
     public static final VariantRedstoneTorchBlock OAK_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
     public static final VariantWallRedstoneTorchBlock WALL_OAK_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    public static final VariantRedstoneTorchBlock MANGROVE_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
+    public static final VariantWallRedstoneTorchBlock WALL_MANGROVE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
     public static final VariantRedstoneTorchBlock SPRUCE_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
     public static final VariantWallRedstoneTorchBlock WALL_SPRUCE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
     public static final VariantRedstoneTorchBlock WARPED_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
@@ -39,6 +41,7 @@ public class RedstoneTorches {
         initTorchBlock("torches/dark_oak_redstone_torch", DARK_OAK_REDSTONE_TORCH,"torches/wall_dark_oak_redstone_torch", WALL_DARK_OAK_REDSTONE_TORCH);
         initTorchBlock("torches/jungle_redstone_torch", JUNGLE_REDSTONE_TORCH,"torches/wall_jungle_redstone_torch", WALL_JUNGLE_REDSTONE_TORCH);
         initTorchBlock("torches/oak_redstone_torch", OAK_REDSTONE_TORCH,"torches/wall_oak_redstone_torch", WALL_OAK_REDSTONE_TORCH);
+        initTorchBlock("torches/mangrove_redstone_torch", MANGROVE_REDSTONE_TORCH,"torches/wall_mangrove_redstone_torch", WALL_MANGROVE_REDSTONE_TORCH);
         initTorchBlock("torches/spruce_redstone_torch", SPRUCE_REDSTONE_TORCH,"torches/wall_spruce_redstone_torch", WALL_SPRUCE_REDSTONE_TORCH);
         initTorchBlock("torches/warped_redstone_torch", WARPED_REDSTONE_TORCH,"torches/wall_warped_redstone_torch", WALL_WARPED_REDSTONE_TORCH);
     }
