@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vwat:item/hoes/diamond_hoe",
+    "layer1": "vwat:item/pickaxes/birch_shaft"
+  }
+}

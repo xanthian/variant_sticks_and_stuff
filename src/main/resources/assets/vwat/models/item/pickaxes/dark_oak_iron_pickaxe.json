@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vwat:item/pickaxes/iron_pickaxe",
+    "layer1": "vwat:item/pickaxes/dark_oak_shaft"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vwat:item/shovels/stone_shovel",
+    "layer1": "vwat:item/shovels/acacia_handle"
+  }
+}

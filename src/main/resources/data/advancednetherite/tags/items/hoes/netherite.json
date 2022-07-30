@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vsas:hoes/acacia_netherite_hoe",
-    "vsas:hoes/birch_netherite_hoe",
-    "vsas:hoes/crimson_netherite_hoe",
-    "vsas:hoes/dark_oak_netherite_hoe",
-    "vsas:hoes/jungle_netherite_hoe",
-    "vsas:hoes/oak_netherite_hoe",
-    "vsas:hoes/mangrove_netherite_hoe",
-    "vsas:hoes/spruce_netherite_hoe",
-    "vsas:hoes/warped_netherite_hoe"
+    "vwat:hoes/acacia_netherite_hoe",
+    "vwat:hoes/birch_netherite_hoe",
+    "vwat:hoes/crimson_netherite_hoe",
+    "vwat:hoes/dark_oak_netherite_hoe",
+    "vwat:hoes/jungle_netherite_hoe",
+    "vwat:hoes/oak_netherite_hoe",
+    "vwat:hoes/mangrove_netherite_hoe",
+    "vwat:hoes/spruce_netherite_hoe",
+    "vwat:hoes/warped_netherite_hoe"
   ]
 }

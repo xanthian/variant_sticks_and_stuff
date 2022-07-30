@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vwat:item/sticks/mangrove_stick"
+  }
+}

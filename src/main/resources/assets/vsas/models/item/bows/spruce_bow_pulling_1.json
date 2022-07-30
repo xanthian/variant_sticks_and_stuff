@@ -1,6 +1,0 @@
-{
-    "parent": "vsas:item/bows/spruce_bow",
-    "textures": {
-        "layer0": "vsas:item/bows/spruce_bow_pulling_1"
-    }
-}

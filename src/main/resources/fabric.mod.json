@@ -1,20 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "vsas",
+  "id": "vwat",
   "version": "${version}",
 
-  "name": "Variant Sticks and Stuff",
-  "description": "Variant Sticks to make variant items",
+  "name": "Variant Weapons & Tools",
+  "description": "Variant Weapons and Tool from vanilla wood types",
   "authors": ["Xanthian"],
   "license": "CC0-1.0",
-  "icon": "assets/vsas/icon.png",
+  "icon": "assets/vwat/icon.png",
 
   "environment": "*",
   "entrypoints": {
-    "main": ["net.xanthian.vsas.Init"],
-    "client": ["net.xanthian.vsas.ClientInit"]
+    "main": ["net.xanthian.vwat.Init"]
   },
-  "mixins": ["vsas.mixins.json"],
+  "mixins": ["vwat.mixins.json"],
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",

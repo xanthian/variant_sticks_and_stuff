@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "vsas:item/itemframes/mangrove_item_frame"
-  }
-}

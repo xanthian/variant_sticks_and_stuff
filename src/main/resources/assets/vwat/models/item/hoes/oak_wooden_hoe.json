@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vwat:item/hoes/oak_wooden_hoe",
+    "layer1": "vwat:item/pickaxes/oak_shaft"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vwat:item/axes/netherite_axe",
+    "layer1": "vwat:item/axes/warped_shaft"
+  }
+}

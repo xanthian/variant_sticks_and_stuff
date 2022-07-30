@@ -1,6 +1,0 @@
-{
-    "parent": "vsas:item/crossbows/acacia_crossbow",
-    "textures": {
-        "layer0": "vsas:item/crossbows/acacia_crossbow_arrow"
-    }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "vsas:item/itemframes/birch_item_frame"
-  }
-}

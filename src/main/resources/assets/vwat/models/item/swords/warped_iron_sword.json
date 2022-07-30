@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "vwat:item/swords/iron_sword",
+    "layer1": "vwat:item/swords/warped_hilt"
+  }
+}

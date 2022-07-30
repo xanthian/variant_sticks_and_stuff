@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_rail_raised_ne",
-  "textures": {
-    "rail": "vsas:block/rails/spruce_activator_rail_on"
-  }
-}

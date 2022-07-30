@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "map=false": { "model": "vsas:block/itemframes/acacia_item_frame" },
-        "map=true":  { "model": "vsas:block/itemframes/acacia_item_frame_map" }
-    }
-}

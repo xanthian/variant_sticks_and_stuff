@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/rail_flat",
-  "textures": {
-    "rail": "vsas:block/rails/dark_oak_activator_rail_on"
-  }
-}

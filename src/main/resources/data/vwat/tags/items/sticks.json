@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "vwat:sticks/acacia_stick",
+    "vwat:sticks/birch_stick",
+    "vwat:sticks/crimson_stick",
+    "vwat:sticks/dark_oak_stick",
+    "vwat:sticks/jungle_stick",
+    "vwat:sticks/oak_stick",
+    "vwat:sticks/mangrove_stick",
+    "vwat:sticks/spruce_stick",
+    "vwat:sticks/warped_stick"
+  ]
+}

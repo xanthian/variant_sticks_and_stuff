@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "vsas:item/hoes/birch_wooden_hoe",
-    "layer1": "vsas:item/pickaxes/birch_shaft"
-  }
-}
