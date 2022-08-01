@@ -1,46 +1,137 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:not",
+      "value": {
+        "condition": "fabric:all_mods_loaded",
+        "values": [
+          "vsas"
+        ]
+      }
+    }
+  ],
   "type": "minecraft:blasting",
   "ingredient": [
-    {"item": "vwat:swords/acacia_golden_sword"},
-    {"item": "vwat:swords/birch_golden_sword"},
-    {"item": "vwat:swords/crimson_golden_sword"},
-    {"item": "vwat:swords/dark_oak_golden_sword"},
-    {"item": "vwat:swords/jungle_golden_sword"},
-    {"item": "vwat:swords/oak_golden_sword"},
-    {"item": "vwat:swords/spruce_golden_sword"},
-    {"item": "vwat:swords/warped_golden_sword"},
-    {"item": "vwat:axes/acacia_golden_axe"},
-    {"item": "vwat:axes/birch_golden_axe"},
-    {"item": "vwat:axes/crimson_golden_axe"},
-    {"item": "vwat:axes/dark_oak_golden_axe"},
-    {"item": "vwat:axes/jungle_golden_axe"},
-    {"item": "vwat:axes/oak_golden_axe"},
-    {"item": "vwat:axes/spruce_golden_axe"},
-    {"item": "vwat:axes/warped_golden_axe"},
-    {"item": "vwat:hoes/acacia_golden_hoe"},
-    {"item": "vwat:hoes/birch_golden_hoe"},
-    {"item": "vwat:hoes/crimson_golden_hoe"},
-    {"item": "vwat:hoes/dark_oak_golden_hoe"},
-    {"item": "vwat:hoes/jungle_golden_hoe"},
-    {"item": "vwat:hoes/oak_golden_hoe"},
-    {"item": "vwat:hoes/spruce_golden_hoe"},
-    {"item": "vwat:hoes/warped_golden_hoe"},
-    {"item": "vwat:pickaxes/acacia_golden_pickaxe"},
-    {"item": "vwat:pickaxes/birch_golden_pickaxe"},
-    {"item": "vwat:pickaxes/crimson_golden_pickaxe"},
-    {"item": "vwat:pickaxes/dark_oak_golden_pickaxe"},
-    {"item": "vwat:pickaxes/jungle_golden_pickaxe"},
-    {"item": "vwat:pickaxes/oak_golden_pickaxe"},
-    {"item": "vwat:pickaxes/spruce_golden_pickaxe"},
-    {"item": "vwat:pickaxes/warped_golden_pickaxe"},
-    {"item": "vwat:shovels/acacia_golden_shovel"},
-    {"item": "vwat:shovels/birch_golden_shovel"},
-    {"item": "vwat:shovels/crimson_golden_shovel"},
-    {"item": "vwat:shovels/dark_oak_golden_shovel"},
-    {"item": "vwat:shovels/jungle_golden_shovel"},
-    {"item": "vwat:shovels/oak_golden_shovel"},
-    {"item": "vwat:shovels/spruce_golden_shovel"},
-    {"item": "vwat:shovels/warped_golden_shovel"}
+    {
+      "item": "vwat:swords/acacia_golden_sword"
+    },
+    {
+      "item": "vwat:swords/birch_golden_sword"
+    },
+    {
+      "item": "vwat:swords/crimson_golden_sword"
+    },
+    {
+      "item": "vwat:swords/dark_oak_golden_sword"
+    },
+    {
+      "item": "vwat:swords/jungle_golden_sword"
+    },
+    {
+      "item": "vwat:swords/oak_golden_sword"
+    },
+    {
+      "item": "vwat:swords/spruce_golden_sword"
+    },
+    {
+      "item": "vwat:swords/warped_golden_sword"
+    },
+    {
+      "item": "vwat:axes/acacia_golden_axe"
+    },
+    {
+      "item": "vwat:axes/birch_golden_axe"
+    },
+    {
+      "item": "vwat:axes/crimson_golden_axe"
+    },
+    {
+      "item": "vwat:axes/dark_oak_golden_axe"
+    },
+    {
+      "item": "vwat:axes/jungle_golden_axe"
+    },
+    {
+      "item": "vwat:axes/oak_golden_axe"
+    },
+    {
+      "item": "vwat:axes/spruce_golden_axe"
+    },
+    {
+      "item": "vwat:axes/warped_golden_axe"
+    },
+    {
+      "item": "vwat:hoes/acacia_golden_hoe"
+    },
+    {
+      "item": "vwat:hoes/birch_golden_hoe"
+    },
+    {
+      "item": "vwat:hoes/crimson_golden_hoe"
+    },
+    {
+      "item": "vwat:hoes/dark_oak_golden_hoe"
+    },
+    {
+      "item": "vwat:hoes/jungle_golden_hoe"
+    },
+    {
+      "item": "vwat:hoes/oak_golden_hoe"
+    },
+    {
+      "item": "vwat:hoes/spruce_golden_hoe"
+    },
+    {
+      "item": "vwat:hoes/warped_golden_hoe"
+    },
+    {
+      "item": "vwat:pickaxes/acacia_golden_pickaxe"
+    },
+    {
+      "item": "vwat:pickaxes/birch_golden_pickaxe"
+    },
+    {
+      "item": "vwat:pickaxes/crimson_golden_pickaxe"
+    },
+    {
+      "item": "vwat:pickaxes/dark_oak_golden_pickaxe"
+    },
+    {
+      "item": "vwat:pickaxes/jungle_golden_pickaxe"
+    },
+    {
+      "item": "vwat:pickaxes/oak_golden_pickaxe"
+    },
+    {
+      "item": "vwat:pickaxes/spruce_golden_pickaxe"
+    },
+    {
+      "item": "vwat:pickaxes/warped_golden_pickaxe"
+    },
+    {
+      "item": "vwat:shovels/acacia_golden_shovel"
+    },
+    {
+      "item": "vwat:shovels/birch_golden_shovel"
+    },
+    {
+      "item": "vwat:shovels/crimson_golden_shovel"
+    },
+    {
+      "item": "vwat:shovels/dark_oak_golden_shovel"
+    },
+    {
+      "item": "vwat:shovels/jungle_golden_shovel"
+    },
+    {
+      "item": "vwat:shovels/oak_golden_shovel"
+    },
+    {
+      "item": "vwat:shovels/spruce_golden_shovel"
+    },
+    {
+      "item": "vwat:shovels/warped_golden_shovel"
+    }
   ],
   "result": "minecraft:gold_nugget",
   "experience": 0.1,

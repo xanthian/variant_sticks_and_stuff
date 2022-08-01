@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vwat:swords/acacia_netherite_sword",
-    "vwat:swords/birch_netherite_sword",
-    "vwat:swords/crimson_netherite_sword",
-    "vwat:swords/dark_oak_netherite_sword",
-    "vwat:swords/jungle_netherite_sword",
-    "vwat:swords/oak_netherite_sword",
-    "vwat:swords/mangrove_netherite_sword",
-    "vwat:swords/spruce_netherite_sword",
-    "vwat:swords/warped_netherite_sword"
+        { "id": "vwat:swords/acacia_netherite_sword",      "required": false},
+        { "id": "vwat:swords/birch_netherite_sword",      "required": false},
+        { "id": "vwat:swords/crimson_netherite_sword",      "required": false},
+        { "id": "vwat:swords/dark_oak_netherite_sword",      "required": false},
+        { "id": "vwat:swords/jungle_netherite_sword",      "required": false},
+        { "id": "vwat:swords/oak_netherite_sword",      "required": false},
+        { "id": "vwat:swords/mangrove_netherite_sword",      "required": false},
+        { "id": "vwat:swords/spruce_netherite_sword",      "required": false},
+        { "id": "vwat:swords/warped_netherite_sword",      "required": false}
   ]
 }

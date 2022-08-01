@@ -1,4 +1,15 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:not",
+      "value": {
+        "condition": "fabric:all_mods_loaded",
+        "values": [
+          "vsas"
+        ]
+      }
+    }
+  ],
   "type": "minecraft:smelting",
   "ingredient": [
     {"item": "vwat:swords/acacia_golden_sword"},
@@ -45,4 +56,4 @@
   "result": "minecraft:gold_nugget",
   "experience": 0.1,
   "cookingtime": 200
-}
+    }

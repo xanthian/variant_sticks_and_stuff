@@ -2,6 +2,7 @@ package net.xanthian.vwat;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.util.Identifier;
 import net.xanthian.vwat.items.*;
 import net.xanthian.vwat.util.LootTableModifiers;
@@ -37,12 +38,17 @@ public class Init implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		Sticks.registerStickItems();
-		Axes.registerAxeItems();
-		Hoes.registerHoeItems();
-		Pickaxes.registerPickaxeItems();
-		Shovels.registerShovelItems();
-		Swords.registerSwordItems();
-		LootTableModifiers.modifyLootTables();
+		if (!FabricLoader.getInstance().isModLoaded("vsas")) {
+			Sticks.registerStickItems();
+			Axes.registerAxeItems();
+			Hoes.registerHoeItems();
+			Pickaxes.registerPickaxeItems();
+			Shovels.registerShovelItems();
+			Swords.registerSwordItems();
+			LootTableModifiers.modifyLootTables();
+		}
+		if (FabricLoader.getInstance().isModLoaded("vsas")) {
+			LOGGER.info("Variant Sticks and Stuff installed, you do not need this mod!!");
+		}
 	}
 }
