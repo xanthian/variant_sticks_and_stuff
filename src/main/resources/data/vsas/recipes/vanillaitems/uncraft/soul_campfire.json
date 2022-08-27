@@ -7,5 +7,12 @@
   ],
   "result": {
     "item": "minecraft:soul_campfire"
-  }
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:soul_campfire"]
+    }
+  ]
 }

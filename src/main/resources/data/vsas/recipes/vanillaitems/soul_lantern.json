@@ -15,5 +15,12 @@
   },
   "result": {
     "item": "minecraft:soul_lantern"
-  }
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:soul_torches"]
+    }
+  ]
 }

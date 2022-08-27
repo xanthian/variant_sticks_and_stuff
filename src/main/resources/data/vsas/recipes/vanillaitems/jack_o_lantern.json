@@ -14,5 +14,12 @@
   },
   "result": {
     "item": "minecraft:jack_o_lantern"
-  }
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:torches"]
+    }
+  ]
 }

@@ -1,4 +1,7 @@
 {
   "replace": false,
-  "values": ["vsas:ladders/warped_ladder", "vsas:ladders/crimson_ladder"]
+  "values": [
+    {"id": "vsas:ladders/warped_ladder", "required": false},
+    {"id": "vsas:ladders/crimson_ladder", "required": false}
+  ]
 }

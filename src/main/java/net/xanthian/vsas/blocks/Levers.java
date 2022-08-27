@@ -10,37 +10,26 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import net.xanthian.vsas.Group;
 import net.xanthian.vsas.Init;
 
     public class Levers {
 
-        public static final VariantLeverBlock ACACIA_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock BIRCH_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock CRIMSON_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock DARK_OAK_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock JUNGLE_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock OAK_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock MANGROVE_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock SPRUCE_LEVER = new VariantLeverBlock();
-        public static final VariantLeverBlock WARPED_LEVER = new VariantLeverBlock();
-
         public static void registerLevers() {
-            registerLeverBlock("levers/acacia_lever", ACACIA_LEVER);
-            registerLeverBlock("levers/birch_lever", BIRCH_LEVER);
-            registerLeverBlock("levers/crimson_lever", CRIMSON_LEVER);
-            registerLeverBlock("levers/dark_oak_lever", DARK_OAK_LEVER);
-            registerLeverBlock("levers/jungle_lever", JUNGLE_LEVER);
-            registerLeverBlock("levers/oak_lever", OAK_LEVER);
-            registerLeverBlock("levers/mangrove_lever", MANGROVE_LEVER);
-            registerLeverBlock("levers/spruce_lever", SPRUCE_LEVER);
-            registerLeverBlock("levers/warped_lever", WARPED_LEVER);
+            VariantLeverBlock ACACIA_LEVER = new VariantLeverBlock();registerLeverBlock("levers/acacia_lever", ACACIA_LEVER);
+            VariantLeverBlock BIRCH_LEVER = new VariantLeverBlock();registerLeverBlock("levers/birch_lever", BIRCH_LEVER);
+            VariantLeverBlock CRIMSON_LEVER = new VariantLeverBlock();registerLeverBlock("levers/crimson_lever", CRIMSON_LEVER);
+            VariantLeverBlock DARK_OAK_LEVER = new VariantLeverBlock();registerLeverBlock("levers/dark_oak_lever", DARK_OAK_LEVER);
+            VariantLeverBlock JUNGLE_LEVER = new VariantLeverBlock();registerLeverBlock("levers/jungle_lever", JUNGLE_LEVER);
+            VariantLeverBlock OAK_LEVER = new VariantLeverBlock();registerLeverBlock("levers/oak_lever", OAK_LEVER);
+            VariantLeverBlock MANGROVE_LEVER = new VariantLeverBlock();registerLeverBlock("levers/mangrove_lever", MANGROVE_LEVER);
+            VariantLeverBlock SPRUCE_LEVER = new VariantLeverBlock();registerLeverBlock("levers/spruce_lever", SPRUCE_LEVER);
+            VariantLeverBlock WARPED_LEVER = new VariantLeverBlock();registerLeverBlock("levers/warped_lever", WARPED_LEVER);
         }
 
         private static void registerLeverBlock(String Id, Block block) {
             Identifier identifier = new Identifier(Init.MOD_ID, Id.toLowerCase());
             Registry.register(Registry.BLOCK, identifier, block);
-            Registry.register(Registry.ITEM, identifier, new BlockItem(block, new FabricItemSettings().group(Group.STICKS_AND_STUFF)));
+            Registry.register(Registry.ITEM, identifier, new BlockItem(block, new FabricItemSettings().group(Init.STICKS_AND_STUFF)));
 
             if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT)
                 RegisterBlockRenderLayerMap(block);

@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vsas:grindstones/acacia_grindstone",
-    "vsas:grindstones/birch_grindstone",
-    "vsas:grindstones/crimson_grindstone",
-    "vsas:grindstones/dark_oak_grindstone",
-    "vsas:grindstones/jungle_grindstone",
-    "vsas:grindstones/oak_grindstone",
-    "vsas:grindstones/mangrove_grindstone",
-    "vsas:grindstones/spruce_grindstone",
-    "vsas:grindstones/warped_grindstone"
+    {"id": "vsas:grindstones/acacia_grindstone", "required": false},
+    {"id": "vsas:grindstones/birch_grindstone", "required": false},
+    {"id": "vsas:grindstones/crimson_grindstone", "required": false},
+    {"id": "vsas:grindstones/dark_oak_grindstone", "required": false},
+    {"id": "vsas:grindstones/jungle_grindstone", "required": false},
+    {"id": "vsas:grindstones/oak_grindstone", "required": false},
+    {"id": "vsas:grindstones/mangrove_grindstone", "required": false},
+    {"id": "vsas:grindstones/spruce_grindstone", "required": false},
+    {"id": "vsas:grindstones/warped_grindstone", "required": false}
   ]
 }

@@ -7,5 +7,12 @@
   ],
   "result": {
     "item": "minecraft:arrow"
-  }
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:arrows"]
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vsas:shovels/acacia_netherite_shovel",
-    "vsas:shovels/birch_netherite_shovel",
-    "vsas:shovels/crimson_netherite_shovel",
-    "vsas:shovels/dark_oak_netherite_shovel",
-    "vsas:shovels/jungle_netherite_shovel",
-    "vsas:shovels/oak_netherite_shovel",
-    "vsas:shovels/mangrove_netherite_shovel",
-    "vsas:shovels/spruce_netherite_shovel",
-    "vsas:shovels/warped_netherite_shovel"
+    {"id": "vsas:shovels/acacia_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/birch_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/crimson_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/dark_oak_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/jungle_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/oak_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/mangrove_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/spruce_netherite_shovel", "required": false},
+    {"id": "vsas:shovels/warped_netherite_shovel", "required": false}
   ]
 }

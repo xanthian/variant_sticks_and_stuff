@@ -31,6 +31,6 @@ public class MangroveArrowEntity
 
     @Override
     protected ItemStack asItemStack() {
-        return new ItemStack(Arrows.OAK_ARROW_ITEM);
+        return new ItemStack(Arrows.MANGROVE_ARROW_ITEM);
     }
 }

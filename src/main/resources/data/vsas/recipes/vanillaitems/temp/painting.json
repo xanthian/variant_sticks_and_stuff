@@ -15,5 +15,12 @@
   },
   "result": {
     "item": "minecraft:painting"
-  }
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:sticks"]
+    }
+  ]
 }

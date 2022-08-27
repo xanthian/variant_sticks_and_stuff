@@ -7,5 +7,12 @@
   ],
   "result": {
     "item": "minecraft:torch"
-  }
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:torches"]
+    }
+  ]
 }

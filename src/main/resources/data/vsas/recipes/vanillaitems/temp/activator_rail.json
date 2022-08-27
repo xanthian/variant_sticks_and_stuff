@@ -19,5 +19,12 @@
   "result": {
     "item": "minecraft:activator_rail",
     "count": 6
-  }
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:sticks"]
+    }
+  ]
 }

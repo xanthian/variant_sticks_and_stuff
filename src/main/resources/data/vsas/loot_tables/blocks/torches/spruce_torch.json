@@ -1,5 +1,12 @@
 {
-  "type": "minecraft:block",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "vsas:torches"
+      ]
+    }
+  ],
   "pools": [
     {
       "rolls": 1.0,

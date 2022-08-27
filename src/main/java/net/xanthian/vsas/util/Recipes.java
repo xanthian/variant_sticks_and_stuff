@@ -1218,6 +1218,7 @@ public class Recipes {
         return json;
     }
 
+    // Rails
     public static JsonObject createRailRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -1251,7 +1252,7 @@ public class Recipes {
         return json;
     }
 
-
+    // Activator Rail
     public static JsonObject createActivatorRailRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -1277,7 +1278,7 @@ public class Recipes {
         json.add("key", keyList);
         iKey = new JsonObject();
         iKey.addProperty("item", MOD_ID + ":torches/" + material + "_redstone_torch");
-        keyList.add("S", iKey);
+        keyList.add("R", iKey);
         iKey = new JsonObject();
         iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
@@ -1288,7 +1289,7 @@ public class Recipes {
         return json;
     }
 
-
+    // Detector Rail
     public static JsonObject createDetectorRailRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
@@ -1322,6 +1323,7 @@ public class Recipes {
         return json;
     }
 
+    // Powered Rail
     public static JsonObject createPoweredRailRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();

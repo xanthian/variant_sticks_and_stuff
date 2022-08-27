@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vsas:bows/acacia_bow",
-    "vsas:bows/birch_bow",
-    "vsas:bows/crimson_bow",
-    "vsas:bows/dark_oak_bow",
-    "vsas:bows/jungle_bow",
-    "vsas:bows/oak_bow",
-    "vsas:bows/mangrove_bow",
-    "vsas:bows/spruce_bow",
-    "vsas:bows/warped_bow"
+    {"id": "vsas:bows/acacia_bow", "required": false},
+    {"id": "vsas:bows/birch_bow", "required": false},
+    {"id": "vsas:bows/crimson_bow", "required": false},
+    {"id": "vsas:bows/dark_oak_bow", "required": false},
+    {"id": "vsas:bows/jungle_bow", "required": false},
+    {"id": "vsas:bows/oak_bow", "required": false},
+    {"id": "vsas:bows/mangrove_bow", "required": false},
+    {"id": "vsas:bows/spruce_bow", "required": false},
+    {"id": "vsas:bows/warped_bow", "required": false}
   ]
 }

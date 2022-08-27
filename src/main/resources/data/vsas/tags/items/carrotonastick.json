@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    {"id": "vsas:onastick/acacia_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/birch_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/crimson_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/dark_oak_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/jungle_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/oak_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/mangrove_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/spruce_carrot_on_a_stick", "required": false},
+    {"id": "vsas:onastick/warped_carrot_on_a_stick", "required": false}
+  ]
+}

@@ -1,4 +1,12 @@
 {
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": [
+        "vsas:soul_campfires"
+      ]
+    }
+  ],
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " S ",

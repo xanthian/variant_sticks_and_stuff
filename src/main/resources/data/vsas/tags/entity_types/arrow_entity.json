@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vsas:acacia_arrow",
-    "vsas:birch_arrow",
-    "vsas:crimson_arrow",
-    "vsas:dark_oak_arrow",
-    "vsas:jungle_arrow",
-    "vsas:oak_arrow",
-    "vsas:mangrove_arrow",
-    "vsas:spruce_arrow",
-    "vsas:warped_arrow"
+    {"id": "vsas:acacia_arrow", "required": false},
+    {"id": "vsas:birch_arrow", "required": false},
+    {"id": "vsas:crimson_arrow", "required": false},
+    {"id": "vsas:dark_oak_arrow", "required": false},
+    {"id": "vsas:jungle_arrow", "required": false},
+    {"id": "vsas:oak_arrow", "required": false},
+    {"id": "vsas:mangrove_arrow", "required": false},
+    {"id": "vsas:spruce_arrow", "required": false},
+    {"id": "vsas:warped_arrow", "required": false}
   ]
 }

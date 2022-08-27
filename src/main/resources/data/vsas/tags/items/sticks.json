@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vsas:sticks/acacia_stick",
-    "vsas:sticks/birch_stick",
-    "vsas:sticks/crimson_stick",
-    "vsas:sticks/dark_oak_stick",
-    "vsas:sticks/jungle_stick",
-    "vsas:sticks/oak_stick",
-    "vsas:sticks/mangrove_stick",
-    "vsas:sticks/spruce_stick",
-    "vsas:sticks/warped_stick"
+    {"id": "vsas:sticks/acacia_stick", "required": false},
+    {"id": "vsas:sticks/birch_stick", "required": false},
+    {"id": "vsas:sticks/crimson_stick", "required": false},
+    {"id": "vsas:sticks/dark_oak_stick", "required": false},
+    {"id": "vsas:sticks/jungle_stick", "required": false},
+    {"id": "vsas:sticks/oak_stick", "required": false},
+    {"id": "vsas:sticks/mangrove_stick", "required": false},
+    {"id": "vsas:sticks/spruce_stick", "required": false},
+    {"id": "vsas:sticks/warped_stick", "required": false}
   ]
 }

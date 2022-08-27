@@ -7,5 +7,12 @@
   ],
   "result": {
     "item": "minecraft:rail"
-  }
+  },
+
+"fabric:load_conditions": [
+{
+"condition": "fabric:item_tags_populated",
+"values": ["vsas:rails"]
+}
+]
 }

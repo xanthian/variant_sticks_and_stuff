@@ -18,5 +18,13 @@
   },
   "result": {
     "item": "minecraft:dispenser"
-  }
+  },
+
+
+"fabric:load_conditions": [
+{
+"condition": "fabric:item_tags_populated",
+"values": ["vsas:weapons"]
+}
+]
 }

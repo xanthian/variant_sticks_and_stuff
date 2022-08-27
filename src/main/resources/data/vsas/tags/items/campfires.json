@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "vsas:campfires/acacia_campfire",
-    "vsas:campfires/birch_campfire",
-    "vsas:campfires/crimson_campfire",
-    "vsas:campfires/dark_oak_campfire",
-    "vsas:campfires/jungle_campfire",
-    "vsas:campfires/oak_campfire",
-    "vsas:campfires/mangrove_campfire",
-    "vsas:campfires/spruce_campfire",
-    "vsas:campfires/warped_campfire"
-    ]
+    {"id": "vsas:campfires/acacia_campfire", "required": false},
+    {"id": "vsas:campfires/birch_campfire", "required": false},
+    {"id": "vsas:campfires/crimson_campfire", "required": false},
+    {"id": "vsas:campfires/dark_oak_campfire", "required": false},
+    {"id": "vsas:campfires/jungle_campfire", "required": false},
+    {"id": "vsas:campfires/oak_campfire", "required": false},
+    {"id": "vsas:campfires/mangrove_campfire", "required": false},
+    {"id": "vsas:campfires/spruce_campfire", "required": false},
+    {"id": "vsas:campfires/warped_campfire", "required": false}
+  ]
 }

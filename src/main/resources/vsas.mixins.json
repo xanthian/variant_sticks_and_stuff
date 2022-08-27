@@ -8,7 +8,6 @@
     "FishingBobberEntityMixin",
     "GrindstoneScreenHandlerMixin",
     "PigEntityMixin",
-    "PointOfInterestTypeMixin",
     "RecipeManagerMixin",
     "StriderEntityMixin"
   ],
