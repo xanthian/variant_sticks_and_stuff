@@ -6,7 +6,7 @@
   "name": "Variant Sticks and Stuff",
   "description": "Variant Sticks to make variant items",
   "authors": ["Xanthian"],
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/vsas/icon.png",
 
   "environment": "*",

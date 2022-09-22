@@ -10,14 +10,15 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
 
     private String configContents =
          """
-                ##########################################################################################
+                ##############################################################################################################################################
                 # All Blocks includes : Campfires, Grindstones, Ladders, Levers, Rails & Torches
                 # All Items includes : Arrows, Axes, Bows, Carrot on a Stick, Crossbows, Fishing Rods, Hoes, Fungus on a Stick, Pickaxes, Shovels, Sticks, Swords
                 # All Tools includes : Axes, Hoes, Pickaxes, Shovels
                 # All Weapons includes : Arrows, Bows, Crossbows, Swords
                 # (Probably best to leave the 'All' configs as true and just disable individual elements)
+                # Disabling recipes will remove the code based recipes for ALL items to allow you to make your own.
                 # (>'.')> ~ Enter true to enable or false to disable ~ <('.'<)
-                ##########################################################################################
+                ##############################################################################################################################################
                 """;
 
     public List<Pair> getConfigsList() {
@@ -61,6 +62,8 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
     public static boolean bows;
     public static boolean swords;
 
+    public static boolean recipes;
+
     public static void registerConfigs() {
         configs = new VsasConfig();
         createConfigs();
@@ -94,6 +97,8 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
         configs.addKeyValuePair(new Pair<>("bows", true));
         configs.addKeyValuePair(new Pair<>("swords", true));
 
+        configs.addKeyValuePair(new Pair<>("recipes", true));
+
     }
 
     private static void assignConfigs() {
@@ -119,5 +124,7 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
         bows = CONFIG.getOrDefault("bows", true);
         arrows = CONFIG.getOrDefault("arrows", true);
         swords = CONFIG.getOrDefault("swords", true);
+
+        recipes = CONFIG.getOrDefault("recipes", true);
     }
 }
