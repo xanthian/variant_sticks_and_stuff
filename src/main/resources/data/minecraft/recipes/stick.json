@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "vsas:sticks"
+    }
+  ],
+  "result": {
+    "item": "minecraft:stick"
+  },
+
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:item_tags_populated",
+      "values": ["vsas:sticks"]
+    }
+  ]
+}
