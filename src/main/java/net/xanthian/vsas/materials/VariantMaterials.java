@@ -3,7 +3,6 @@ package net.xanthian.vsas.materials;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Lazy;
 
 import java.util.function.Supplier;
 
@@ -25,7 +24,7 @@ public enum VariantMaterials implements ToolMaterial {
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Lazy<Ingredient> repairIngredient;
+    private final Supplier repairIngredient;
 
     private VariantMaterials(int miningLevel, int itemDurability,
                           float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
@@ -34,7 +33,7 @@ public enum VariantMaterials implements ToolMaterial {
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = new Lazy(repairIngredient);
+        this.repairIngredient = repairIngredient;
     }
     void Materials(int i, int i1, float v, float v1, int i2, Object o) {
     }

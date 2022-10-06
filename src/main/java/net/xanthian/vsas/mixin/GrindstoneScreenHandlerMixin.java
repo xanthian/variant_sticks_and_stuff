@@ -17,8 +17,10 @@ public abstract class GrindstoneScreenHandlerMixin {
     private ScreenHandlerContext context;
 
     /**
-     * @author Olivia
-     */
+     @author Olivia
+     @reason to fix stupid screen handler sht
+    **/
+
     @Overwrite
     public boolean canUse(PlayerEntity player) {
         return this.context.get((world, pos) -> world.getBlockState(pos).getBlock() instanceof GrindstoneBlock, true);

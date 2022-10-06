@@ -15,6 +15,7 @@
     "client": ["net.xanthian.vsas.ClientInit"]
   },
   "mixins": ["vsas.mixins.json"],
+  "accessWidener": "vsas.accesswidener",
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",

@@ -3,6 +3,7 @@ package net.xanthian.vsas;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.minecraft.block.Block;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -11,6 +12,7 @@ import net.xanthian.vsas.config.VsasConfig;
 import net.xanthian.vsas.entity.EntityInit;
 import net.xanthian.vsas.items.*;
 import net.xanthian.vsas.util.LootTableModifiers;
+import net.xanthian.vsas.util.ModPOITypes;
 import org.apache.commons.lang3.tuple.Pair;
 
 import org.slf4j.Logger;
@@ -117,5 +119,10 @@ public class Init implements ModInitializer {
 			}
 		}
 		EntityInit.init();
+		ModPOITypes.init();
+		for (Map.Entry<Identifier, Block> entry : Grindstones.MOD_GRINDSTONES.entrySet())
+		{
+			LOGGER.info(entry.getKey().toString() + " -> " + entry.getValue().getName().getString());
+		}
 	}
 }

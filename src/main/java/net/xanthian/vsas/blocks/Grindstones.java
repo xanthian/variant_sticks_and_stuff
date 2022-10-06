@@ -1,5 +1,6 @@
 package net.xanthian.vsas.blocks;
 
+import com.google.common.collect.Maps;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -12,7 +13,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.xanthian.vsas.Init;
 
+import java.util.Map;
+
 public class Grindstones {
+
+    public static Map<Identifier, Block> MOD_GRINDSTONES = Maps.newHashMap();
 
     public static void registerGrindstones() {
         VariantGrindstoneBlock ACACIA_GRINDSTONE = new VariantGrindstoneBlock();
@@ -39,11 +44,11 @@ public class Grindstones {
         Identifier identifier = new Identifier(Init.MOD_ID, Id.toLowerCase());
         Registry.register(Registry.BLOCK, identifier, block);
         Registry.register(Registry.ITEM, identifier, new BlockItem(block, new FabricItemSettings().group(Init.STICKS_AND_STUFF)));
+        MOD_GRINDSTONES.put(identifier, block);
 
         if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT)
             RegisterBlockRenderLayerMap(block);
     }
-
     @Environment(EnvType.CLIENT)
     private static void RegisterBlockRenderLayerMap(Block block) {
         BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
