@@ -1,6 +1,5 @@
 package net.xanthian.vsas.mixin;
 
-
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
 import net.minecraft.item.ItemStack;

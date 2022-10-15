@@ -11,7 +11,6 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.world.World;
 import net.xanthian.vsas.config.VsasConfig;
-import net.xanthian.vsas.items.OnAStick;
 import net.xanthian.vsas.items.VariantFungusOnAStickItem;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -19,7 +18,6 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import static net.xanthian.vsas.items.VariantCarrotOnAStickItem.PIG_FEEDER_INGREDIENT_TAG;
 import static net.xanthian.vsas.items.VariantFungusOnAStickItem.STRIDER_FEEDER_INGREDIENT_TAG;
 
 @Mixin(StriderEntity.class)

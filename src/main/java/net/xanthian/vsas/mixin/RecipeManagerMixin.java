@@ -3,11 +3,15 @@ package net.xanthian.vsas.mixin;
 import com.google.gson.JsonElement;
 
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.inventory.Inventory;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeManager;
+import net.minecraft.recipe.RecipeType;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 
+import net.minecraft.world.World;
 import net.xanthian.vsas.Init;
 import net.xanthian.vsas.config.VsasConfig;
 import net.xanthian.vsas.util.Recipes;
@@ -15,6 +19,8 @@ import net.xanthian.vsas.util.Recipes;
 import org.apache.commons.lang3.tuple.Pair;
 
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -126,5 +132,27 @@ public abstract class RecipeManagerMixin {
                 }
             }
         }
+    }
+    @Shadow
+    private <C extends Inventory, T extends Recipe<C>> Map<Identifier, Recipe<C>> getAllOfType(RecipeType<T> type) {
+        return null;
+    }
+
+    /**
+     * @author Paulevs - Amended by Grend (mostly) & Xanthian (a bit)
+     * @reason mc janky crafting manager recipe ordering
+     **/
+    @Overwrite
+    public <C extends Inventory, T extends Recipe<C>> Optional<T> getFirstMatch(RecipeType<T> type, C inventory, World world) {
+        Collection<Recipe<C>> values = getAllOfType(type).values();
+
+        List<Recipe<C>> recipes = new ArrayList<>(values);
+
+        recipes.sort((first, second) -> {
+            boolean isMine = first.getId().getNamespace().equals(Init.MOD_ID);
+            return (isMine ^ second.getId().getNamespace().equals(Init.MOD_ID)) ? (isMine ? -1 : 1) : 0;
+        });
+
+        return (Optional<T>) recipes.stream().filter(recipe -> recipe.matches(inventory, world)).findFirst();
     }
 }

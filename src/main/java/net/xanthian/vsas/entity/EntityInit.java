@@ -10,7 +10,6 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.xanthian.vsas.Init;
-import net.xanthian.vsas.blocks.Campfires;
 import net.xanthian.vsas.entity.arrows.*;
 
 public class EntityInit {
