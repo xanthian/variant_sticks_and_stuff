@@ -183,10 +183,8 @@ public class CampFireBlockEntity extends BlockEntity implements Clearable {
             this.inventoryChanged();
         }
     }
-
     @Override
     public void clear() {
         this.inventory.clear();
     }
-
 }

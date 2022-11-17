@@ -1,37 +1,25 @@
 package net.xanthian.vsas.mixin;
 
+import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.vehicle.AbstractMinecartEntity;
-import net.minecraft.world.World;
 import net.xanthian.vsas.blocks.VariantActivatorRailBlock;
 import net.xanthian.vsas.blocks.VariantPoweredRailBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(AbstractMinecartEntity.class)
-public abstract class AbstractMinecartEntityMixin extends Entity {
+public abstract class AbstractMinecartEntityMixin  {
 
-    public AbstractMinecartEntityMixin(EntityType<?> type, World world) {
-        super(type, world);
+    @WrapOperation(method = "moveOnRail", at = @At(value = "INVOKE", target = "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z"))
+    boolean vsas$minecartWillWorkOnCustomPoweredRails(BlockState state, Block block, Operation<Boolean> original) {
+        return original.call(state, block) || state.getBlock() instanceof VariantPoweredRailBlock;
+    }
 
-    }
-    @Redirect(method = "moveOnRail", at = @At(value = "INVOKE", target = "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z"))
-    boolean redirectIsOf(BlockState state, Block block) {
-        if (block == Blocks.POWERED_RAIL) {
-            return state.isOf(block) || state.getBlock() instanceof VariantPoweredRailBlock;
-        }
-            return state.isOf(block);
-    }
-    @Redirect(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z"))
-    boolean redirectIsOf2(BlockState state, Block block) {
-        if (block == Blocks.ACTIVATOR_RAIL) {
-            return state.isOf(block) || state.getBlock() instanceof VariantActivatorRailBlock;
-        }
-        return state.isOf(block);
+    @WrapOperation(method = "tick", at = @At(value = "INVOKE", target = "Lnet/minecraft/block/BlockState;isOf(Lnet/minecraft/block/Block;)Z"))
+    boolean vsas$customActivatorRailTick(BlockState state, Block block, Operation<Boolean> original) {
+        return original.call(state, block) || state.getBlock() instanceof VariantActivatorRailBlock;
     }
 }

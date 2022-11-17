@@ -15,15 +15,32 @@ import net.xanthian.vsas.Init;
     public class Levers {
 
         public static void registerLevers() {
-            VariantLeverBlock ACACIA_LEVER = new VariantLeverBlock();registerLeverBlock("levers/acacia_lever", ACACIA_LEVER);
-            VariantLeverBlock BIRCH_LEVER = new VariantLeverBlock();registerLeverBlock("levers/birch_lever", BIRCH_LEVER);
-            VariantLeverBlock CRIMSON_LEVER = new VariantLeverBlock();registerLeverBlock("levers/crimson_lever", CRIMSON_LEVER);
-            VariantLeverBlock DARK_OAK_LEVER = new VariantLeverBlock();registerLeverBlock("levers/dark_oak_lever", DARK_OAK_LEVER);
-            VariantLeverBlock JUNGLE_LEVER = new VariantLeverBlock();registerLeverBlock("levers/jungle_lever", JUNGLE_LEVER);
-            VariantLeverBlock OAK_LEVER = new VariantLeverBlock();registerLeverBlock("levers/oak_lever", OAK_LEVER);
-            VariantLeverBlock MANGROVE_LEVER = new VariantLeverBlock();registerLeverBlock("levers/mangrove_lever", MANGROVE_LEVER);
-            VariantLeverBlock SPRUCE_LEVER = new VariantLeverBlock();registerLeverBlock("levers/spruce_lever", SPRUCE_LEVER);
-            VariantLeverBlock WARPED_LEVER = new VariantLeverBlock();registerLeverBlock("levers/warped_lever", WARPED_LEVER);
+            VariantLeverBlock ACACIA_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/acacia_lever", ACACIA_LEVER);
+
+            VariantLeverBlock BIRCH_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/birch_lever", BIRCH_LEVER);
+
+            VariantLeverBlock CRIMSON_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/crimson_lever", CRIMSON_LEVER);
+
+            VariantLeverBlock DARK_OAK_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/dark_oak_lever", DARK_OAK_LEVER);
+
+            VariantLeverBlock JUNGLE_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/jungle_lever", JUNGLE_LEVER);
+
+            VariantLeverBlock OAK_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/oak_lever", OAK_LEVER);
+
+            VariantLeverBlock MANGROVE_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/mangrove_lever", MANGROVE_LEVER);
+
+            VariantLeverBlock SPRUCE_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/spruce_lever", SPRUCE_LEVER);
+
+            VariantLeverBlock WARPED_LEVER = new VariantLeverBlock();
+            registerLeverBlock("levers/warped_lever", WARPED_LEVER);
         }
 
         private static void registerLeverBlock(String Id, Block block) {
@@ -38,6 +55,5 @@ import net.xanthian.vsas.Init;
         @Environment(EnvType.CLIENT)
         private static void RegisterBlockRenderLayerMap(Block block) {
             BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
-
         }
     }

@@ -1,4 +1,4 @@
 {
   "replace": false,
-  "values": ["#vsas:rails","#vsas:activator_rails","#vsas:powered_rails"]
+  "values": ["#vsas:rails","#vsas:activator_rails","#vsas:powered_rails","#vsas:detector_rails"]
 }

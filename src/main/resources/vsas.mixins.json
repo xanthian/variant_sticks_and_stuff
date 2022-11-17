@@ -9,6 +9,7 @@
     "GrindstoneScreenHandlerMixin",
     "PigEntityMixin",
     "PointOfInterestTypesAccessor",
+    "PoweredRailBlockMixin",
     "RecipeManagerMixin",
     "StriderEntityMixin"
   ],

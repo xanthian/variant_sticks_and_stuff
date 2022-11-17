@@ -1304,9 +1304,9 @@ public class Recipes {
         }
         json.addProperty("type", "minecraft:crafting_shaped");
         JsonArray pattern = new JsonArray();
-        pattern.add("I I");
         pattern.add("ISI");
-        pattern.add("I I");
+        pattern.add("IPI");
+        pattern.add("IRI");
         json.add("pattern", pattern);
         JsonObject keyList = new JsonObject();
         JsonObject iKey = new JsonObject();
@@ -1316,10 +1316,16 @@ public class Recipes {
         iKey = new JsonObject();
         iKey.addProperty("item", MOD_ID + ":sticks/" + material + "_stick");
         keyList.add("S", iKey);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:stone_pressure_plate");
+        keyList.add("P", iKey);
+        iKey = new JsonObject();
+        iKey.addProperty("item", "minecraft:redstone");
+        keyList.add("R", iKey);
         JsonObject result = new JsonObject();
-        result.addProperty("item", MOD_ID + ":rails/" + material + "_rail");
+        result.addProperty("item", MOD_ID + ":rails/" + material + "_detector_rail");
         json.add("result", result);
-        result.addProperty("count", 16);
+        result.addProperty("count", 6);
         return json;
     }
 

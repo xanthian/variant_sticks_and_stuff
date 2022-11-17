@@ -43,6 +43,7 @@ public abstract class RecipeManagerMixin {
                     if (VsasConfig.rails == true) {
                         map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_rail"), Recipes.createRailRecipeJson(woodType.getLeft(), woodType.getRight()));
                         map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_activator_rail"), Recipes.createActivatorRailRecipeJson(woodType.getLeft(), woodType.getRight()));
+                        map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_detector_rail"), Recipes.createDetectorRailRecipeJson(woodType.getLeft(), woodType.getRight()));
                         map.put(new Identifier(Init.MOD_ID, woodType.getLeft() + "_powered_rail"), Recipes.createPoweredRailRecipeJson(woodType.getLeft(), woodType.getRight()));
                     }
                     if (VsasConfig.torches == true) {
@@ -137,7 +138,6 @@ public abstract class RecipeManagerMixin {
     private <C extends Inventory, T extends Recipe<C>> Map<Identifier, Recipe<C>> getAllOfType(RecipeType<T> type) {
         return null;
     }
-
     /**
      * @author Paulevs - Amended by Grend (mostly) & Xanthian (a bit)
      * @reason mc janky crafting manager recipe ordering
@@ -145,14 +145,11 @@ public abstract class RecipeManagerMixin {
     @Overwrite
     public <C extends Inventory, T extends Recipe<C>> Optional<T> getFirstMatch(RecipeType<T> type, C inventory, World world) {
         Collection<Recipe<C>> values = getAllOfType(type).values();
-
         List<Recipe<C>> recipes = new ArrayList<>(values);
-
         recipes.sort((first, second) -> {
             boolean isMine = first.getId().getNamespace().equals(Init.MOD_ID);
             return (isMine ^ second.getId().getNamespace().equals(Init.MOD_ID)) ? (isMine ? -1 : 1) : 0;
         });
-
         return (Optional<T>) recipes.stream().filter(recipe -> recipe.matches(inventory, world)).findFirst();
     }
 }

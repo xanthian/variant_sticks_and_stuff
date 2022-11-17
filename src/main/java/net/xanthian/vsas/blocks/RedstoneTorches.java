@@ -16,23 +16,40 @@ public class RedstoneTorches {
 
     public static void registerRedstoneTorches() {
     VariantRedstoneTorchBlock ACACIA_REDSTONE_TORCH = new VariantRedstoneTorchBlock(); 
-    VariantWallRedstoneTorchBlock WALL_ACACIA_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock(); registerTorchBlock("torches/acacia_redstone_torch", ACACIA_REDSTONE_TORCH,"torches/wall_acacia_redstone_torch", WALL_ACACIA_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_ACACIA_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/acacia_redstone_torch", ACACIA_REDSTONE_TORCH,"torches/wall_acacia_redstone_torch", WALL_ACACIA_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock BIRCH_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_BIRCH_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/birch_redstone_torch", BIRCH_REDSTONE_TORCH,"torches/wall_birch_redstone_torch", WALL_BIRCH_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_BIRCH_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/birch_redstone_torch", BIRCH_REDSTONE_TORCH,"torches/wall_birch_redstone_torch", WALL_BIRCH_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock CRIMSON_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_CRIMSON_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/crimson_redstone_torch", CRIMSON_REDSTONE_TORCH,"torches/wall_crimson_redstone_torch", WALL_CRIMSON_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_CRIMSON_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/crimson_redstone_torch", CRIMSON_REDSTONE_TORCH,"torches/wall_crimson_redstone_torch", WALL_CRIMSON_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock DARK_OAK_REDSTONE_TORCH  = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_DARK_OAK_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/dark_oak_redstone_torch", DARK_OAK_REDSTONE_TORCH,"torches/wall_dark_oak_redstone_torch", WALL_DARK_OAK_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_DARK_OAK_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/dark_oak_redstone_torch", DARK_OAK_REDSTONE_TORCH,"torches/wall_dark_oak_redstone_torch", WALL_DARK_OAK_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock JUNGLE_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_JUNGLE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/jungle_redstone_torch", JUNGLE_REDSTONE_TORCH,"torches/wall_jungle_redstone_torch", WALL_JUNGLE_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_JUNGLE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/jungle_redstone_torch", JUNGLE_REDSTONE_TORCH,"torches/wall_jungle_redstone_torch", WALL_JUNGLE_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock OAK_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_OAK_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/oak_redstone_torch", OAK_REDSTONE_TORCH,"torches/wall_oak_redstone_torch", WALL_OAK_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_OAK_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/oak_redstone_torch", OAK_REDSTONE_TORCH,"torches/wall_oak_redstone_torch", WALL_OAK_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock MANGROVE_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_MANGROVE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/mangrove_redstone_torch", MANGROVE_REDSTONE_TORCH,"torches/wall_mangrove_redstone_torch", WALL_MANGROVE_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_MANGROVE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/mangrove_redstone_torch", MANGROVE_REDSTONE_TORCH,"torches/wall_mangrove_redstone_torch", WALL_MANGROVE_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock SPRUCE_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_SPRUCE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/spruce_redstone_torch", SPRUCE_REDSTONE_TORCH,"torches/wall_spruce_redstone_torch", WALL_SPRUCE_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_SPRUCE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/spruce_redstone_torch", SPRUCE_REDSTONE_TORCH,"torches/wall_spruce_redstone_torch", WALL_SPRUCE_REDSTONE_TORCH);
+
     VariantRedstoneTorchBlock WARPED_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
-    VariantWallRedstoneTorchBlock WALL_WARPED_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();registerTorchBlock("torches/warped_redstone_torch", WARPED_REDSTONE_TORCH,"torches/wall_warped_redstone_torch", WALL_WARPED_REDSTONE_TORCH);
+    VariantWallRedstoneTorchBlock WALL_WARPED_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    registerTorchBlock("torches/warped_redstone_torch", WARPED_REDSTONE_TORCH,"torches/wall_warped_redstone_torch", WALL_WARPED_REDSTONE_TORCH);
 
     }
     private static void registerTorchBlock(String torchName, Block torch, String wallTorchName, Block wallTorch) {

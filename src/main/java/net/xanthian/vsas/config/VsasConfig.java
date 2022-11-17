@@ -17,6 +17,7 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
                 # All Weapons includes : Arrows, Bows, Crossbows, Swords
                 # (Probably best to leave the 'All' configs as true and just disable individual elements)
                 # Disabling recipes will remove the code based recipes for ALL items to allow you to make your own.
+                # Disabling Villagers will remove the villager trades for VSAS items.
                 # (>'.')> ~ Enter true to enable or false to disable ~ <('.'<)
                 ##############################################################################################################################################
                 """;
@@ -64,6 +65,8 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
 
     public static boolean recipes;
 
+    public static boolean villagers;
+
     public static void registerConfigs() {
         configs = new VsasConfig();
         createConfigs();
@@ -99,6 +102,8 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
 
         configs.addKeyValuePair(new Pair<>("recipes", true));
 
+        configs.addKeyValuePair(new Pair<>("villagers", true));
+
     }
 
     private static void assignConfigs() {
@@ -126,5 +131,7 @@ public class VsasConfig implements SimpleConfig.DefaultConfig {
         swords = CONFIG.getOrDefault("swords", true);
 
         recipes = CONFIG.getOrDefault("recipes", true);
+
+        villagers = CONFIG.getOrDefault("villagers", true);
     }
 }

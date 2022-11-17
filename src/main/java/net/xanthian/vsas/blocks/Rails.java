@@ -58,17 +58,26 @@ public class Rails {
         registerRailBlock("rails/warped_activator_rail", WARPED_ACTIVATOR_RAIL);
     }
 
-    //public static void registerDetectorRails() {
-        //VariantDetectorRailBlock ACACIA_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/acacia_detector_rail", ACACIA_DETECTOR_RAIL);
-        //VariantDetectorRailBlock BIRCH_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/birch_detector_rail", BIRCH_DETECTOR_RAIL);
-        //VariantDetectorRailBlock CRIMSON_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/crimson_detector_rail", CRIMSON_DETECTOR_RAIL);
-        //VariantDetectorRailBlock DARK_OAK_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/dark_oak_detector_rail", DARK_OAK_DETECTOR_RAIL);
-        //VariantDetectorRailBlock JUNGLE_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/jungle_detector_rail", JUNGLE_DETECTOR_RAIL);
-        //VariantDetectorRailBlock OAK_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/oak_detector_rail", OAK_DETECTOR_RAIL);
-        //VariantDetectorRailBlock MANGROVE_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/mangrove_detector_rail", MANGROVE_DETECTOR_RAIL);
-        //VariantDetectorRailBlock SPRUCE_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/spruce_detector_rail", SPRUCE_DETECTOR_RAIL);
-        //VariantDetectorRailBlock WARPED_DETECTOR_RAIL = new VariantDetectorRailBlock(); registerRailBlock("rails/warped_detector_rail", WARPED_DETECTOR_RAIL);
-    //}
+    public static void registerDetectorRails() {
+        VariantDetectorRailBlock ACACIA_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/acacia_detector_rail", ACACIA_DETECTOR_RAIL);
+        VariantDetectorRailBlock BIRCH_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/birch_detector_rail", BIRCH_DETECTOR_RAIL);
+        VariantDetectorRailBlock CRIMSON_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/crimson_detector_rail", CRIMSON_DETECTOR_RAIL);
+        VariantDetectorRailBlock DARK_OAK_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/dark_oak_detector_rail", DARK_OAK_DETECTOR_RAIL);
+        VariantDetectorRailBlock JUNGLE_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/jungle_detector_rail", JUNGLE_DETECTOR_RAIL);
+        VariantDetectorRailBlock OAK_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/oak_detector_rail", OAK_DETECTOR_RAIL);
+        VariantDetectorRailBlock MANGROVE_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/mangrove_detector_rail", MANGROVE_DETECTOR_RAIL);
+        VariantDetectorRailBlock SPRUCE_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/spruce_detector_rail", SPRUCE_DETECTOR_RAIL);
+        VariantDetectorRailBlock WARPED_DETECTOR_RAIL = new VariantDetectorRailBlock();
+        registerRailBlock("rails/warped_detector_rail", WARPED_DETECTOR_RAIL);
+    }
 
     public static void registerPoweredRails() {
         VariantPoweredRailBlock ACACIA_POWERED_RAIL = new VariantPoweredRailBlock();
@@ -103,6 +112,5 @@ public class Rails {
     @Environment(EnvType.CLIENT)
     private static void RegisterBlockRenderLayerMap(Block block) {
         BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
-
     }
 }

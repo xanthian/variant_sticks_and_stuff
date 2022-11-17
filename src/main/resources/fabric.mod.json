@@ -12,6 +12,7 @@
   "environment": "*",
   "entrypoints": {
     "main": ["net.xanthian.vsas.Init"],
+    "preLaunch": ["net.xanthian.vsas.PreLaunch"],
     "client": ["net.xanthian.vsas.ClientInit"]
   },
   "mixins": ["vsas.mixins.json"],

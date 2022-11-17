@@ -44,10 +44,8 @@ public class LootTableModifiers {
             = new Identifier("minecraft", "gameplay/fishing/junk");
 
     public static void modifyLootTables() {
-
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-
-            if (source.isBuiltin() && ACACIA_LEAVES_ID.equals(id)) {
+            if (ACACIA_LEAVES_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.02F).build())
@@ -100,11 +98,13 @@ public class LootTableModifiers {
                         .rolls(UniformLootNumberProvider.create(0, 1))
                         .with(ItemEntry.builder(Sticks.ACACIA_STICK))
                         .with(ItemEntry.builder(Sticks.BIRCH_STICK))
+                        .with(ItemEntry.builder(Sticks.CRIMSON_STICK))
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
                         .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
-                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
+                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK))
+                        .with(ItemEntry.builder(Sticks.WARPED_STICK));
                 tableBuilder.pool(poolBuilder);
             }
             if (VILLAGE_FLETCHER_CHEST.equals(id)) {
@@ -112,11 +112,13 @@ public class LootTableModifiers {
                         .rolls(UniformLootNumberProvider.create(0, 1))
                         .with(ItemEntry.builder(Sticks.ACACIA_STICK))
                         .with(ItemEntry.builder(Sticks.BIRCH_STICK))
+                        .with(ItemEntry.builder(Sticks.CRIMSON_STICK))
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
                         .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
-                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
+                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK))
+                        .with(ItemEntry.builder(Sticks.WARPED_STICK));
                 tableBuilder.pool(poolBuilder);
             }
             if (VILLAGE_TOOLSMITH_CHEST.equals(id)) {
@@ -124,11 +126,13 @@ public class LootTableModifiers {
                         .rolls(UniformLootNumberProvider.create(0, 2))
                         .with(ItemEntry.builder(Sticks.ACACIA_STICK))
                         .with(ItemEntry.builder(Sticks.BIRCH_STICK))
+                        .with(ItemEntry.builder(Sticks.CRIMSON_STICK))
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
                         .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
-                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
+                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK))
+                        .with(ItemEntry.builder(Sticks.WARPED_STICK));
                 tableBuilder.pool(poolBuilder);
             }
             if (WITCH_STICKS.equals(id)) {
@@ -136,11 +140,13 @@ public class LootTableModifiers {
                         .rolls(UniformLootNumberProvider.create(0, 3))
                         .with(ItemEntry.builder(Sticks.ACACIA_STICK))
                         .with(ItemEntry.builder(Sticks.BIRCH_STICK))
+                        .with(ItemEntry.builder(Sticks.CRIMSON_STICK))
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
                         .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
-                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
+                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK))
+                        .with(ItemEntry.builder(Sticks.WARPED_STICK));
                 tableBuilder.pool(poolBuilder);
             }
             if (FISH_STICKS.equals(id)) {
@@ -148,11 +154,13 @@ public class LootTableModifiers {
                         .rolls(UniformLootNumberProvider.create(0, 1))
                         .with(ItemEntry.builder(Sticks.ACACIA_STICK))
                         .with(ItemEntry.builder(Sticks.BIRCH_STICK))
+                        .with(ItemEntry.builder(Sticks.CRIMSON_STICK))
                         .with(ItemEntry.builder(Sticks.DARK_OAK_STICK))
                         .with(ItemEntry.builder(Sticks.JUNGLE_STICK))
                         .with(ItemEntry.builder(Sticks.OAK_STICK))
                         .with(ItemEntry.builder(Sticks.MANGROVE_STICK))
-                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK));
+                        .with(ItemEntry.builder(Sticks.SPRUCE_STICK))
+                        .with(ItemEntry.builder(Sticks.WARPED_STICK));
                 tableBuilder.pool(poolBuilder);
             }
             });

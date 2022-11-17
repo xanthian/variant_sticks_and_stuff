@@ -22,20 +22,28 @@ public class Grindstones {
     public static void registerGrindstones() {
         VariantGrindstoneBlock ACACIA_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/acacia_grindstone", ACACIA_GRINDSTONE);
+
         VariantGrindstoneBlock BIRCH_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/birch_grindstone", BIRCH_GRINDSTONE);
+
         VariantGrindstoneBlock CRIMSON_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/crimson_grindstone", CRIMSON_GRINDSTONE);
+
         VariantGrindstoneBlock DARK_OAK_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/dark_oak_grindstone", DARK_OAK_GRINDSTONE);
+
         VariantGrindstoneBlock JUNGLE_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/jungle_grindstone", JUNGLE_GRINDSTONE);
+
         VariantGrindstoneBlock OAK_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/oak_grindstone", OAK_GRINDSTONE);
+
         VariantGrindstoneBlock MANGROVE_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/mangrove_grindstone", MANGROVE_GRINDSTONE);
+
         VariantGrindstoneBlock SPRUCE_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/spruce_grindstone", SPRUCE_GRINDSTONE);
+
         VariantGrindstoneBlock WARPED_GRINDSTONE = new VariantGrindstoneBlock();
         registerGrindstoneBlock("grindstones/warped_grindstone", WARPED_GRINDSTONE);
     }
@@ -52,6 +60,5 @@ public class Grindstones {
     @Environment(EnvType.CLIENT)
     private static void RegisterBlockRenderLayerMap(Block block) {
         BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
-
     }
 }

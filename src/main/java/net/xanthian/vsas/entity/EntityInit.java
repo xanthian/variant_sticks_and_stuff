@@ -30,7 +30,8 @@ public class EntityInit {
     }
 
     private static <T extends Entity> EntityType<T> createArrowEntityType(EntityType.EntityFactory<T> factory) {
-        return FabricEntityTypeBuilder.create(SpawnGroup.MISC, factory).dimensions(EntityDimensions.changing(0.5f, 0.5f)).trackRangeBlocks(4).trackedUpdateRate(20).build();
+        return FabricEntityTypeBuilder.create(SpawnGroup.MISC, factory).dimensions(EntityDimensions.changing(0.5f,
+                0.5f)).trackRangeBlocks(4).trackedUpdateRate(20).build();
     }
 
     public static void init() {

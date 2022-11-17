@@ -18,6 +18,7 @@ public class Torches {
         VariantTorchBlock ACACIA_TORCH = new VariantTorchBlock();
         VariantWallTorchBlock WALL_ACACIA_TORCH = new VariantWallTorchBlock();
         registerTorchBlock("torches/acacia_torch", ACACIA_TORCH, "torches/wall_acacia_torch", WALL_ACACIA_TORCH);
+
         VariantTorchBlock BIRCH_TORCH = new VariantTorchBlock();
         VariantWallTorchBlock WALL_BIRCH_TORCH = new VariantWallTorchBlock();
         registerTorchBlock("torches/birch_torch", BIRCH_TORCH, "torches/wall_birch_torch", WALL_BIRCH_TORCH);

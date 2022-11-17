@@ -7,6 +7,5 @@ import net.minecraft.particle.ParticleTypes;
 public class VariantWallTorchBlock extends WallTorchBlock {
     public VariantWallTorchBlock() {
         super(FabricBlockSettings.copy(Blocks.WALL_TORCH).nonOpaque().noCollision(), ParticleTypes.FLAME);
-
     }
 }
