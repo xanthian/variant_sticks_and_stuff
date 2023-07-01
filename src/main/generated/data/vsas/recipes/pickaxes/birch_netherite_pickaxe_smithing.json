@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "vsas:pickaxes/birch_diamond_pickaxe"
+  },
+  "result": {
+    "item": "vsas:pickaxes/birch_netherite_pickaxe"
+  }
+}

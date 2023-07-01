@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "vsas:activator_rails"
+    }
+  ],
+  "result": {
+    "item": "minecraft:activator_rail"
+  }
+}

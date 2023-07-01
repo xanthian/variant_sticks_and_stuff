@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "vsas:detector_rails"
+    }
+  ],
+  "result": {
+    "item": "minecraft:detector_rail"
+  }
+}

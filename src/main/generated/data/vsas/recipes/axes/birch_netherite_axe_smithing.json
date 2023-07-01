@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "vsas:axes/birch_diamond_axe"
+  },
+  "result": {
+    "item": "vsas:axes/birch_netherite_axe"
+  }
+}

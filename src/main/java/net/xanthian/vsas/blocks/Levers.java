@@ -1,59 +1,36 @@
 package net.xanthian.vsas.blocks;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.loader.api.FabricLoader;
+
 import net.minecraft.block.*;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import net.xanthian.vsas.Init;
 
-    public class Levers {
+import net.xanthian.vsas.Initialise;
 
-        public static void registerLevers() {
-            VariantLeverBlock ACACIA_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/acacia_lever", ACACIA_LEVER);
+public class Levers {
 
-            VariantLeverBlock BIRCH_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/birch_lever", BIRCH_LEVER);
+    public static final Block ACACIA_LEVER = registerLeverBlock("levers/acacia_lever", new VariantLeverBlock());
+    public static final Block BIRCH_LEVER = registerLeverBlock("levers/birch_lever", new VariantLeverBlock());
+    public static final Block CRIMSON_LEVER = registerLeverBlock("levers/crimson_lever", new VariantLeverBlock());
+    public static final Block DARK_OAK_LEVER = registerLeverBlock("levers/dark_oak_lever", new VariantLeverBlock());
+    public static final Block JUNGLE_LEVER = registerLeverBlock("levers/jungle_lever", new VariantLeverBlock());
+    public static final Block MANGROVE_LEVER = registerLeverBlock("levers/oak_lever", new VariantLeverBlock());
+    public static final Block OAK_LEVER = registerLeverBlock("levers/mangrove_lever", new VariantLeverBlock());
+    public static final Block SPRUCE_LEVER = registerLeverBlock("levers/spruce_lever", new VariantLeverBlock());
+    public static final Block WARPED_LEVER = registerLeverBlock("levers/warped_lever", new VariantLeverBlock());
 
-            VariantLeverBlock CRIMSON_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/crimson_lever", CRIMSON_LEVER);
-
-            VariantLeverBlock DARK_OAK_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/dark_oak_lever", DARK_OAK_LEVER);
-
-            VariantLeverBlock JUNGLE_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/jungle_lever", JUNGLE_LEVER);
-
-            VariantLeverBlock OAK_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/oak_lever", OAK_LEVER);
-
-            VariantLeverBlock MANGROVE_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/mangrove_lever", MANGROVE_LEVER);
-
-            VariantLeverBlock SPRUCE_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/spruce_lever", SPRUCE_LEVER);
-
-            VariantLeverBlock WARPED_LEVER = new VariantLeverBlock();
-            registerLeverBlock("levers/warped_lever", WARPED_LEVER);
-        }
-
-        private static void registerLeverBlock(String Id, Block block) {
-            Identifier identifier = new Identifier(Init.MOD_ID, Id.toLowerCase());
-            Registry.register(Registry.BLOCK, identifier, block);
-            Registry.register(Registry.ITEM, identifier, new BlockItem(block, new FabricItemSettings().group(Init.STICKS_AND_STUFF)));
-
-            if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT)
-                RegisterBlockRenderLayerMap(block);
-        }
-
-        @Environment(EnvType.CLIENT)
-        private static void RegisterBlockRenderLayerMap(Block block) {
-            BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
-        }
+    private static Block registerLeverBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
     }
+
+    private static Item registerBlockItem(String name, Block block) {
+        Item item = Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
+        return item;
+    }
+}

@@ -1,11 +1,12 @@
 package net.xanthian.vsas.util;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
-import net.xanthian.vsas.config.VsasConfig;
+
 import net.xanthian.vsas.items.*;
 
 public class VillagerTrades {
@@ -68,9 +69,6 @@ public class VillagerTrades {
                                 new ItemStack(Items.EMERALD, 1), 16, 2, 0.05F)));
                     });
 
-            if (VsasConfig.items == true) {
-                if (VsasConfig.weapons == true) {
-                    if (VsasConfig.arrows == true) {
                         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FLETCHER, 1,
                                 factories -> {
                                     factories.add((entity, random) -> (new TradeOffer(
@@ -125,9 +123,8 @@ public class VillagerTrades {
                                             new ItemStack(Items.EMERALD, 1),
                                             new ItemStack(Arrows.WARPED_ARROW_ITEM, 16), 16, 1, 0.05F)));
                                 });
-                    }
 
-                    if (VsasConfig.bows == true) {
+
                         // Fletcher Apprentice
                         TradeOfferHelper.registerVillagerOffers(VillagerProfession.FLETCHER, 2,
                                 factories -> {
@@ -239,10 +236,9 @@ public class VillagerTrades {
                                             new ItemStack(Items.EMERALD, 3),
                                             new ItemStack(Crossbows.WARPED_CROSSBOW, 1), 12, 10, 0.05F)));
                                 });
-                    }
-                }
-                if (VsasConfig.tools == true) {
-                    if (VsasConfig.axes == true) {
+
+
+
                         // Novice Toolsmith
                         TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1,
                                 factories -> {
@@ -298,9 +294,7 @@ public class VillagerTrades {
                                             new ItemStack(Items.EMERALD, 1),
                                             new ItemStack(Axes.WARPED_STONE_AXE, 1), 12, 1, 0.2F)));
                                 });
-                    }
 
-                    if (VsasConfig.shovels == true) {
 
                         TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1,
                                 factories -> {
@@ -356,8 +350,7 @@ public class VillagerTrades {
                                             new ItemStack(Items.EMERALD, 1),
                                             new ItemStack(Shovels.WARPED_STONE_SHOVEL, 1), 12, 1, 0.2F)));
                                 });
-                    }
-                    if (VsasConfig.pickaxes == true) {
+
 
                         TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1,
                                 factories -> {
@@ -413,8 +406,7 @@ public class VillagerTrades {
                                             new ItemStack(Items.EMERALD, 1),
                                             new ItemStack(Pickaxes.WARPED_STONE_PICKAXE, 1), 12, 1, 0.2F)));
                                 });
-                    }
-                    if (VsasConfig.hoes == true) {
+
 
                         TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1,
                                 factories -> {
@@ -526,9 +518,7 @@ public class VillagerTrades {
                                             new ItemStack(Items.EMERALD, 4),
                                             new ItemStack(Hoes.WARPED_DIAMOND_HOE, 1), 3, 10, 0.2F)));
                                 });
-                    }
 
-                    if (VsasConfig.axes == true) {
                         // Novice Weaponsmith
                         TradeOfferHelper.registerVillagerOffers(VillagerProfession.WEAPONSMITH, 1,
                                 factories -> {
@@ -586,6 +576,3 @@ public class VillagerTrades {
                                 });
                     }
                 }
-            }
-        }
-}

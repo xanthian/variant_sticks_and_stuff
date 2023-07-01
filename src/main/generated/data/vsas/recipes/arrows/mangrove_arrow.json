@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/mangrove_stick"
+    },
+    "X": {
+      "item": "minecraft:flint"
+    },
+    "Y": {
+      "item": "minecraft:feather"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "Y"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vsas:arrows/mangrove_arrow"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "vsas:hoes/mangrove_diamond_hoe"
+  },
+  "result": {
+    "item": "vsas:hoes/mangrove_netherite_hoe"
+  }
+}

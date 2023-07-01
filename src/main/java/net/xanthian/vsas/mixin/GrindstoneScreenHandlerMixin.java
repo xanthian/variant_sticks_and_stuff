@@ -4,6 +4,7 @@ import net.minecraft.block.GrindstoneBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.GrindstoneScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
+
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "L": {
+      "item": "minecraft:warped_stem"
+    },
+    "S": {
+      "item": "vsas:sticks/warped_stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SCS",
+    "LLL"
+  ],
+  "result": {
+    "item": "vsas:campfires/warped_campfire"
+  },
+  "show_notification": true
+}

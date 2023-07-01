@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:fishingrods/warped_fishing_rod"
+    },
+    "X": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "pattern": [
+    "# ",
+    " X"
+  ],
+  "result": {
+    "item": "vsas:onastick/warped_carrot_on_a_stick"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/crimson_stick"
+    }
+  },
+  "pattern": [
+    "# #",
+    "###",
+    "# #"
+  ],
+  "result": {
+    "count": 3,
+    "item": "vsas:ladders/crimson_ladder"
+  },
+  "show_notification": true
+}

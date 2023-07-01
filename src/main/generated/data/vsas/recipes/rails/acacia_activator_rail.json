@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:torches/acacia_redstone_torch"
+    },
+    "S": {
+      "item": "vsas:sticks/acacia_stick"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vsas:rails/acacia_activator_rail"
+  },
+  "show_notification": true
+}

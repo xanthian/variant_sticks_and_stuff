@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/birch_stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "  #",
+    " #X",
+    "# X"
+  ],
+  "result": {
+    "item": "vsas:fishingrods/birch_fishing_rod"
+  },
+  "show_notification": true
+}

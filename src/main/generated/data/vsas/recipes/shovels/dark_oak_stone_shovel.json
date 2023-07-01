@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/dark_oak_stick"
+    },
+    "X": {
+      "tag": "minecraft:stone_tool_materials"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "vsas:shovels/dark_oak_stone_shovel"
+  },
+  "show_notification": true
+}

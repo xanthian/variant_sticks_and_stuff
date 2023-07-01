@@ -11,16 +11,16 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": ["net.xanthian.vsas.Init"],
-    "preLaunch": ["net.xanthian.vsas.PreLaunch"],
-    "client": ["net.xanthian.vsas.ClientInit"]
+    "main": ["net.xanthian.vsas.Initialise"],
+    "fabric-datagen": ["net.xanthian.vsas.DataGenerator"],
+    "client": ["net.xanthian.vsas.ClientInitialise"]
   },
   "mixins": ["vsas.mixins.json"],
   "accessWidener": "vsas.accesswidener",
   "depends": {
-    "fabricloader": ">=0.14.8",
+    "fabricloader": ">=0.14.20",
     "fabric": "*",
-    "minecraft": ">=1.19 <1.19.3",
+    "minecraft": "1.19.4",
     "java": ">=17"
   }
 }

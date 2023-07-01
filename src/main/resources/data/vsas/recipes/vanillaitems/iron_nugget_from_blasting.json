@@ -44,12 +44,5 @@
   ],
   "result": "minecraft:iron_nugget",
   "experience": 0.1,
-  "cookingtime": 100,
-
-"fabric:load_conditions": [
-{
-"condition": "fabric:item_tags_populated",
-"values": ["vsas:tools"]
-}
-]
+  "cookingtime": 100
 }

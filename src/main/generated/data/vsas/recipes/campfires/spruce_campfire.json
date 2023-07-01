@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "L": {
+      "item": "minecraft:spruce_log"
+    },
+    "S": {
+      "item": "vsas:sticks/spruce_stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SCS",
+    "LLL"
+  ],
+  "result": {
+    "item": "vsas:campfires/spruce_campfire"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sticks",
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vsas:sticks/dark_oak_stick"
+  },
+  "show_notification": true
+}

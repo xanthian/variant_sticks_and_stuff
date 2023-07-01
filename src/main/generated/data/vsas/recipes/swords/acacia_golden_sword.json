@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/acacia_stick"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "vsas:swords/acacia_golden_sword"
+  },
+  "show_notification": true
+}

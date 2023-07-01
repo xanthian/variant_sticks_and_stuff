@@ -5,3 +5,4 @@ accessWidener v1 named
 # Credit to Aton-Kish, check out their Reinforced Barrels mod!
 accessible field net/minecraft/world/poi/PointOfInterestType blockStates Ljava/util/Set;
 mutable field net/minecraft/world/poi/PointOfInterestType blockStates Ljava/util/Set;
+accessible method net/minecraft/data/client/BlockStateModelGenerator registerGrindstone ()V

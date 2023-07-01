@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/oak_stick"
+    },
+    "X": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "item": "vsas:axes/oak_wooden_axe"
+  },
+  "show_notification": true
+}

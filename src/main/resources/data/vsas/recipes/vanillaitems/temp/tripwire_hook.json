@@ -19,12 +19,5 @@
   "result": {
     "item": "minecraft:tripwire_hook",
     "count": 2
-  },
-
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:item_tags_populated",
-      "values": ["vsas:sticks"]
-    }
-  ]
+  }
 }

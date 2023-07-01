@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "L": {
+      "item": "minecraft:oak_log"
+    },
+    "S": {
+      "item": "vsas:sticks/oak_stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SCS",
+    "LLL"
+  ],
+  "result": {
+    "item": "vsas:campfires/oak_campfire"
+  },
+  "show_notification": true
+}

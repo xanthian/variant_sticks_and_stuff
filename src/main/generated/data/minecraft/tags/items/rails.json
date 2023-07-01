@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#vsas:activator_rails",
+    "#vsas:detector_rails",
+    "#vsas:powered_rails",
+    "#vsas:rails"
+  ]
+}

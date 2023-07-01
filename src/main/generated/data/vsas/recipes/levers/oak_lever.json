@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "X": {
+      "item": "vsas:sticks/mangrove_stick"
+    }
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "vsas:levers/oak_lever"
+  },
+  "show_notification": true
+}

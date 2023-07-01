@@ -5,12 +5,12 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "AbstractMinecartEntityMixin",
+    "BlockEntityTypeMixin",
     "FishingBobberEntityMixin",
     "GrindstoneScreenHandlerMixin",
     "PigEntityMixin",
     "PointOfInterestTypesAccessor",
     "PoweredRailBlockMixin",
-    "RecipeManagerMixin",
     "StriderEntityMixin"
   ],
   "client": [

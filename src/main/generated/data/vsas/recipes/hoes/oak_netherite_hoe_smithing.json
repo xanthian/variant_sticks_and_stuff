@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "vsas:hoes/oak_diamond_hoe"
+  },
+  "result": {
+    "item": "vsas:hoes/oak_netherite_hoe"
+  }
+}

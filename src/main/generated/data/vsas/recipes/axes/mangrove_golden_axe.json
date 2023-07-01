@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/mangrove_stick"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "item": "vsas:axes/mangrove_golden_axe"
+  },
+  "show_notification": true
+}

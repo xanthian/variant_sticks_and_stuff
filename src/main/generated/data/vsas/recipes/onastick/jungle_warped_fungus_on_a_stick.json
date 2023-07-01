@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:fishingrods/jungle_fishing_rod"
+    },
+    "X": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "pattern": [
+    "# ",
+    " X"
+  ],
+  "result": {
+    "item": "vsas:onastick/jungle_warped_fungus_on_a_stick"
+  },
+  "show_notification": true
+}

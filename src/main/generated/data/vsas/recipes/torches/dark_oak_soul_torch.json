@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/dark_oak_stick"
+    },
+    "S": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    "X": [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:charcoal"
+      }
+    ]
+  },
+  "pattern": [
+    "X",
+    "#",
+    "S"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vsas:torches/dark_oak_soul_torch"
+  },
+  "show_notification": true
+}

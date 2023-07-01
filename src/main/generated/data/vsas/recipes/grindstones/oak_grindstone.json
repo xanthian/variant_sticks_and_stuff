@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "-": {
+      "item": "minecraft:stone_slab"
+    },
+    "I": {
+      "item": "vsas:sticks/oak_stick"
+    }
+  },
+  "pattern": [
+    "I-I",
+    "# #"
+  ],
+  "result": {
+    "item": "vsas:grindstones/oak_grindstone"
+  },
+  "show_notification": true
+}

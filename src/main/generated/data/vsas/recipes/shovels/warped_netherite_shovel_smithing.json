@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "vsas:shovels/warped_diamond_shovel"
+  },
+  "result": {
+    "item": "vsas:shovels/warped_netherite_shovel"
+  }
+}

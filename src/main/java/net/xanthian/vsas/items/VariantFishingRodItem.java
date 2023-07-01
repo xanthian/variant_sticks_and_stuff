@@ -1,6 +1,7 @@
 package net.xanthian.vsas.items;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.FishingBobberEntity;
@@ -13,11 +14,10 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
-import net.xanthian.vsas.Init;
 
 public class VariantFishingRodItem extends FishingRodItem {
     public VariantFishingRodItem() {
-        super(new FabricItemSettings().group(Init.STICKS_AND_STUFF).maxDamage(64));
+        super(new FabricItemSettings().maxDamage(64));
     }
 
     @Override

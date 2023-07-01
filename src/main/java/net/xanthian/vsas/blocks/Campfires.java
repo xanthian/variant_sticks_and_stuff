@@ -1,88 +1,48 @@
 package net.xanthian.vsas.blocks;
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+
 import net.minecraft.block.Block;
-import net.minecraft.client.render.RenderLayer;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
-import net.xanthian.vsas.Init;
+
+import net.xanthian.vsas.Initialise;
 
 public class Campfires {
 
-    public static void RegisterCampfires() {
-        VariantCampFireBlock ACACIA_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/acacia_campfire", ACACIA_CAMPFIRE);
+    public static final Block ACACIA_CAMPFIRE = registerCampfireBlock("campfires/acacia_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block BIRCH_CAMPFIRE = registerCampfireBlock("campfires/birch_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block CRIMSON_CAMPFIRE = registerCampfireBlock("campfires/crimson_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block DARK_OAK_CAMPFIRE = registerCampfireBlock("campfires/dark_oak_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block JUNGLE_CAMPFIRE = registerCampfireBlock("campfires/jungle_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block MANGROVE_CAMPFIRE = registerCampfireBlock("campfires/mangrove_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block OAK_CAMPFIRE = registerCampfireBlock("campfires/oak_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block SPRUCE_CAMPFIRE = registerCampfireBlock("campfires/spruce_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
+    public static final Block WARPED_CAMPFIRE = registerCampfireBlock("campfires/warped_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
 
-        VariantCampFireBlock BIRCH_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/birch_campfire", BIRCH_CAMPFIRE);
+    public static final Block ACACIA_SOUL_CAMPFIRE = registerCampfireBlock("campfires/acacia_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block BIRCH_SOUL_CAMPFIRE = registerCampfireBlock("campfires/birch_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block CRIMSON_SOUL_CAMPFIRE = registerCampfireBlock("campfires/crimson_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block DARK_OAK_SOUL_CAMPFIRE = registerCampfireBlock("campfires/dark_oak_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block JUNGLE_SOUL_CAMPFIRE = registerCampfireBlock("campfires/jungle_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block MANGROVE_SOUL_CAMPFIRE = registerCampfireBlock("campfires/mangrove_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block OAK_SOUL_CAMPFIRE = registerCampfireBlock("campfires/oak_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block SPRUCE_SOUL_CAMPFIRE = registerCampfireBlock("campfires/spruce_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
+    public static final Block WARPED_SOUL_CAMPFIRE = registerCampfireBlock("campfires/warped_soul_campfire", new VariantCampfireBlock(2, FabricBlockSettings.copyOf(Blocks.SOUL_CAMPFIRE)));
 
-        VariantCampFireBlock CRIMSON_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/crimson_campfire", CRIMSON_CAMPFIRE);
-
-        VariantCampFireBlock DARK_OAK_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/dark_oak_campfire", DARK_OAK_CAMPFIRE);
-
-        VariantCampFireBlock JUNGLE_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/jungle_campfire", JUNGLE_CAMPFIRE);
-
-        VariantCampFireBlock OAK_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/oak_campfire", OAK_CAMPFIRE);
-
-        VariantCampFireBlock MANGROVE_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/mangrove_campfire", MANGROVE_CAMPFIRE);
-
-        VariantCampFireBlock SPRUCE_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/spruce_campfire", SPRUCE_CAMPFIRE);
-
-        VariantCampFireBlock WARPED_CAMPFIRE = new VariantCampFireBlock(1);
-        registerCampfireBlock("campfires/warped_campfire", WARPED_CAMPFIRE);
+    private static Block registerCampfireBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
     }
 
-    public static void registerSoulCampfires() {
-        VariantCampFireBlock ACACIA_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/acacia_soul_campfire", ACACIA_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock BIRCH_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/birch_soul_campfire", BIRCH_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock CRIMSON_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/crimson_soul_campfire", CRIMSON_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock DARK_OAK_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/dark_oak_soul_campfire", DARK_OAK_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock JUNGLE_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/jungle_soul_campfire", JUNGLE_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock OAK_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/oak_soul_campfire", OAK_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock MANGROVE_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/mangrove_soul_campfire", MANGROVE_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock SPRUCE_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/spruce_soul_campfire", SPRUCE_SOUL_CAMPFIRE);
-
-        VariantCampFireBlock WARPED_SOUL_CAMPFIRE = new VariantCampFireBlock(2);
-        registerCampfireBlock("campfires/warped_soul_campfire", WARPED_SOUL_CAMPFIRE);
-    }
-
-    private static void registerCampfireBlock(String Id, Block block) {
-        Identifier identifier = new Identifier(Init.MOD_ID, Id.toLowerCase());
-        Registry.register(Registry.BLOCK, identifier, block);
-        Registry.register(Registry.ITEM, identifier, new BlockItem(block, new FabricItemSettings().group(Init.STICKS_AND_STUFF)));
-
-        if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT)
-            RegisterBlockRenderLayerMap(block);
-    }
-
-    @Environment(EnvType.CLIENT)
-    private static void RegisterBlockRenderLayerMap(Block block) {
-        BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
+    private static Item registerBlockItem(String name, Block block) {
+        Item item = Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name),
+                new BlockItem(block, new FabricItemSettings()));
+        return item;
     }
 }

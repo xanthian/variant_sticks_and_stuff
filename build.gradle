@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.0-SNAPSHOT'
+	id 'fabric-loom' version '1.2-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -29,12 +29,34 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Mixin Extras
-	implementation "com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}"
-	annotationProcessor "com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}"
-	include "com.github.LlamaLad7:MixinExtras:${project.mixinextras_version}"
+	include(implementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-fabric:0.2.0-beta.8")))
 }
+
 loom {
 	accessWidenerPath = file("src/main/resources/vsas.accesswidener")
+	runs {
+		// This adds a new gradle task that runs the datagen API: "gradlew runDatagen"
+		datagen {
+			inherit server
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+			vmArg "-Dfabric-api.datagen.modid=vsas"
+
+			runDir "build/datagen"
+		}
+	}
+}
+
+// Add the generated resources to the main source set
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					'src/main/generated'
+			]
+		}
+	}
 }
 
 processResources {

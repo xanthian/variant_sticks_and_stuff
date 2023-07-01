@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:warped_planks"
+    },
+    "-": {
+      "item": "minecraft:stone_slab"
+    },
+    "I": {
+      "item": "vsas:sticks/warped_stick"
+    }
+  },
+  "pattern": [
+    "I-I",
+    "# #"
+  ],
+  "result": {
+    "item": "vsas:grindstones/warped_grindstone"
+  },
+  "show_notification": true
+}

@@ -15,12 +15,5 @@
   },
   "result": {
     "item": "minecraft:item_frame"
-  },
-
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:item_tags_populated",
-      "values": ["vsas:sticks"]
-    }
-  ]
+  }
 }

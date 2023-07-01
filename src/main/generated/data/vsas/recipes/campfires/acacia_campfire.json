@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "minecraft:coals"
+    },
+    "L": {
+      "item": "minecraft:acacia_log"
+    },
+    "S": {
+      "item": "vsas:sticks/acacia_stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    "SCS",
+    "LLL"
+  ],
+  "result": {
+    "item": "vsas:campfires/acacia_campfire"
+  },
+  "show_notification": true
+}

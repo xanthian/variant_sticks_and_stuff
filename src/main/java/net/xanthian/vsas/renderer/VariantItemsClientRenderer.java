@@ -2,6 +2,7 @@ package net.xanthian.vsas.renderer;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.CrossbowItem;
@@ -9,7 +10,6 @@ import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.util.Identifier;
-import net.xanthian.vsas.items.VariantCrossbowItem;
 
 @Environment(EnvType.CLIENT)
 public class VariantItemsClientRenderer {
@@ -28,7 +28,7 @@ public class VariantItemsClientRenderer {
     }
 
     // Crossbow
-    public static void registerCrossbowPredicates(VariantCrossbowItem crossbowItem) {
+    public static void registerCrossbowPredicates(CrossbowItem crossbowItem) {
         ModelPredicateProviderRegistry.register(crossbowItem, new Identifier("pull"), (itemStack, clientWorld, livingEntity, seed) -> {
             if (livingEntity == null) {
                 return 0;

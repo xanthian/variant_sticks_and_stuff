@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/warped_stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " #X",
+    "# X",
+    " #X"
+  ],
+  "result": {
+    "item": "vsas:bows/warped_bow"
+  },
+  "show_notification": true
+}

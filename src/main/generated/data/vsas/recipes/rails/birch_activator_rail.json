@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:torches/birch_redstone_torch"
+    },
+    "S": {
+      "item": "vsas:sticks/birch_stick"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vsas:rails/birch_activator_rail"
+  },
+  "show_notification": true
+}

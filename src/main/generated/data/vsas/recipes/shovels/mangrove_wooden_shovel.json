@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/mangrove_stick"
+    },
+    "X": {
+      "item": "minecraft:mangrove_planks"
+    }
+  },
+  "pattern": [
+    "X",
+    "#",
+    "#"
+  ],
+  "result": {
+    "item": "vsas:shovels/mangrove_wooden_shovel"
+  },
+  "show_notification": true
+}

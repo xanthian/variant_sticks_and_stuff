@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "vsas:shovels/jungle_diamond_shovel"
+  },
+  "result": {
+    "item": "vsas:shovels/jungle_netherite_shovel"
+  }
+}

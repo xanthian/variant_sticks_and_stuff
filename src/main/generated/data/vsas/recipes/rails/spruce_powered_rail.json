@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/spruce_stick"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "X X",
+    "X#X",
+    "XRX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vsas:rails/spruce_powered_rail"
+  },
+  "show_notification": true
+}

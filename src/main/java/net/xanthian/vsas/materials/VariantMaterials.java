@@ -37,6 +37,7 @@ public enum VariantMaterials implements ToolMaterial {
     }
     void Materials(int i, int i1, float v, float v1, int i2, Object o) {
     }
+
     public int getDurability() {
         return this.itemDurability;
     }

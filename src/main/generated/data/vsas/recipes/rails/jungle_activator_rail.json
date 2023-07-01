@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "vsas:torches/jungle_redstone_torch"
+    },
+    "S": {
+      "item": "vsas:sticks/jungle_stick"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "vsas:rails/jungle_activator_rail"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/crimson_stick"
+    },
+    "X": {
+      "item": "minecraft:crimson_planks"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "vsas:pickaxes/crimson_wooden_pickaxe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/crimson_stick"
+    },
+    "$": {
+      "item": "minecraft:tripwire_hook"
+    },
+    "&": {
+      "item": "minecraft:iron_ingot"
+    },
+    "~": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "#&#",
+    "~$~",
+    " # "
+  ],
+  "result": {
+    "item": "vsas:crossbows/crimson_crossbow"
+  },
+  "show_notification": true
+}

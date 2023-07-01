@@ -18,12 +18,5 @@
   },
   "result": {
     "item": "minecraft:comparator"
-  },
-
-  "fabric:load_conditions": [
-    {
-      "condition": "fabric:item_tags_populated",
-      "values": ["vsas:redstone_torches"]
-    }
-  ]
+  }
 }

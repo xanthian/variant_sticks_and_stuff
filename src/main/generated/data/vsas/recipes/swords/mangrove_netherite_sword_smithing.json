@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "vsas:swords/mangrove_diamond_sword"
+  },
+  "result": {
+    "item": "vsas:swords/mangrove_netherite_sword"
+  }
+}

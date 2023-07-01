@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sticks",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_planks"
+    }
+  },
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "result": {
+    "count": 4,
+    "item": "vsas:sticks/mangrove_stick"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "vsas:sticks/dark_oak_stick"
+    },
+    "X": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "vsas:swords/dark_oak_wooden_sword"
+  },
+  "show_notification": true
+}

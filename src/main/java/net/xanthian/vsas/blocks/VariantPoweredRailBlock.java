@@ -1,6 +1,7 @@
 package net.xanthian.vsas.blocks;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+
 import net.minecraft.block.*;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.util.math.BlockPos;
@@ -11,7 +12,6 @@ public class VariantPoweredRailBlock extends PoweredRailBlock {
     protected VariantPoweredRailBlock() {
         super(FabricBlockSettings.copyOf(Blocks.POWERED_RAIL));
     }
-
 
     @Override
     protected boolean isPoweredByOtherRails(World world, BlockPos pos, boolean bl, int distance, RailShape shape) {
