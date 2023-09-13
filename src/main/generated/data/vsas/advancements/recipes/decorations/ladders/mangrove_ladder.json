@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "vsas:sticks/oak_stick"
+              "vsas:sticks/mangrove_stick"
             ]
           }
         ]
@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:ladders/mangrove_ladder"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

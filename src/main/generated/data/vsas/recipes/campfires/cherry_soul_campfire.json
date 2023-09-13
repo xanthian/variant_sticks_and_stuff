@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    "L": {
+      "item": "minecraft:cherry_log"
+    },
+    "S": {
+      "item": "vsas:sticks/cherry_stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    "S#S",
+    "LLL"
+  ],
+  "result": {
+    "item": "vsas:campfires/cherry_soul_campfire"
+  },
+  "show_notification": true
+}

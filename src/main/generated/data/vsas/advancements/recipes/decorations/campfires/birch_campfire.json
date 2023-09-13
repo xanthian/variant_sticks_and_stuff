@@ -41,5 +41,6 @@
     "recipes": [
       "vsas:campfires/birch_campfire"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

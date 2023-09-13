@@ -1,14 +1,15 @@
 {
   "replace": false,
   "values": [
-    "vsas:rails/acacia_detector_rail",
-    "vsas:rails/birch_detector_rail",
-    "vsas:rails/crimson_detector_rail",
+    "vsas:rails/cherry_detector_rail",
     "vsas:rails/dark_oak_detector_rail",
     "vsas:rails/jungle_detector_rail",
-    "vsas:rails/oak_detector_rail",
+    "vsas:rails/crimson_detector_rail",
     "vsas:rails/mangrove_detector_rail",
     "vsas:rails/spruce_detector_rail",
+    "vsas:rails/acacia_detector_rail",
+    "vsas:rails/birch_detector_rail",
+    "vsas:rails/bamboo_detector_rail",
     "vsas:rails/warped_detector_rail"
   ]
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:sticks/birch_stick"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:sticks/dark_oak_stick"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

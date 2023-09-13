@@ -1,11 +1,23 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "tag": "vsas:grindstones"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "-": {
+      "item": "minecraft:stone_slab"
+    },
+    "I": {
+      "item": "vsas:sticks/dark_oak_stick"
     }
+  },
+  "pattern": [
+    "I-I",
+    "# #"
   ],
   "result": {
     "item": "minecraft:grindstone"
-  }
+  },
+  "show_notification": true
 }

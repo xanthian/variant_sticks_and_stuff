@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:axes/jungle_wooden_axe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

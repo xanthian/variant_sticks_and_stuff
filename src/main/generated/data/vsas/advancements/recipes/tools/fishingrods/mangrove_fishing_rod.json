@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:fishingrods/mangrove_fishing_rod"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

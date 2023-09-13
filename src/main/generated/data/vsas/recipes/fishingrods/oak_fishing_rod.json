@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "#": {
-      "item": "vsas:sticks/oak_stick"
+      "item": "minecraft:stick"
     },
     "X": {
       "item": "minecraft:string"

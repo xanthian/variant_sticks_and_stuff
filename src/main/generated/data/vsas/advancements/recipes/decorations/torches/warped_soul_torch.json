@@ -28,5 +28,6 @@
     "recipes": [
       "vsas:torches/warped_soul_torch"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

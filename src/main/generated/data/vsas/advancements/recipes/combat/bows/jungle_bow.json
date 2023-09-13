@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:bows/jungle_bow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

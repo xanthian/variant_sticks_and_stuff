@@ -43,5 +43,6 @@
     "recipes": [
       "vsas:arrows/jungle_arrow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

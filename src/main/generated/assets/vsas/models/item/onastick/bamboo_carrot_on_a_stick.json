@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld_rod",
+  "textures": {
+    "layer0": "vsas:item/onastick/bamboo_carrot_on_a_stick"
+  }
+}

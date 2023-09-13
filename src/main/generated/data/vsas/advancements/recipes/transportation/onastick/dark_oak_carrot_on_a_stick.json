@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:onastick/dark_oak_carrot_on_a_stick"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

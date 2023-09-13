@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:rails/spruce_rail"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

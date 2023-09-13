@@ -9,7 +9,7 @@
       "item": "minecraft:stone_slab"
     },
     "I": {
-      "item": "vsas:sticks/oak_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:axes/warped_golden_axe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

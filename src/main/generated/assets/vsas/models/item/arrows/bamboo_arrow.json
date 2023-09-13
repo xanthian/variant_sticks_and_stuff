@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "vsas:item/arrows/bamboo_arrow"
+  }
+}

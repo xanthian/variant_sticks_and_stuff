@@ -28,5 +28,6 @@
     "recipes": [
       "vsas:torches/jungle_soul_torch"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

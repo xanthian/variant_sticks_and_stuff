@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:axes/acacia_diamond_axe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

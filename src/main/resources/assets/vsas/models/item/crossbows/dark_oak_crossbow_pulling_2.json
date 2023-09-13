@@ -1,6 +1,0 @@
-{
-    "parent": "item/crossbow",
-    "textures": {
-        "layer0": "vsas:item/crossbows/dark_oak_crossbow_pulling_2"
-    }
-}

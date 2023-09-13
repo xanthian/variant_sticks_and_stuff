@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/rail_curved",
+  "textures": {
+    "rail": "vsas:block/rails/bamboo_rail_corner"
+  }
+}

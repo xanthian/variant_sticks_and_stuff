@@ -1,0 +1,8 @@
+{
+  "parent": "vsas:block/levers/lever_on",
+  "textures": {
+    "base": "minecraft:block/cobblestone",
+    "lever": "vsas:block/levers/spruce_lever",
+    "particle": "minecraft:block/cobblestone"
+  }
+}

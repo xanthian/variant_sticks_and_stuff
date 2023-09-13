@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:swords/crimson_wooden_sword"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

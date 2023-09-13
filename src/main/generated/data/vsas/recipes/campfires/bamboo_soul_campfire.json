@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    "L": {
+      "item": "minecraft:bamboo_mosaic"
+    },
+    "S": {
+      "item": "vsas:sticks/bamboo_stick"
+    }
+  },
+  "pattern": [
+    " S ",
+    "S#S",
+    "LLL"
+  ],
+  "result": {
+    "item": "vsas:campfires/bamboo_soul_campfire"
+  },
+  "show_notification": true
+}

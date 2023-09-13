@@ -1,0 +1,10 @@
+{
+  "parent": "vsas:block/grindstones/grindstone",
+  "textures": {
+    "leg": "minecraft:block/bamboo_mosaic",
+    "particle": "minecraft:block/grindstone_side",
+    "pivot": "vsas:block/grindstones/bamboo_grindstone_pivot",
+    "round": "minecraft:block/grindstone_round",
+    "side": "minecraft:block/grindstone_side"
+  }
+}

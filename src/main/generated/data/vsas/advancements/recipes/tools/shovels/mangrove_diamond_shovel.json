@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:shovels/mangrove_diamond_shovel"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

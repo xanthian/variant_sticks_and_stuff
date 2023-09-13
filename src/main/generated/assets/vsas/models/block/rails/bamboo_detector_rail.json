@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/rail_flat",
+  "textures": {
+    "rail": "vsas:block/rails/bamboo_detector_rail"
+  }
+}

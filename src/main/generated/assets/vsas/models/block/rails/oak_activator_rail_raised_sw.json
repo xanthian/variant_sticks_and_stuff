@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_rail_raised_sw",
-  "textures": {
-    "rail": "vsas:block/rails/oak_activator_rail"
-  }
-}

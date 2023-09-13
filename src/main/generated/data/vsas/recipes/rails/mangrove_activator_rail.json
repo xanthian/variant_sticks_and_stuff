@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "vsas:torches/oak_redstone_torch"
+      "item": "vsas:torches/mangrove_redstone_torch"
     },
     "S": {
-      "item": "vsas:sticks/oak_stick"
+      "item": "vsas:sticks/mangrove_stick"
     },
     "X": {
       "item": "minecraft:iron_ingot"

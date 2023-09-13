@@ -1,0 +1,9 @@
+{
+  "parent": "vsas:block/campfires/campfire",
+  "textures": {
+    "fire": "minecraft:block/soul_campfire_fire",
+    "lit_log": "vsas:block/campfires/cherry_soul_campfire_log_lit",
+    "log": "vsas:block/campfires/cherry_campfire_log",
+    "particle": "vsas:block/campfires/cherry_campfire_log"
+  }
+}

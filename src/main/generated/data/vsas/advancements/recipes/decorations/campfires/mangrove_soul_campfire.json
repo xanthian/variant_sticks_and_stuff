@@ -28,5 +28,6 @@
     "recipes": [
       "vsas:campfires/mangrove_soul_campfire"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

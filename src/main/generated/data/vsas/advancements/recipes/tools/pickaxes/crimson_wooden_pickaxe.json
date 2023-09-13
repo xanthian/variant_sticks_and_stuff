@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:pickaxes/crimson_wooden_pickaxe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

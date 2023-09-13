@@ -1,11 +1,28 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "tag": "vsas:detector_rails"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:stone_pressure_plate"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
     }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XRX"
   ],
   "result": {
+    "count": 6,
     "item": "minecraft:detector_rail"
-  }
+  },
+  "show_notification": true
 }

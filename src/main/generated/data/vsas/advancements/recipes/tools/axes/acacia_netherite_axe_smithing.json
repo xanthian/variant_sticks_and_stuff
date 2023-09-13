@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:axes/acacia_netherite_axe_smithing"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

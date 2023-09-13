@@ -2,6 +2,13 @@ package net.xanthian.vsas;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
+
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+
 import net.xanthian.vsas.blocks.RedstoneTorches;
 import net.xanthian.vsas.blocks.SoulTorches;
 import net.xanthian.vsas.blocks.Torches;
@@ -15,11 +22,13 @@ public class Initialise implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
 		ModItemGroup.registerGroup();
 
 		Arrows.registerArrowItems();
 		Axes.registerAxeItems();
 		Bows.registerBowItems();
+		Brushes.registerBrushItems();
 		Crossbows.registerCrossBowItems();
 		FishingRods.registerFishingRodItems();
 		Hoes.registerHoeItems();
@@ -38,5 +47,11 @@ public class Initialise implements ModInitializer {
 		ModPOITypes.init();
 		ModRegistries.registerFuels();
 		VillagerTrades.registerTrades();
+
+		ResourceManagerHelper.registerBuiltinResourcePack(
+				new Identifier(MOD_ID, "minecraft"),
+				FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
+				Text.translatable("vsas.resourcepacks.minecraft"),
+				ResourcePackActivationType.ALWAYS_ENABLED);
 	}
 }

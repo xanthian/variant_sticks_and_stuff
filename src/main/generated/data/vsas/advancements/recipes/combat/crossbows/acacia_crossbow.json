@@ -56,5 +56,6 @@
     "recipes": [
       "vsas:crossbows/acacia_crossbow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

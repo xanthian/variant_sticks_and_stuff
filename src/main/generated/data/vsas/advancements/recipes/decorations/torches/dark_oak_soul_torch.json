@@ -28,5 +28,6 @@
     "recipes": [
       "vsas:torches/dark_oak_soul_torch"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

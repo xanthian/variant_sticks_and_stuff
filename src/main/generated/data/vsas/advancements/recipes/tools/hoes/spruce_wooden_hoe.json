@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:hoes/spruce_wooden_hoe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

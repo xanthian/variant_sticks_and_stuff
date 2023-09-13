@@ -1,14 +1,15 @@
 {
   "replace": false,
   "values": [
-    "vsas:arrows/acacia_arrow",
     "vsas:arrows/birch_arrow",
+    "vsas:arrows/acacia_arrow",
+    "vsas:arrows/cherry_arrow",
+    "vsas:arrows/bamboo_arrow",
+    "vsas:arrows/jungle_arrow",
+    "vsas:arrows/warped_arrow",
     "vsas:arrows/crimson_arrow",
     "vsas:arrows/dark_oak_arrow",
-    "vsas:arrows/jungle_arrow",
     "vsas:arrows/mangrove_arrow",
-    "vsas:arrows/oak_arrow",
-    "vsas:arrows/spruce_arrow",
-    "vsas:arrows/warped_arrow"
+    "vsas:arrows/oak_arrow"
   ]
 }

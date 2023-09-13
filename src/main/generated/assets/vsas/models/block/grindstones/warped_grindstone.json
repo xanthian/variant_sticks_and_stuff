@@ -1,0 +1,10 @@
+{
+  "parent": "vsas:block/grindstones/grindstone",
+  "textures": {
+    "leg": "minecraft:block/warped_stem",
+    "particle": "minecraft:block/grindstone_side",
+    "pivot": "vsas:block/grindstones/warped_grindstone_pivot",
+    "round": "minecraft:block/grindstone_round",
+    "side": "minecraft:block/grindstone_side"
+  }
+}

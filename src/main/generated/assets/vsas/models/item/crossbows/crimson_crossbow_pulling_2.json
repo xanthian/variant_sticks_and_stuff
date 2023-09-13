@@ -1,0 +1,6 @@
+{
+  "parent": "vsas:item/crossbows/crimson_crossbow",
+  "textures": {
+    "layer0": "vsas:item/crossbows/crimson_crossbow_pulling_2"
+  }
+}

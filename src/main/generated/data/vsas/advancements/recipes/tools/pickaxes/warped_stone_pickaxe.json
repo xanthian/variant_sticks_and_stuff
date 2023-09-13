@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:pickaxes/warped_stone_pickaxe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

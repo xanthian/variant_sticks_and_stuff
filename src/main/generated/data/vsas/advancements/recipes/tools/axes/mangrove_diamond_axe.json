@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:axes/mangrove_diamond_axe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "vsas:block/campfires/campfire_off",
+  "textures": {
+    "log": "vsas:block/campfires/acacia_campfire_log",
+    "particle": "vsas:block/campfires/acacia_campfire_log"
+  }
+}

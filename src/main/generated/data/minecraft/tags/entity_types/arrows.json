@@ -2,13 +2,14 @@
   "replace": false,
   "values": [
     "vsas:acacia_arrow",
+    "vsas:bamboo_arrow",
     "vsas:birch_arrow",
+    "vsas:cherry_arrow",
     "vsas:crimson_arrow",
     "vsas:dark_oak_arrow",
     "vsas:jungle_arrow",
     "vsas:mangrove_arrow",
     "vsas:oak_arrow",
-    "vsas:spruce_arrow",
     "vsas:warped_arrow"
   ]
 }

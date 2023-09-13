@@ -27,8 +27,16 @@ public class VariantItemsClientRenderer {
                 (itemStack, clientWorld, livingEntity, i) -> livingEntity != null && livingEntity.isUsingItem() && livingEntity.getActiveItem() == itemStack ? 1.0F : 0.0F);
     }
 
+    public static void registerBrushPredicates(Item brushItem) {
+        ModelPredicateProviderRegistry.register(brushItem, new Identifier("brushing"), (stack, world, entity, seed) -> {
+            if (entity == null || entity.getActiveItem() != stack) {
+                return 0.0f;
+            }
+            return (float)(entity.getItemUseTimeLeft() % 10) / 10.0f;
+        });
+    }
     // Crossbow
-    public static void registerCrossbowPredicates(CrossbowItem crossbowItem) {
+    public static void registerCrossbowPredicates(Item crossbowItem) {
         ModelPredicateProviderRegistry.register(crossbowItem, new Identifier("pull"), (itemStack, clientWorld, livingEntity, seed) -> {
             if (livingEntity == null) {
                 return 0;

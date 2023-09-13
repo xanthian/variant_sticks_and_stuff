@@ -41,5 +41,6 @@
     "recipes": [
       "vsas:campfires/spruce_campfire"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

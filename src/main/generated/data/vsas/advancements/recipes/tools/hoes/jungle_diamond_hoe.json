@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:hoes/jungle_diamond_hoe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

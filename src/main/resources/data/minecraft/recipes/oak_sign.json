@@ -11,7 +11,7 @@
       "item": "minecraft:oak_planks"
     },
     "X": {
-      "item": "vsas:sticks/oak_stick"
+      "item": "minecraft:stick"
     }
   },
   "result": {

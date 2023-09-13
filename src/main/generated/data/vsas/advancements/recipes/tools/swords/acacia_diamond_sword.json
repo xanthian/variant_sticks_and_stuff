@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:swords/acacia_diamond_sword"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

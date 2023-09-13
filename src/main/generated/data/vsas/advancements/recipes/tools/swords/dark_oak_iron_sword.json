@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:swords/dark_oak_iron_sword"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

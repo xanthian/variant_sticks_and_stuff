@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:sticks/crimson_stick"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

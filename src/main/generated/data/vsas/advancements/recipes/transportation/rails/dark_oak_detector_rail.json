@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:rails/dark_oak_detector_rail"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

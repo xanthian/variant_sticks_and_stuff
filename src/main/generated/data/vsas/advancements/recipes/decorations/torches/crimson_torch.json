@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:torches/crimson_torch"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

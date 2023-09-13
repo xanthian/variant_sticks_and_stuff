@@ -12,14 +12,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.world.World;
 
-import net.xanthian.vsas.items.VariantCarrotOnAStickItem;
+import net.xanthian.vsas.items.itemtypes.VariantCarrotOnAStickItem;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import static net.xanthian.vsas.items.VariantCarrotOnAStickItem.PIG_FEEDER_INGREDIENT_TAG;
+import static net.xanthian.vsas.items.itemtypes.VariantCarrotOnAStickItem.PIG_FEEDER_INGREDIENT_TAG;
 
 @Mixin(PigEntity.class)
 

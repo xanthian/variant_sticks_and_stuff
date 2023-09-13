@@ -43,5 +43,6 @@
     "recipes": [
       "vsas:arrows/dark_oak_arrow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

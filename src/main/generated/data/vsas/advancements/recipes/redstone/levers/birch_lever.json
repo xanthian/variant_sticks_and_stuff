@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:levers/birch_lever"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

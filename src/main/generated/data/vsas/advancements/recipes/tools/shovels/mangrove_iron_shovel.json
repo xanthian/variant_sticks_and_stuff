@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:shovels/mangrove_iron_shovel"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

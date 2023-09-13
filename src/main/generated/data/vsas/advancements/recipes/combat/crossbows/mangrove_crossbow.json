@@ -56,5 +56,6 @@
     "recipes": [
       "vsas:crossbows/mangrove_crossbow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

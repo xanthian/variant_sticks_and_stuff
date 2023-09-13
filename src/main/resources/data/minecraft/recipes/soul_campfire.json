@@ -1,11 +1,24 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
-      "tag": "vsas:soul_campfires"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    "L": {
+      "item": "minecraft:oak_log"
+    },
+    "S": {
+      "item": "minecraft:stick"
     }
+  },
+  "pattern": [
+    " S ",
+    "S#S",
+    "LLL"
   ],
   "result": {
     "item": "minecraft:soul_campfire"
-  }
+  },
+  "show_notification": true
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:ladders/dark_oak_ladder"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

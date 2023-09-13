@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:rails/warped_powered_rail"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

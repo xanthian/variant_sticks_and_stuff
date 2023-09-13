@@ -1,14 +1,15 @@
 {
   "replace": false,
   "values": [
-    "vsas:torches/acacia_torch",
     "vsas:torches/birch_torch",
+    "vsas:torches/mangrove_torch",
+    "vsas:torches/cherry_torch",
     "vsas:torches/crimson_torch",
+    "vsas:torches/acacia_torch",
+    "vsas:torches/warped_torch",
     "vsas:torches/dark_oak_torch",
     "vsas:torches/jungle_torch",
-    "vsas:torches/mangrove_torch",
-    "vsas:torches/oak_torch",
-    "vsas:torches/spruce_torch",
-    "vsas:torches/warped_torch"
+    "vsas:torches/bamboo_torch",
+    "vsas:torches/spruce_torch"
   ]
 }

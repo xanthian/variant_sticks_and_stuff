@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:grindstones/warped_grindstone"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

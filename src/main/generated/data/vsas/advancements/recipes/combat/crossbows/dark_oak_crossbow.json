@@ -56,5 +56,6 @@
     "recipes": [
       "vsas:crossbows/dark_oak_crossbow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

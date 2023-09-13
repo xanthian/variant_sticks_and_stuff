@@ -1,0 +1,7 @@
+{
+  "parent": "vsas:block/ladders/ladder",
+  "textures": {
+    "particle": "minecraft:block/cherry_planks",
+    "texture": "vsas:block/ladders/cherry_ladder"
+  }
+}

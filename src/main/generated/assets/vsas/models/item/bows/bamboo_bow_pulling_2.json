@@ -1,0 +1,6 @@
+{
+  "parent": "vsas:item/bows/bamboo_bow",
+  "textures": {
+    "layer0": "vsas:item/bows/bamboo_bow_pulling_2"
+  }
+}

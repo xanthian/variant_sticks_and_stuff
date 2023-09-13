@@ -43,5 +43,6 @@
     "recipes": [
       "vsas:arrows/warped_arrow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

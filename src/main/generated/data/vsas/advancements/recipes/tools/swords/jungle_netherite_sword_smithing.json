@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:swords/jungle_netherite_sword_smithing"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

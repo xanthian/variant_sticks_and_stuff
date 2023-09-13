@@ -56,5 +56,6 @@
     "recipes": [
       "vsas:crossbows/warped_crossbow"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:hoes/birch_iron_hoe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

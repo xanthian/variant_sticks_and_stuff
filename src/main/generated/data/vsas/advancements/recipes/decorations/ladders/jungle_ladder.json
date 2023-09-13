@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:ladders/jungle_ladder"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

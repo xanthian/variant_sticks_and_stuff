@@ -1,0 +1,6 @@
+{
+  "parent": "vsas:item/crossbows/oak_crossbow",
+  "textures": {
+    "layer0": "vsas:item/crossbows/oak_crossbow_firework"
+  }
+}

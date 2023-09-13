@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:shovels/dark_oak_golden_shovel"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

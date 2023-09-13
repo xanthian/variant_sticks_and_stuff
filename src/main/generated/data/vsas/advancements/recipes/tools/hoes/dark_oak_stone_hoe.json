@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:hoes/dark_oak_stone_hoe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

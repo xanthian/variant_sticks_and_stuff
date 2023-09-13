@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:fishingrods/crimson_fishing_rod"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

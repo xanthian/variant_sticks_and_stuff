@@ -7,8 +7,8 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.vehicle.AbstractMinecartEntity;
 
-import net.xanthian.vsas.blocks.VariantActivatorRailBlock;
-import net.xanthian.vsas.blocks.VariantPoweredRailBlock;
+import net.xanthian.vsas.blocks.blocktypes.VariantActivatorRailBlock;
+import net.xanthian.vsas.blocks.blocktypes.VariantPoweredRailBlock;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

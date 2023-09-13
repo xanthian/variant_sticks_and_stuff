@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:pickaxes/dark_oak_diamond_pickaxe"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

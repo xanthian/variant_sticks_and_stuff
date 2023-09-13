@@ -13,14 +13,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.world.World;
 
-import net.xanthian.vsas.items.VariantFungusOnAStickItem;
+import net.xanthian.vsas.items.itemtypes.VariantFungusOnAStickItem;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import static net.xanthian.vsas.items.VariantFungusOnAStickItem.STRIDER_FEEDER_INGREDIENT_TAG;
+import static net.xanthian.vsas.items.itemtypes.VariantFungusOnAStickItem.STRIDER_FEEDER_INGREDIENT_TAG;
 
 @Mixin(StriderEntity.class)
 public abstract class StriderEntityMixin extends PassiveEntity {

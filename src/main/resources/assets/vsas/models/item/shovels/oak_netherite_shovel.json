@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "vsas:item/shovels/netherite_shovel",
-    "layer1": "vsas:item/shovels/oak_handle"
-  }
-}

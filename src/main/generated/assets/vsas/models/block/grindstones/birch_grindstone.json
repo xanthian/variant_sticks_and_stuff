@@ -1,0 +1,10 @@
+{
+  "parent": "vsas:block/grindstones/grindstone",
+  "textures": {
+    "leg": "minecraft:block/birch_log",
+    "particle": "minecraft:block/grindstone_side",
+    "pivot": "vsas:block/grindstones/birch_grindstone_pivot",
+    "round": "minecraft:block/grindstone_round",
+    "side": "minecraft:block/grindstone_side"
+  }
+}

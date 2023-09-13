@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:rails/jungle_rail"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

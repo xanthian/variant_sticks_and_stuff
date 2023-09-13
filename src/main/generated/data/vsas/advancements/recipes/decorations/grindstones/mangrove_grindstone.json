@@ -30,5 +30,6 @@
     "recipes": [
       "vsas:grindstones/mangrove_grindstone"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

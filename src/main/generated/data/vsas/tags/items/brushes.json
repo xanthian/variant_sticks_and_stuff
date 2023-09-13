@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:brushes/bamboo_brush",
+    "vsas:brushes/dark_oak_brush",
+    "vsas:brushes/crimson_brush",
+    "vsas:brushes/birch_brush",
+    "vsas:brushes/spruce_brush",
+    "vsas:brushes/warped_brush",
+    "vsas:brushes/jungle_brush",
+    "vsas:brushes/mangrove_brush",
+    "vsas:brushes/acacia_brush",
+    "vsas:brushes/cherry_brush"
+  ]
+}
