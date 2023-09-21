@@ -4,9 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.VanillaRecipeProvider;
+import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -16,15 +14,13 @@ import net.minecraft.registry.tag.ItemTags;
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.items.*;
 
-import java.util.function.Consumer;
-
 public class RecipeGenerator extends FabricRecipeProvider {
     public RecipeGenerator(FabricDataOutput output) {
         super(output);
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
 
         // ACACIA
         offerArrowRecipe(exporter, Arrows.ACACIA_ARROW_ITEM, Sticks.ACACIA_STICK);
@@ -601,274 +597,274 @@ public class RecipeGenerator extends FabricRecipeProvider {
 
     }
     
-    public static void offerArrowRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerArrowRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 4)
                 .input('#', input).input('X', Items.FLINT).input('Y', Items.FEATHER)
                 .pattern("X").pattern("#").pattern("Y")
                 .criterion("has_feather", VanillaRecipeProvider.conditionsFromItem(Items.FEATHER))
                 .criterion("has_flint", VanillaRecipeProvider.conditionsFromItem(Items.FLINT)).offerTo(exporter);
     }
-    public static void offerWoodenAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible axe, ItemConvertible stick, ItemConvertible plank) {
+    public static void offerWoodenAxeRecipe(RecipeExporter exporter, ItemConvertible axe, ItemConvertible stick, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, axe)
                 .input('#', stick).input('X', plank)
                 .pattern("XX").pattern("X#").pattern(" #")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(stick)).offerTo(exporter);
     }
-    public static void offerStoneAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible axe,  ItemConvertible stick) {
+    public static void offerStoneAxeRecipe(RecipeExporter exporter, ItemConvertible axe,  ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, axe)
                 .input('#', stick).input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .pattern("XX").pattern("X#").pattern(" #")
                 .criterion("has_cobblestone", VanillaRecipeProvider.conditionsFromItem(Items.COBBLESTONE)).offerTo(exporter);
     }
-    public static void offerIronAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible axe, ItemConvertible stick) {
+    public static void offerIronAxeRecipe(RecipeExporter exporter, ItemConvertible axe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, axe)
                 .input('#', stick).input('X', Items.IRON_INGOT)
                 .pattern("XX").pattern("X#").pattern(" #")
                 .criterion("has_iron_ingot", VanillaRecipeProvider.conditionsFromItem(Items.IRON_INGOT)).offerTo(exporter);
     }
-    public static void offerGoldenAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible axe, ItemConvertible stick) {
+    public static void offerGoldenAxeRecipe(RecipeExporter exporter, ItemConvertible axe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, axe)
                 .input('#', stick).input('X', Items.GOLD_INGOT)
                 .pattern("XX").pattern("X#").pattern(" #")
                 .criterion("has_gold_ingot", VanillaRecipeProvider.conditionsFromItem(Items.GOLD_INGOT)).offerTo(exporter);
     }
-    public static void offerDiamondAxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible axe, ItemConvertible stick) {
+    public static void offerDiamondAxeRecipe(RecipeExporter exporter, ItemConvertible axe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, axe)
                 .input('#', stick).input('X', Items.DIAMOND)
                 .pattern("XX").pattern("X#").pattern(" #")
                 .criterion("has_diamond", VanillaRecipeProvider.conditionsFromItem(Items.DIAMOND)).offerTo(exporter);
     }
-    public static void offerBowRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible bow, ItemConvertible stick) {
+    public static void offerBowRecipe(RecipeExporter exporter, ItemConvertible bow, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, bow)
                 .input('#', stick).input('X', Items.STRING)
                 .pattern(" #X").pattern("# X").pattern(" #X")
                 .criterion("has_string", VanillaRecipeProvider.conditionsFromItem(Items.STRING)).offerTo(exporter);
     }
-    public static void offerBrushRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible brush, ItemConvertible stick) {
+    public static void offerBrushRecipe(RecipeExporter exporter, ItemConvertible brush, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, brush)
                 .input('X', Items.FEATHER).input('#', Items.COPPER_INGOT).input('I', stick)
                 .pattern("X").pattern("#").pattern("I")
                 .criterion("has_copper_ingot", VanillaRecipeProvider.conditionsFromItem(Items.COPPER_INGOT)).offerTo(exporter);
     }
-    public static void offerCrossbowRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible xbow, ItemConvertible stick) {
+    public static void offerCrossbowRecipe(RecipeExporter exporter, ItemConvertible xbow, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, xbow)
                 .input('~', Items.STRING).input('#', stick).input('&', Items.IRON_INGOT).input('$', Blocks.TRIPWIRE_HOOK)
                 .pattern("#&#").pattern("~$~").pattern(" # ")
                 .criterion("has_string", VanillaRecipeProvider.conditionsFromItem(Items.STRING)).criterion("has_iron_ingot", VanillaRecipeProvider.conditionsFromItem(Items.IRON_INGOT)).criterion("has_tripwire_hook", VanillaRecipeProvider.conditionsFromItem(Blocks.TRIPWIRE_HOOK)).offerTo(exporter);
     }
-    public static void offerFishingRodRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible rod, ItemConvertible stick) {
+    public static void offerFishingRodRecipe(RecipeExporter exporter, ItemConvertible rod, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, rod)
                 .input('#', stick)
                 .input('X', Items.STRING)
                 .pattern("  #").pattern(" #X").pattern("# X")
                 .criterion("has_string", VanillaRecipeProvider.conditionsFromItem(Items.STRING)).offerTo(exporter);
     }
-    public static void offerWoodenHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible hoe, ItemConvertible stick, ItemConvertible plank) {
+    public static void offerWoodenHoeRecipe(RecipeExporter exporter, ItemConvertible hoe, ItemConvertible stick, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hoe)
                 .input('#', stick).input('X', plank)
                 .pattern("XX").pattern(" #").pattern(" #")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(stick)).offerTo(exporter);
     }
-    public static void offerStoneHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible hoe, ItemConvertible stick) {
+    public static void offerStoneHoeRecipe(RecipeExporter exporter, ItemConvertible hoe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hoe)
                 .input('#', stick).input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .pattern("XX").pattern(" #").pattern(" #")
                 .criterion("has_cobblestone", VanillaRecipeProvider.conditionsFromItem(Items.COBBLESTONE)).offerTo(exporter);
     }
-    public static void offerIronHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible hoe, ItemConvertible stick) {
+    public static void offerIronHoeRecipe(RecipeExporter exporter, ItemConvertible hoe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hoe)
                 .input('#', stick).input('X', Items.IRON_INGOT)
                 .pattern("XX").pattern(" #").pattern(" #")
                 .criterion("has_iron_ingot", VanillaRecipeProvider.conditionsFromItem(Items.IRON_INGOT)).offerTo(exporter);
     }
-    public static void offerGoldenHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible hoe, ItemConvertible stick) {
+    public static void offerGoldenHoeRecipe(RecipeExporter exporter, ItemConvertible hoe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hoe)
                 .input('#', stick).input('X', Items.GOLD_INGOT)
                 .pattern("XX").pattern(" #").pattern(" #")
                 .criterion("has_gold_ingot", VanillaRecipeProvider.conditionsFromItem(Items.GOLD_INGOT)).offerTo(exporter);
     }
-    public static void offerDiamondHoeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible hoe, ItemConvertible stick) {
+    public static void offerDiamondHoeRecipe(RecipeExporter exporter, ItemConvertible hoe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, hoe)
                 .input('#', stick).input('X', Items.DIAMOND)
                 .pattern("XX").pattern(" #").pattern(" #")
                 .criterion("has_diamond", VanillaRecipeProvider.conditionsFromItem(Items.DIAMOND)).offerTo(exporter);
     }
-    public static void offerCarrotOnAStickRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible carrotstick, ItemConvertible rod) {
+    public static void offerCarrotOnAStickRecipe(RecipeExporter exporter, ItemConvertible carrotstick, ItemConvertible rod) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, carrotstick)
                 .input('#', rod).input('X', Items.CARROT)
                 .pattern("# ").pattern(" X")
                 .criterion("has_carrot", VanillaRecipeProvider.conditionsFromItem(Items.CARROT)).offerTo(exporter);
     }
-    public static void offerWarpedFungusOnAStickRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible fungusstick, ItemConvertible rod) {
+    public static void offerWarpedFungusOnAStickRecipe(RecipeExporter exporter, ItemConvertible fungusstick, ItemConvertible rod) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, fungusstick)
                 .input('#', rod).input('X', Items.CARROT)
                 .pattern("# ").pattern(" X")
                 .criterion("has_carrot", VanillaRecipeProvider.conditionsFromItem(Items.CARROT)).offerTo(exporter);
     }
-    public static void offerWoodenPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible pickaxe, ItemConvertible stick, ItemConvertible plank) {
+    public static void offerWoodenPickaxeRecipe(RecipeExporter exporter, ItemConvertible pickaxe, ItemConvertible stick, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, pickaxe)
                 .input('#', stick).input('X', plank)
             .pattern("XXX").pattern(" # ").pattern(" # ")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(stick)).offerTo(exporter);
     }
-    public static void offerStonePickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible pickaxe, ItemConvertible stick) {
+    public static void offerStonePickaxeRecipe(RecipeExporter exporter, ItemConvertible pickaxe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, pickaxe)
                 .input('#', stick).input('X', ItemTags.STONE_TOOL_MATERIALS)
             .pattern("XXX").pattern(" # ").pattern(" # ")
                 .criterion("has_cobblestone", VanillaRecipeProvider.conditionsFromItem(Items.COBBLESTONE)).offerTo(exporter);
     }
-    public static void offerIronPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible pickaxe, ItemConvertible stick) {
+    public static void offerIronPickaxeRecipe(RecipeExporter exporter, ItemConvertible pickaxe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, pickaxe)
                 .input('#', stick).input('X', Items.IRON_INGOT)
             .pattern("XXX").pattern(" # ").pattern(" # ")
                 .criterion("has_iron_ingot", VanillaRecipeProvider.conditionsFromItem(Items.IRON_INGOT)).offerTo(exporter);
     }
-    public static void offerGoldenPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible pickaxe, ItemConvertible stick) {
+    public static void offerGoldenPickaxeRecipe(RecipeExporter exporter, ItemConvertible pickaxe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, pickaxe)
                 .input('#', stick).input('X', Items.GOLD_INGOT)
             .pattern("XXX").pattern(" # ").pattern(" # ")
                 .criterion("has_gold_ingot", VanillaRecipeProvider.conditionsFromItem(Items.GOLD_INGOT)).offerTo(exporter);
     }
-    public static void offerDiamondPickaxeRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible pickaxe, ItemConvertible stick) {
+    public static void offerDiamondPickaxeRecipe(RecipeExporter exporter, ItemConvertible pickaxe, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, pickaxe)
                 .input('#', stick).input('X', Items.DIAMOND)
             .pattern("XXX").pattern(" # ").pattern(" # ")
                 .criterion("has_diamond", VanillaRecipeProvider.conditionsFromItem(Items.DIAMOND)).offerTo(exporter);
     }
-    public static void offerWoodenShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shovel, ItemConvertible stick, ItemConvertible plank) {
+    public static void offerWoodenShovelRecipe(RecipeExporter exporter, ItemConvertible shovel, ItemConvertible stick, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, shovel)
                 .input('#', stick).input('X', plank)
                 .pattern("X").pattern("#").pattern("#")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(stick)).offerTo(exporter);
     }
-    public static void offerStoneShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shovel, ItemConvertible stick) {
+    public static void offerStoneShovelRecipe(RecipeExporter exporter, ItemConvertible shovel, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, shovel)
                 .input('#', stick).input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .pattern("X").pattern("#").pattern("#")
                 .criterion("has_cobblestone", VanillaRecipeProvider.conditionsFromItem(Items.COBBLESTONE)).offerTo(exporter);
     }
-    public static void offerIronShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shovel, ItemConvertible stick) {
+    public static void offerIronShovelRecipe(RecipeExporter exporter, ItemConvertible shovel, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, shovel)
                 .input('#', stick).input('X', Items.IRON_INGOT)
                 .pattern("X").pattern("#").pattern("#")
                 .criterion("has_iron_ingot", VanillaRecipeProvider.conditionsFromItem(Items.IRON_INGOT)).offerTo(exporter);
     }
-    public static void offerGoldenShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shovel, ItemConvertible stick) {
+    public static void offerGoldenShovelRecipe(RecipeExporter exporter, ItemConvertible shovel, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, shovel)
                 .input('#', stick).input('X', Items.GOLD_INGOT)
                 .pattern("X").pattern("#").pattern("#")
                 .criterion("has_gold_ingot", VanillaRecipeProvider.conditionsFromItem(Items.GOLD_INGOT)).offerTo(exporter);
     }
-    public static void offerDiamondShovelRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shovel, ItemConvertible stick) {
+    public static void offerDiamondShovelRecipe(RecipeExporter exporter, ItemConvertible shovel, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, shovel)
                 .input('#', stick).input('X', Items.DIAMOND)
                 .pattern("X").pattern("#").pattern("#")
                 .criterion("has_diamond", VanillaRecipeProvider.conditionsFromItem(Items.DIAMOND)).offerTo(exporter);
     }
-    public static void offerStickRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible stick, ItemConvertible plank) {
+    public static void offerStickRecipe(RecipeExporter exporter, ItemConvertible stick, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, stick, 4)
                 .input('#', plank)
                 .pattern("#").pattern("#")
                 .group("sticks")
                 .criterion("has_planks", VanillaRecipeProvider.conditionsFromItem(plank)).offerTo(exporter);
     }
-    public static void offerWoodenSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible sword, ItemConvertible stick, ItemConvertible plank) {
+    public static void offerWoodenSwordRecipe(RecipeExporter exporter, ItemConvertible sword, ItemConvertible stick, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, sword)
                 .input('#', stick).input('X', plank)
                 .pattern("X").pattern("X").pattern("#")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(stick)).offerTo(exporter);
     }
-    public static void offerStoneSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible sword, ItemConvertible stick) {
+    public static void offerStoneSwordRecipe(RecipeExporter exporter, ItemConvertible sword, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, sword)
                 .input('#', stick).input('X', ItemTags.STONE_TOOL_MATERIALS)
                 .pattern("X").pattern("X").pattern("#")
                 .criterion("has_cobblestone", VanillaRecipeProvider.conditionsFromItem(Items.COBBLESTONE)).offerTo(exporter);
     }
-    public static void offerIronSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible sword, ItemConvertible stick) {
+    public static void offerIronSwordRecipe(RecipeExporter exporter, ItemConvertible sword, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, sword)
                 .input('#', stick).input('X', Items.IRON_INGOT)
                 .pattern("X").pattern("X").pattern("#")
                 .criterion("has_iron_ingot", VanillaRecipeProvider.conditionsFromItem(Items.IRON_INGOT)).offerTo(exporter);
     }
-    public static void offerGoldenSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible sword, ItemConvertible stick) {
+    public static void offerGoldenSwordRecipe(RecipeExporter exporter, ItemConvertible sword, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, sword)
                 .input('#', stick).input('X', Items.GOLD_INGOT)
                 .pattern("X").pattern("X").pattern("#")
                 .criterion("has_gold_ingot", VanillaRecipeProvider.conditionsFromItem(Items.GOLD_INGOT)).offerTo(exporter);
     }
-    public static void offerDiamondSwordRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible sword, ItemConvertible stick) {
+    public static void offerDiamondSwordRecipe(RecipeExporter exporter, ItemConvertible sword, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, sword)
                 .input('#', stick).input('X', Items.DIAMOND)
                 .pattern("X").pattern("X").pattern("#")
                 .criterion("has_diamond", VanillaRecipeProvider.conditionsFromItem(Items.DIAMOND)).offerTo(exporter);
     }
-    public static void offerCampfireRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible campfire, ItemConvertible log, ItemConvertible stick) {
+    public static void offerCampfireRecipe(RecipeExporter exporter, ItemConvertible campfire, ItemConvertible log, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, campfire)
                 .input('L', log).input('S', stick).input('C', ItemTags.COALS)
                 .pattern(" S ").pattern("SCS").pattern("LLL")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(stick)).criterion("has_coal", VanillaRecipeProvider.conditionsFromTag(ItemTags.COALS)).offerTo(exporter);
     }
-    public static void offerSoulCampfireRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible soulcampfire, ItemConvertible log, ItemConvertible stick) {
+    public static void offerSoulCampfireRecipe(RecipeExporter exporter, ItemConvertible soulcampfire, ItemConvertible log, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, soulcampfire)
                 .input('L', log).input('S', stick).input('#', ItemTags.SOUL_FIRE_BASE_BLOCKS)
                 .pattern(" S ").pattern("S#S").pattern("LLL")
                 .criterion("has_soul_sand", VanillaRecipeProvider.conditionsFromTag(ItemTags.SOUL_FIRE_BASE_BLOCKS)).offerTo(exporter);
     }
-    public static void offerGrindstoneRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible grindstone, ItemConvertible stick, ItemConvertible plank) {
+    public static void offerGrindstoneRecipe(RecipeExporter exporter, ItemConvertible grindstone, ItemConvertible stick, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, grindstone)
                 .input('I', stick).input('-', Blocks.STONE_SLAB).input('#', plank)
                 .pattern("I-I").pattern("# #")
                 .criterion("has_stone_slab", VanillaRecipeProvider.conditionsFromItem(Blocks.STONE_SLAB)).offerTo(exporter);
     }
-    public static void offerLadderRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible ladder, ItemConvertible stick) {
+    public static void offerLadderRecipe(RecipeExporter exporter, ItemConvertible ladder, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ladder, 3)
                 .input('#', stick)
                 .pattern("# #").pattern("###").pattern("# #")
                 .criterion("has_stick", VanillaRecipeProvider.conditionsFromItem(stick)).offerTo(exporter);
     }
-    public static void offerLeverRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible lever, ItemConvertible stick) {
+    public static void offerLeverRecipe(RecipeExporter exporter, ItemConvertible lever, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, lever)
                 .input('#', Blocks.COBBLESTONE).input('X', stick)
                 .pattern("X").pattern("#")
                 .criterion("has_cobblestone", VanillaRecipeProvider.conditionsFromItem(Blocks.COBBLESTONE)).offerTo(exporter);
     }
-    public static void offerActivatorRailRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible activatorrail, ItemConvertible redstonetorch, ItemConvertible stick, ItemConvertible rail) {
+    public static void offerActivatorRailRecipe(RecipeExporter exporter, ItemConvertible activatorrail, ItemConvertible redstonetorch, ItemConvertible stick, ItemConvertible rail) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, activatorrail, 6)
                 .input('#', redstonetorch).input('S', stick).input('X', Items.IRON_INGOT)
                 .pattern("XSX").pattern("X#X").pattern("XSX")
                 .criterion("has_rail", VanillaRecipeProvider.conditionsFromItem(rail)).offerTo(exporter);
     }
-    public static void offerDetectorRailRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible detectorrail, ItemConvertible stick, ItemConvertible rail) {
+    public static void offerDetectorRailRecipe(RecipeExporter exporter, ItemConvertible detectorrail, ItemConvertible stick, ItemConvertible rail) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, detectorrail, 6)
                 .input('R', Items.REDSTONE).input('#', Blocks.STONE_PRESSURE_PLATE).input('S', stick).input('X', Items.IRON_INGOT)
                 .pattern("XSX").pattern("X#X").pattern("XRX")
                 .criterion("has_rail", VanillaRecipeProvider.conditionsFromItem(rail)).offerTo(exporter);
     }
-    public static void offerPoweredRailRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible poweredrail, ItemConvertible stick, ItemConvertible rail) {
+    public static void offerPoweredRailRecipe(RecipeExporter exporter, ItemConvertible poweredrail, ItemConvertible stick, ItemConvertible rail) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, poweredrail, 6)
                 .input('R', Items.REDSTONE).input('#', stick).input('X', Items.GOLD_INGOT)
                 .pattern("X X").pattern("X#X").pattern("XRX")
                 .criterion("has_rail", VanillaRecipeProvider.conditionsFromItem(rail)).offerTo(exporter);
     }
-    public static void offerRailRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible rail, ItemConvertible stick) {
+    public static void offerRailRecipe(RecipeExporter exporter, ItemConvertible rail, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.TRANSPORTATION, rail, 16)
                 .input('#', stick).input('X', Items.IRON_INGOT)
                 .pattern("X X").pattern("X#X").pattern("X X")
                 .criterion("has_minecart", VanillaRecipeProvider.conditionsFromItem(Items.MINECART)).offerTo(exporter);
     }
-    public static void offerRedstoneTorchRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible redstonetorch, ItemConvertible stick) {
+    public static void offerRedstoneTorchRecipe(RecipeExporter exporter, ItemConvertible redstonetorch, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, redstonetorch)
                 .input('#', stick).input('X', Items.REDSTONE)
                 .pattern("X").pattern("#")
                 .criterion("has_redstone", VanillaRecipeProvider.conditionsFromItem(Items.REDSTONE)).offerTo(exporter);
     }
-    public static void offerSoulTorchRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible soultorch, ItemConvertible stick) {
+    public static void offerSoulTorchRecipe(RecipeExporter exporter, ItemConvertible soultorch, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, soultorch, 4)
                 .input('X', Ingredient.ofItems(Items.COAL, Items.CHARCOAL)).input('#', stick).input('S', ItemTags.SOUL_FIRE_BASE_BLOCKS)
                 .pattern("X").pattern("#").pattern("S")
                 .criterion("has_soul_sand", VanillaRecipeProvider.conditionsFromTag(ItemTags.SOUL_FIRE_BASE_BLOCKS)).offerTo(exporter);
     }
-    public static void offerTorchRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible torch, ItemConvertible stick) {
+    public static void offerTorchRecipe(RecipeExporter exporter, ItemConvertible torch, ItemConvertible stick) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, torch, 4)
                 .input('#', stick).input('X', Ingredient.ofItems(Items.COAL, Items.CHARCOAL))
                 .pattern("X").pattern("#")

@@ -50,7 +50,7 @@ public class ModModel extends Models {
         return new Model(Optional.of(getLeverBlockId(parent)), Optional.empty(), requiredTextures);
     }
 
-    static {;
+    static {
         BOW = createBowModel("bow",TextureKey.LAYER0);
         CAMPFIRE = createCampfireModel("campfire", TextureKey.PARTICLE, TextureKey.FIRE, TextureKey.LIT_LOG, ModTextureKey.LOG);
         CAMPFIRE_OFF = createCampfireModel("campfire_off", TextureKey.PARTICLE, ModTextureKey.LOG);

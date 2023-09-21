@@ -8,6 +8,7 @@ import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.passive.PigEntity;
 import net.minecraft.entity.passive.StriderEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.recipe.Ingredient;
@@ -28,9 +29,9 @@ public abstract class StriderEntityMixin extends PassiveEntity {
         super(entityType, world);
     }
 
-    @WrapOperation(method = "getControllingPassenger", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
-    private boolean vsas$customRodsCanControlStrider(ItemStack stack, Item item, Operation<Boolean> original) {
-        return original.call(stack, item) || stack.getItem() instanceof VariantFungusOnAStickItem;
+    @WrapOperation(method = "getControllingPassenger", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;isHolding(Lnet/minecraft/item/Item;)Z"))
+    private boolean vsas$customRodsCanControlStrider(PlayerEntity playerEntity, Item item, Operation<Boolean> original) {
+        return original.call(playerEntity, item) || playerEntity.isHolding((ItemStack stack) -> stack.getItem() instanceof  VariantFungusOnAStickItem);
     }
 
     @Inject(method = "initGoals", at = @At("TAIL"))
