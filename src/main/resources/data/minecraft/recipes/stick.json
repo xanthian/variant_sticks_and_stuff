@@ -1,11 +1,19 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sticks",
+  "key": {
+    "#": {
       "item": "minecraft:oak_planks"
     }
+  },
+  "pattern": [
+    "#",
+    "#"
   ],
   "result": {
+    "count": 4,
     "item": "minecraft:stick"
-  }
+  },
+  "show_notification": true
 }
