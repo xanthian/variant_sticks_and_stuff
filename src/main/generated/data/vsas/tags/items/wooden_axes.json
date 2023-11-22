@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:axes/acacia_wooden_axe",
+    "vsas:axes/bamboo_wooden_axe",
+    "vsas:axes/birch_wooden_axe",
+    "vsas:axes/cherry_wooden_axe",
+    "vsas:axes/crimson_wooden_axe",
+    "vsas:axes/dark_oak_wooden_axe",
+    "vsas:axes/jungle_wooden_axe",
+    "vsas:axes/mangrove_wooden_axe",
+    "vsas:axes/spruce_wooden_axe",
+    "vsas:axes/warped_wooden_axe"
+  ]
+}

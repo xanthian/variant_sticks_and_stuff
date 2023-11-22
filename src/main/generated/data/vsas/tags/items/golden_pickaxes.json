@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:pickaxes/acacia_golden_pickaxe",
+    "vsas:pickaxes/bamboo_golden_pickaxe",
+    "vsas:pickaxes/birch_golden_pickaxe",
+    "vsas:pickaxes/cherry_golden_pickaxe",
+    "vsas:pickaxes/crimson_golden_pickaxe",
+    "vsas:pickaxes/dark_oak_golden_pickaxe",
+    "vsas:pickaxes/jungle_golden_pickaxe",
+    "vsas:pickaxes/mangrove_golden_pickaxe",
+    "vsas:pickaxes/spruce_golden_pickaxe",
+    "vsas:pickaxes/warped_golden_pickaxe"
+  ]
+}

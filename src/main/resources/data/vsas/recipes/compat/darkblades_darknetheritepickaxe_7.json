@@ -1,0 +1,38 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "darkblades"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "darkblades:dark_ingot"
+    },
+    "3": {
+      "item": "darkblades:dark_ingot"
+    },
+    "4": {
+      "tag": "vsas:netherite_pickaxes"
+    },
+    "5": {
+      "item": "darkblades:dark_ingot"
+    },
+    "7": {
+      "item": "darkblades:dark_catalyst"
+    }
+  },
+  "result": {
+    "item": "darkblades:dark_netherite_pickaxe",
+    "count": 1
+  }
+}

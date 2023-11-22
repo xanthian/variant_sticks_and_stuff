@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:swords/acacia_netherite_sword",
+    "vsas:swords/bamboo_netherite_sword",
+    "vsas:swords/birch_netherite_sword",
+    "vsas:swords/cherry_netherite_sword",
+    "vsas:swords/crimson_netherite_sword",
+    "vsas:swords/dark_oak_netherite_sword",
+    "vsas:swords/jungle_netherite_sword",
+    "vsas:swords/mangrove_netherite_sword",
+    "vsas:swords/spruce_netherite_sword",
+    "vsas:swords/warped_netherite_sword"
+  ]
+}

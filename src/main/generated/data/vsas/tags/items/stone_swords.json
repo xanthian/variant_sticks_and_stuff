@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:swords/acacia_stone_sword",
+    "vsas:swords/bamboo_stone_sword",
+    "vsas:swords/birch_stone_sword",
+    "vsas:swords/cherry_stone_sword",
+    "vsas:swords/crimson_stone_sword",
+    "vsas:swords/dark_oak_stone_sword",
+    "vsas:swords/jungle_stone_sword",
+    "vsas:swords/mangrove_stone_sword",
+    "vsas:swords/spruce_stone_sword",
+    "vsas:swords/warped_stone_sword"
+  ]
+}

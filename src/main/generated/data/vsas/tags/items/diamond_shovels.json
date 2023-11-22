@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:shovels/acacia_diamond_shovel",
+    "vsas:shovels/bamboo_diamond_shovel",
+    "vsas:shovels/birch_diamond_shovel",
+    "vsas:shovels/cherry_diamond_shovel",
+    "vsas:shovels/crimson_diamond_shovel",
+    "vsas:shovels/dark_oak_diamond_shovel",
+    "vsas:shovels/jungle_diamond_shovel",
+    "vsas:shovels/mangrove_diamond_shovel",
+    "vsas:shovels/spruce_diamond_shovel",
+    "vsas:shovels/warped_diamond_shovel"
+  ]
+}

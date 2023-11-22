@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:pickaxes/acacia_netherite_pickaxe",
+    "vsas:pickaxes/bamboo_netherite_pickaxe",
+    "vsas:pickaxes/birch_netherite_pickaxe",
+    "vsas:pickaxes/cherry_netherite_pickaxe",
+    "vsas:pickaxes/crimson_netherite_pickaxe",
+    "vsas:pickaxes/dark_oak_netherite_pickaxe",
+    "vsas:pickaxes/jungle_netherite_pickaxe",
+    "vsas:pickaxes/mangrove_netherite_pickaxe",
+    "vsas:pickaxes/spruce_netherite_pickaxe",
+    "vsas:pickaxes/warped_netherite_pickaxe"
+  ]
+}

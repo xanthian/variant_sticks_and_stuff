@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "amethyst_imbuement"
+      ]
+    }
+  ],
+  "type": "amethyst_imbuement:enhancing",
+  "dust": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "base": {
+    "tag": "vsas:torches"
+  },
+  "addition": {
+    "item": "minecraft:sunflower"
+  },
+  "result": {
+    "item": "amethyst_imbuement:shine_light",
+    "count": 2
+  }
+}

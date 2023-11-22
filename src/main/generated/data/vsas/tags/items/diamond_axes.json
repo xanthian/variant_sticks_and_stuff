@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:axes/acacia_diamond_axe",
+    "vsas:axes/bamboo_diamond_axe",
+    "vsas:axes/birch_diamond_axe",
+    "vsas:axes/cherry_diamond_axe",
+    "vsas:axes/crimson_diamond_axe",
+    "vsas:axes/dark_oak_diamond_axe",
+    "vsas:axes/jungle_diamond_axe",
+    "vsas:axes/mangrove_diamond_axe",
+    "vsas:axes/spruce_diamond_axe",
+    "vsas:axes/warped_diamond_axe"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:pickaxes/acacia_wooden_pickaxe",
+    "vsas:pickaxes/bamboo_wooden_pickaxe",
+    "vsas:pickaxes/birch_wooden_pickaxe",
+    "vsas:pickaxes/cherry_wooden_pickaxe",
+    "vsas:pickaxes/crimson_wooden_pickaxe",
+    "vsas:pickaxes/dark_oak_wooden_pickaxe",
+    "vsas:pickaxes/jungle_wooden_pickaxe",
+    "vsas:pickaxes/mangrove_wooden_pickaxe",
+    "vsas:pickaxes/spruce_wooden_pickaxe",
+    "vsas:pickaxes/warped_wooden_pickaxe"
+  ]
+}

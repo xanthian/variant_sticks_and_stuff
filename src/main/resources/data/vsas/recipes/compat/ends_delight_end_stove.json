@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "ends_delight"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "111",
+    "2 2",
+    "232"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    "2": {
+      "item": "minecraft:end_stone_bricks"
+    },
+    "3": {
+      "tag": "vsas:campfires"
+    }
+  },
+  "result": {
+    "item": "ends_delight:end_stove"
+  }
+}

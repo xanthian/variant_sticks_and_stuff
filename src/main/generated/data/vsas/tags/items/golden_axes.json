@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:axes/acacia_golden_axe",
+    "vsas:axes/bamboo_golden_axe",
+    "vsas:axes/birch_golden_axe",
+    "vsas:axes/cherry_golden_axe",
+    "vsas:axes/crimson_golden_axe",
+    "vsas:axes/dark_oak_golden_axe",
+    "vsas:axes/jungle_golden_axe",
+    "vsas:axes/mangrove_golden_axe",
+    "vsas:axes/spruce_golden_axe",
+    "vsas:axes/warped_golden_axe"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "amethyst_imbuement"
+      ]
+    }
+  ],
+  "type": "amethyst_imbuement:imbuing",
+  "imbueA": {
+	"item": "amethyst_imbuement:danburite"
+  },
+  "imbueB": {
+	"item": "amethyst_imbuement:danburite"
+  },
+  "imbueC": {
+	"item": "amethyst_imbuement:danburite"
+  },
+  "imbueD": {
+	"item": "amethyst_imbuement:danburite"
+  },
+  "craftB": {
+	"item": "amethyst_imbuement:book_of_lore"
+  },
+  "craftD": {
+	"tag": "vsas:iron_shovels"
+  },
+  "craftF": {
+	"tag": "vsas:iron_shovels"
+  },
+  "craftH": {
+	"tag": "vsas:iron_shovels"
+  },
+  "title": "Excavate",
+  "cost": 7,
+  "augment": "amethyst_imbuement:excavate"
+}
+

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:axes/acacia_netherite_axe",
+    "vsas:axes/bamboo_netherite_axe",
+    "vsas:axes/birch_netherite_axe",
+    "vsas:axes/cherry_netherite_axe",
+    "vsas:axes/crimson_netherite_axe",
+    "vsas:axes/dark_oak_netherite_axe",
+    "vsas:axes/jungle_netherite_axe",
+    "vsas:axes/mangrove_netherite_axe",
+    "vsas:axes/spruce_netherite_axe",
+    "vsas:axes/warped_netherite_axe"
+  ]
+}

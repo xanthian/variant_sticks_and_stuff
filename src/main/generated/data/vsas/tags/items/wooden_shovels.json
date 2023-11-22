@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:shovels/acacia_wooden_shovel",
+    "vsas:shovels/bamboo_wooden_shovel",
+    "vsas:shovels/birch_wooden_shovel",
+    "vsas:shovels/cherry_wooden_shovel",
+    "vsas:shovels/crimson_wooden_shovel",
+    "vsas:shovels/dark_oak_wooden_shovel",
+    "vsas:shovels/jungle_wooden_shovel",
+    "vsas:shovels/mangrove_wooden_shovel",
+    "vsas:shovels/spruce_wooden_shovel",
+    "vsas:shovels/warped_wooden_shovel"
+  ]
+}

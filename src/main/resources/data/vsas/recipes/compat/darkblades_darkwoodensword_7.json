@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "darkblades"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "tag": "minecraft:planks"
+    },
+    "2": {
+      "tag": "minecraft:planks"
+    },
+    "3": {
+      "item": "darkblades:dark_ingot"
+    },
+    "4": {
+      "tag": "vsas:wooden_swords"
+    },
+    "5": {
+      "tag": "minecraft:planks"
+    },
+    "6": {
+      "item": "darkblades:dark_core"
+    },
+    "7": {
+      "item": "darkblades:dark_ingot"
+    }
+  },
+  "result": {
+    "item": "darkblades:dark_wooden_sword",
+    "count": 1
+  }
+}

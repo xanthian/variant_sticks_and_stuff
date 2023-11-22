@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:pickaxes/acacia_diamond_pickaxe",
+    "vsas:pickaxes/bamboo_diamond_pickaxe",
+    "vsas:pickaxes/birch_diamond_pickaxe",
+    "vsas:pickaxes/cherry_diamond_pickaxe",
+    "vsas:pickaxes/crimson_diamond_pickaxe",
+    "vsas:pickaxes/dark_oak_diamond_pickaxe",
+    "vsas:pickaxes/jungle_diamond_pickaxe",
+    "vsas:pickaxes/mangrove_diamond_pickaxe",
+    "vsas:pickaxes/spruce_diamond_pickaxe",
+    "vsas:pickaxes/warped_diamond_pickaxe"
+  ]
+}

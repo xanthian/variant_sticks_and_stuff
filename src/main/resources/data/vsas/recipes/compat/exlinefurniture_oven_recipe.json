@@ -1,0 +1,28 @@
+{
+    "fabric:load_conditions": [
+        {
+            "condition": "fabric:all_mods_loaded",
+            "values": [
+                "exlinefurniture"
+            ]
+        }
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BBB",
+        "BRB",
+        "BBB"
+    ],
+    "key": {
+        "R": {
+            "tag": "vsas:campfires"
+        },
+        "B": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "exlinefurniture:oven",
+        "count": 1
+    }
+}

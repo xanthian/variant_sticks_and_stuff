@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:pickaxes/acacia_iron_pickaxe",
+    "vsas:pickaxes/bamboo_iron_pickaxe",
+    "vsas:pickaxes/birch_iron_pickaxe",
+    "vsas:pickaxes/cherry_iron_pickaxe",
+    "vsas:pickaxes/crimson_iron_pickaxe",
+    "vsas:pickaxes/dark_oak_iron_pickaxe",
+    "vsas:pickaxes/jungle_iron_pickaxe",
+    "vsas:pickaxes/mangrove_iron_pickaxe",
+    "vsas:pickaxes/spruce_iron_pickaxe",
+    "vsas:pickaxes/warped_iron_pickaxe"
+  ]
+}

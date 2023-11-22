@@ -1,0 +1,51 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "amethyst_imbuement"
+      ]
+    }
+  ],
+  "type": "amethyst_imbuement:imbuing",
+  "imbueA": {
+	"item": "amethyst_imbuement:energetic_opal"
+  },
+  "imbueB": {
+	"item": "minecraft:amethyst_shard"
+  },
+  "imbueC": {
+	"item": "minecraft:amethyst_shard"
+  },
+  "imbueD": {
+	"item": "minecraft:amethyst_shard"
+  },
+  "craftA": {
+	"tag": "vsas:iron_pickaxes"
+  },
+  "craftB": {
+	"item": "minecraft:redstone"
+  },
+  "craftC": {
+	"tag": "vsas:iron_pickaxes"
+  },
+  "craftD": {
+	"item": "minecraft:redstone"
+  },
+  "craftF": {
+	"item": "minecraft:redstone"
+  },
+  "craftG": {
+	"tag": "vsas:iron_pickaxes"
+  },
+  "craftH": {
+	"item": "minecraft:redstone"
+  },
+  "craftI": {
+	"tag": "vsas:iron_pickaxes"
+  },
+  "title": "Hasting",
+  "cost": 8,
+  "augment": "amethyst_imbuement:hasting"
+}
+

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:shovels/acacia_golden_shovel",
+    "vsas:shovels/bamboo_golden_shovel",
+    "vsas:shovels/birch_golden_shovel",
+    "vsas:shovels/cherry_golden_shovel",
+    "vsas:shovels/crimson_golden_shovel",
+    "vsas:shovels/dark_oak_golden_shovel",
+    "vsas:shovels/jungle_golden_shovel",
+    "vsas:shovels/mangrove_golden_shovel",
+    "vsas:shovels/spruce_golden_shovel",
+    "vsas:shovels/warped_golden_shovel"
+  ]
+}

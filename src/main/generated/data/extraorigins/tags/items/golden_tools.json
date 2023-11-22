@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "#vsas:golden_axes",
+    "vsas:hoes/acacia_golden_hoe",
+    "vsas:hoes/birch_golden_hoe",
+    "vsas:hoes/cherry_golden_hoe",
+    "vsas:hoes/crimson_golden_hoe",
+    "vsas:hoes/dark_oak_golden_hoe",
+    "vsas:hoes/jungle_golden_hoe",
+    "vsas:hoes/mangrove_golden_hoe",
+    "vsas:hoes/spruce_golden_hoe",
+    "vsas:hoes/warped_golden_hoe",
+    "#vsas:golden_pickaxes",
+    "#vsas:golden_shovels",
+    "vsas:swords/acacia_golden_sword",
+    "vsas:swords/birch_golden_sword",
+    "vsas:swords/cherry_golden_sword",
+    "vsas:swords/crimson_golden_sword",
+    "vsas:swords/dark_oak_golden_sword",
+    "vsas:swords/jungle_golden_sword",
+    "vsas:swords/mangrove_golden_sword",
+    "vsas:swords/spruce_golden_sword",
+    "vsas:swords/warped_golden_sword"
+  ]
+}

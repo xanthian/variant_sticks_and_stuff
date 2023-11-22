@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:axes/acacia_iron_axe",
+    "vsas:axes/bamboo_iron_axe",
+    "vsas:axes/birch_iron_axe",
+    "vsas:axes/cherry_iron_axe",
+    "vsas:axes/crimson_iron_axe",
+    "vsas:axes/dark_oak_iron_axe",
+    "vsas:axes/jungle_iron_axe",
+    "vsas:axes/mangrove_iron_axe",
+    "vsas:axes/spruce_iron_axe",
+    "vsas:axes/warped_iron_axe"
+  ]
+}

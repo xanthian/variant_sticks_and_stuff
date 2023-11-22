@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:hoes/acacia_golden_hoe",
+    "vsas:hoes/bamboo_golden_hoe",
+    "vsas:hoes/birch_golden_hoe",
+    "vsas:hoes/cherry_golden_hoe",
+    "vsas:hoes/crimson_golden_hoe",
+    "vsas:hoes/dark_oak_golden_hoe",
+    "vsas:hoes/jungle_golden_hoe",
+    "vsas:hoes/mangrove_golden_hoe",
+    "vsas:hoes/spruce_golden_hoe",
+    "vsas:hoes/warped_golden_hoe",
+    "vsas:hoes/acacia_diamond_hoe",
+    "vsas:hoes/bamboo_diamond_hoe",
+    "vsas:hoes/birch_diamond_hoe",
+    "vsas:hoes/cherry_diamond_hoe",
+    "vsas:hoes/crimson_diamond_hoe",
+    "vsas:hoes/dark_oak_diamond_hoe",
+    "vsas:hoes/jungle_diamond_hoe",
+    "vsas:hoes/mangrove_diamond_hoe",
+    "vsas:hoes/spruce_diamond_hoe",
+    "vsas:hoes/warped_diamond_hoe"
+  ]
+}

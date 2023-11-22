@@ -21,13 +21,9 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
         super(output, registriesFuture);
     }
 
-    private static final TagKey<Block> ACTIVATOR_RAILS = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "activator_rails"));
     private static final TagKey<Block> CAMPFIRES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "campfires"));
-    private static final TagKey<Block> DETECTOR_RAILS = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "detector_rails"));
     private static final TagKey<Block> GRINDSTONES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "grindstones"));
     private static final TagKey<Block> LADDERS = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "ladders"));
-    private static final TagKey<Block> POWERED_RAILS = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "powered_rails"));
-    private static final TagKey<Block> RAILS = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "rails"));
     private static final TagKey<Block> REDSTONE_TORCHES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "redstone_torches"));
     private static final TagKey<Block> SOUL_CAMPFIRES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "soul_campfires"));
     private static final TagKey<Block> SOUL_TORCHES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "soul_torches"));
@@ -40,7 +36,7 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
         for (Block block : ActivatorRails.MOD_ACTIVATOR_RAILS.values()) {
-            getOrCreateTagBuilder(ACTIVATOR_RAILS)
+            getOrCreateTagBuilder(BlockTags.RAILS)
                     .add(block);
         }
 
@@ -50,7 +46,7 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
         }
 
         for (Block block : DetectorRails.MOD_DETECTOR_RAILS.values()) {
-            getOrCreateTagBuilder(DETECTOR_RAILS)
+            getOrCreateTagBuilder(BlockTags.RAILS)
                     .add(block);
         }
 
@@ -65,12 +61,12 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
         }
 
         for (Block block : PoweredRails.MOD_POWERED_RAILS.values()) {
-            getOrCreateTagBuilder(POWERED_RAILS)
+            getOrCreateTagBuilder(BlockTags.RAILS)
                     .add(block);
         }
 
         for (Block block : Rails.MOD_RAILS.values()) {
-            getOrCreateTagBuilder(RAILS)
+            getOrCreateTagBuilder(BlockTags.RAILS)
                     .add(block);
         }
 
@@ -123,12 +119,6 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
                 .addTag(SOUL_CAMPFIRES)
                 .addTag(SOUL_TORCHES)
                 .addTag(WALL_SOUL_TORCHES);
-
-        getOrCreateTagBuilder(BlockTags.RAILS)
-                .addTag(ACTIVATOR_RAILS)
-                .addTag(DETECTOR_RAILS)
-                .addTag(RAILS)
-                .addTag(POWERED_RAILS);
 
         getOrCreateTagBuilder(BlockTags.WALL_POST_OVERRIDE)
                 .addTag(REDSTONE_TORCHES)

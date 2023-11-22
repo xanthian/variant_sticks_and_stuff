@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:pickaxes/acacia_stone_pickaxe",
+    "vsas:pickaxes/bamboo_stone_pickaxe",
+    "vsas:pickaxes/birch_stone_pickaxe",
+    "vsas:pickaxes/cherry_stone_pickaxe",
+    "vsas:pickaxes/crimson_stone_pickaxe",
+    "vsas:pickaxes/dark_oak_stone_pickaxe",
+    "vsas:pickaxes/jungle_stone_pickaxe",
+    "vsas:pickaxes/mangrove_stone_pickaxe",
+    "vsas:pickaxes/spruce_stone_pickaxe",
+    "vsas:pickaxes/warped_stone_pickaxe"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "vsas:shovels/acacia_iron_shovel",
+    "vsas:shovels/bamboo_iron_shovel",
+    "vsas:shovels/birch_iron_shovel",
+    "vsas:shovels/cherry_iron_shovel",
+    "vsas:shovels/crimson_iron_shovel",
+    "vsas:shovels/dark_oak_iron_shovel",
+    "vsas:shovels/jungle_iron_shovel",
+    "vsas:shovels/mangrove_iron_shovel",
+    "vsas:shovels/spruce_iron_shovel",
+    "vsas:shovels/warped_iron_shovel"
+  ]
+}
