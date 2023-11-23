@@ -92,7 +92,7 @@ public class Pickaxes {
     public static final Item WARPED_NETHERITE_PICKAXE = registerItem("pickaxes/warped_netherite_pickaxe", new VariantPickaxeItem(ToolMaterials.NETHERITE));
     
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_PICKAXES.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

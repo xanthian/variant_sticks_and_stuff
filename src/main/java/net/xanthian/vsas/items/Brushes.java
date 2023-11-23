@@ -27,7 +27,7 @@ public class Brushes {
     public static final Item WARPED_BRUSH = registerItem("brushes/warped_brush", new VariantBrushItem());
     
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_BRUSHES.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

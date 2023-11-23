@@ -92,7 +92,7 @@ public class Hoes {
     public static final Item WARPED_NETHERITE_HOE = registerItem("hoes/warped_netherite_hoe", new VariantHoeItem(ToolMaterials.NETHERITE,-4,0F));
     
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_HOES.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

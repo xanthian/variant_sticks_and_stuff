@@ -29,7 +29,7 @@ public class Crossbows {
     public static final CrossbowItem WARPED_CROSSBOW = registerItem("crossbows/warped_crossbow", new VariantCrossbowItem());
 
     private static CrossbowItem registerItem(String name, CrossbowItem item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_CROSSBOWS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

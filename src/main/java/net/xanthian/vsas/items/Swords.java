@@ -89,7 +89,7 @@ public class Swords {
     public static final Item WARPED_NETHERITE_SWORD = registerItem("swords/warped_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE));
     
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_SWORDS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

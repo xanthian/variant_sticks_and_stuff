@@ -55,7 +55,7 @@ public class Torches {
     }
 
     private static void initTorchBlock(String torchName, Block torch, String wallTorchName, Block wallTorch) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, torchName.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, torchName);
         MOD_TORCHES.put(identifier, torch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, torchName), torch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, wallTorchName), wallTorch);

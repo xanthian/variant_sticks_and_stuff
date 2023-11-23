@@ -28,7 +28,7 @@ public class Arrows {
     public static final ArrowItem WARPED_ARROW_ITEM = registerItem("arrows/warped_arrow", new WarpedArrowItem());
 
     private static ArrowItem registerItem(String name, ArrowItem item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_ARROWS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

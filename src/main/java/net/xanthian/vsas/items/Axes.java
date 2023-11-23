@@ -93,7 +93,7 @@ public class Axes {
     public static final Item WARPED_NETHERITE_AXE = registerItem("axes/warped_netherite_axe", new VariantAxeItem(ToolMaterials.NETHERITE,5F,-3F));
 
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_AXES.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
 

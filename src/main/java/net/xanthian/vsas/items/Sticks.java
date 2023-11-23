@@ -33,7 +33,7 @@ public class Sticks extends Item {
     public static final Item WARPED_STICK = registerItem("sticks/warped_stick", new Sticks());
 
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_STICKS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

@@ -41,7 +41,7 @@ public class OnAStick {
     public static final Item WARPED_WARPED_FUNGUS_ON_A_STICK = registerItem("onastick/warped_warped_fungus_on_a_stick", new VariantFungusOnAStickItem());
 
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         ONASTICK.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

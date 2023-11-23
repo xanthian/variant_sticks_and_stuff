@@ -4,7 +4,6 @@ import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -29,15 +28,9 @@ public class PoweredRails {
     public static final Block WARPED_POWERED_RAIL = registerRailBlock("rails/warped_powered_rail", new VariantPoweredRailBlock());
 
     private static Block registerRailBlock(String name, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
-        registerBlockItem(name, block);
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
+        Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
         MOD_POWERED_RAILS.put(identifier, block);
         return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
-    }
-
-    private static Item registerBlockItem(String name, Block block) {
-        Item item = Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
-        return item;
     }
 }

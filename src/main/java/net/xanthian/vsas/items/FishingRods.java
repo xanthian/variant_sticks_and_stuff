@@ -28,7 +28,7 @@ public class FishingRods {
     public static final Item WARPED_FISHING_ROD = registerItem("fishingrods/warped_fishing_rod", new VariantFishingRodItem());
 
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_FISHING_RODS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

@@ -28,7 +28,7 @@ public class Bows {
     public static final Item WARPED_BOW = registerItem("bows/warped_bow", new VariantBowItem());
 
     private static Item registerItem(String name, Item item) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_BOWS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }

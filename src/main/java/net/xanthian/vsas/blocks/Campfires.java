@@ -3,15 +3,12 @@ package net.xanthian.vsas.blocks;
 import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.blocks.blocktypes.VariantCampfireBlock;
 
@@ -33,15 +30,10 @@ public class Campfires {
     public static final Block WARPED_CAMPFIRE = registerCampfireBlock("campfires/warped_campfire", new VariantCampfireBlock(1, FabricBlockSettings.copyOf(Blocks.CAMPFIRE)));
 
     private static Block registerCampfireBlock(String name, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
-        registerBlockItem(name, block);
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
+        Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
         MOD_CAMPFIRES.put(identifier, block);
         return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
     }
 
-    private static Item registerBlockItem(String name, Block block) {
-        Item item = Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
-        return item;
-    }
 }

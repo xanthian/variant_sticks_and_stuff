@@ -2,14 +2,11 @@ package net.xanthian.vsas.blocks;
 
 import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.blocks.blocktypes.VariantLadderBlock;
 
@@ -31,15 +28,9 @@ public class Ladders {
     public static final Block WARPED_LADDER = registerLadderBlock("ladders/warped_ladder", new VariantLadderBlock());
 
     private static Block registerLadderBlock(String name, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
-        registerBlockItem(name, block);
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
+        Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
         MOD_LADDERS.put(identifier, block);
         return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
-    }
-
-    private static Item registerBlockItem(String name, Block block) {
-        Item item = Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings()));
-        return item;
     }
 }
