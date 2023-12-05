@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "betterend:thallasium_ingot"
+  },
+  "base": {
+    "tag": "c:wood_sticks"
+  },
+  "result": {
+    "item": "betterend:thallasium_sword_handle"
+  },
+  "template": {
+    "item": "betterend:thallasium_upgrade_smithing_template"
+  }
+}

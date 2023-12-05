@@ -1,7 +1,8 @@
 package net.xanthian.vsas.items;
 
 import com.google.common.collect.Maps;
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -87,11 +88,13 @@ public class Swords {
     public static final Item MANGROVE_NETHERITE_SWORD = registerItem("swords/mangrove_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE));
     public static final Item SPRUCE_NETHERITE_SWORD = registerItem("swords/spruce_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE));
     public static final Item WARPED_NETHERITE_SWORD = registerItem("swords/warped_netherite_sword", new VariantSwordItem(ToolMaterials.NETHERITE));
-    
+
     private static Item registerItem(String name, Item item) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_SWORDS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }
-    public static void registerSwordItems() {}
+
+    public static void registerSwordItems() {
+    }
 }

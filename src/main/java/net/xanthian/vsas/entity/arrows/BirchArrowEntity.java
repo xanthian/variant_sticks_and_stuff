@@ -5,7 +5,6 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
 import net.xanthian.vsas.entity.EntityInit;
 import net.xanthian.vsas.items.Arrows;
 
@@ -13,7 +12,7 @@ public class BirchArrowEntity
         extends PersistentProjectileEntity {
 
     public BirchArrowEntity(EntityType<? extends BirchArrowEntity> entityType, World world) {
-        super((EntityType<? extends PersistentProjectileEntity>)entityType, world);
+        super(entityType, world);
     }
 
     public BirchArrowEntity(World world, double x, double y, double z) {

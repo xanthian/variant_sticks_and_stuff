@@ -12,7 +12,7 @@ public class CherryArrowEntity
         extends PersistentProjectileEntity {
 
     public CherryArrowEntity(EntityType<? extends CherryArrowEntity> entityType, World world) {
-        super((EntityType<? extends PersistentProjectileEntity>)entityType, world);
+        super(entityType, world);
     }
 
     public CherryArrowEntity(World world, double x, double y, double z) {

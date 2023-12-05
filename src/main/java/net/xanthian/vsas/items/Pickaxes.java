@@ -6,7 +6,6 @@ import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.items.itemtypes.VariantPickaxeItem;
 import net.xanthian.vsas.materials.VariantMaterials;
@@ -29,7 +28,7 @@ public class Pickaxes {
     public static final Item MANGROVE_WOODEN_PICKAXE = registerItem("pickaxes/mangrove_wooden_pickaxe", new VariantPickaxeItem(VariantMaterials.MANGROVE_PLANK));
     public static final Item SPRUCE_WOODEN_PICKAXE = registerItem("pickaxes/spruce_wooden_pickaxe", new VariantPickaxeItem(VariantMaterials.SPRUCE_PLANK));
     public static final Item WARPED_WOODEN_PICKAXE = registerItem("pickaxes/warped_wooden_pickaxe", new VariantPickaxeItem(VariantMaterials.WARPED_PLANK));
-    
+
     // Stone
     public static final Item ACACIA_STONE_PICKAXE = registerItem("pickaxes/acacia_stone_pickaxe", new VariantPickaxeItem(ToolMaterials.STONE));
     public static final Item BAMBOO_STONE_PICKAXE = registerItem("pickaxes/bamboo_stone_pickaxe", new VariantPickaxeItem(ToolMaterials.STONE));
@@ -90,11 +89,13 @@ public class Pickaxes {
     public static final Item MANGROVE_NETHERITE_PICKAXE = registerItem("pickaxes/mangrove_netherite_pickaxe", new VariantPickaxeItem(ToolMaterials.NETHERITE));
     public static final Item SPRUCE_NETHERITE_PICKAXE = registerItem("pickaxes/spruce_netherite_pickaxe", new VariantPickaxeItem(ToolMaterials.NETHERITE));
     public static final Item WARPED_NETHERITE_PICKAXE = registerItem("pickaxes/warped_netherite_pickaxe", new VariantPickaxeItem(ToolMaterials.NETHERITE));
-    
+
     private static Item registerItem(String name, Item item) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_PICKAXES.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }
-    public static void registerPickaxeItems() {}
+
+    public static void registerPickaxeItems() {
+    }
 }

@@ -12,7 +12,7 @@ public class BambooArrowEntity
         extends PersistentProjectileEntity {
 
     public BambooArrowEntity(EntityType<? extends BambooArrowEntity> entityType, World world) {
-        super((EntityType<? extends PersistentProjectileEntity>)entityType, world);
+        super(entityType, world);
     }
 
     public BambooArrowEntity(World world, double x, double y, double z) {

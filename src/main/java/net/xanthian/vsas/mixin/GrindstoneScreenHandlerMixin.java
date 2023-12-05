@@ -3,7 +3,6 @@ package net.xanthian.vsas.mixin;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.screen.GrindstoneScreenHandler;
 import net.minecraft.screen.ScreenHandlerContext;
-
 import net.xanthian.vsas.blocks.blocktypes.VariantGrindstoneBlock;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;

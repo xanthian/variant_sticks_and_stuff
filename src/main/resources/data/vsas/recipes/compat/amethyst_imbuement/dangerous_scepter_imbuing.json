@@ -1,0 +1,44 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "amethyst_imbuement"
+      ]
+    }
+  ],
+  "type": "amethyst_imbuement:imbuing",
+  "imbueA": {
+    "item": "amethyst_imbuement:citrine"
+  },
+  "imbueB": {
+    "item": "amethyst_imbuement:lethal_gem"
+  },
+  "imbueC": {
+    "item": "amethyst_imbuement:citrine"
+  },
+  "imbueD": {
+    "item": "amethyst_imbuement:citrine"
+  },
+  "craftB": {
+    "tag": "vsas:stone_swords"
+  },
+  "craftD": {
+    "tag": "vsas:stone_swords"
+  },
+  "craftE": {
+    "item": "amethyst_imbuement:opaline_scepter"
+  },
+  "craftF": {
+    "tag": "vsas:stone_swords"
+  },
+  "craftH": {
+    "tag": "vsas:stone_swords"
+  },
+  "title": "Dangerous Scepter",
+  "cost": 7,
+  "resultA": "amethyst_imbuement:dangerous_scepter",
+  "countA": 1,
+  "transferEnchant": true
+}
+

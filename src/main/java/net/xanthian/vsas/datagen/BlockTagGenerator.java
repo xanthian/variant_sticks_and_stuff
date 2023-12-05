@@ -2,14 +2,12 @@ package net.xanthian.vsas.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.blocks.*;
 
 import java.util.concurrent.CompletableFuture;
@@ -17,10 +15,6 @@ import java.util.concurrent.CompletableFuture;
 import static net.xanthian.vsas.Initialise.MOD_ID;
 
 public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
-    public BlockTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(output, registriesFuture);
-    }
-
     private static final TagKey<Block> CAMPFIRES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "campfires"));
     private static final TagKey<Block> GRINDSTONES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "grindstones"));
     private static final TagKey<Block> LADDERS = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "ladders"));
@@ -29,8 +23,11 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
     private static final TagKey<Block> SOUL_TORCHES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "soul_torches"));
     private static final TagKey<Block> TORCHES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "torches"));
     private static final TagKey<Block> WALL_SOUL_TORCHES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(MOD_ID, "wall_soul_torches"));
-
     private static final TagKey<Block> C_JOB_SITE = TagKey.of(Registries.BLOCK.getKey(), new Identifier("c:villager_job_sites"));
+
+    public BlockTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
+    }
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {

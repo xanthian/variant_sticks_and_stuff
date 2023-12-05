@@ -1,0 +1,33 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "azure-paxels"
+      ]
+    }
+  ],
+  "result": {
+    "item": "azure-paxels:wooden_paxel"
+  },
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AQ$",
+    " I ",
+    " I "
+  ],
+  "key": {
+    "I": {
+      "tag": "c:wood_sticks"
+    },
+    "$": {
+      "tag": "vsas:wooden_axes"
+    },
+    "Q": {
+      "tag": "vsas:wooden_shovels"
+    },
+    "A": {
+      "tag": "vsas:wooden_pickaxes"
+    }
+  }
+}

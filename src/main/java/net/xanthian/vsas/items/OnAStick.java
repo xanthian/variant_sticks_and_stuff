@@ -5,7 +5,6 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.items.itemtypes.VariantCarrotOnAStickItem;
 import net.xanthian.vsas.items.itemtypes.VariantFungusOnAStickItem;

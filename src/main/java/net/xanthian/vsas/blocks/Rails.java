@@ -33,4 +33,7 @@ public class Rails {
         MOD_RAILS.put(identifier, block);
         return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
     }
+
+    public static void registerRails() {
+    }
 }

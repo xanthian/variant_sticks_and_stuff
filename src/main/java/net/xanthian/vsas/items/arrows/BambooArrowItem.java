@@ -12,6 +12,7 @@ public class BambooArrowItem extends ArrowItem {
     public BambooArrowItem() {
         super(new FabricItemSettings());
     }
+
     @Override
     public PersistentProjectileEntity createArrow(World world, ItemStack stack, LivingEntity shooter) {
         return new BambooArrowEntity(world, shooter);

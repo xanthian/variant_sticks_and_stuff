@@ -2,14 +2,12 @@ package net.xanthian.vsas.blocks;
 
 import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.VerticallyAttachableBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.blocks.blocktypes.VariantSoulTorchBlock;
 import net.xanthian.vsas.blocks.blocktypes.VariantWallSoulTorchBlock;
@@ -17,8 +15,6 @@ import net.xanthian.vsas.blocks.blocktypes.VariantWallSoulTorchBlock;
 import java.util.Map;
 
 public class SoulTorches {
-
-    public static Map<Identifier, Block> MOD_SOUL_TORCHES = Maps.newHashMap();
 
     public static final Block ACACIA_SOUL_TORCH = new VariantSoulTorchBlock();
     public static final Block WALL_ACACIA_SOUL_TORCH = new VariantWallSoulTorchBlock();
@@ -40,6 +36,7 @@ public class SoulTorches {
     public static final Block WALL_SPRUCE_SOUL_TORCH = new VariantWallSoulTorchBlock();
     public static final Block WARPED_SOUL_TORCH = new VariantSoulTorchBlock();
     public static final Block WALL_WARPED_SOUL_TORCH = new VariantWallSoulTorchBlock();
+    public static Map<Identifier, Block> MOD_SOUL_TORCHES = Maps.newHashMap();
 
     public static void registerSoulTorchBlocks() {
         initTorchBlock("torches/acacia_soul_torch", ACACIA_SOUL_TORCH, "torches/wall_acacia_soul_torch", WALL_ACACIA_SOUL_TORCH);

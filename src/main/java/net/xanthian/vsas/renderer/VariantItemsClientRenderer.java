@@ -2,7 +2,6 @@ package net.xanthian.vsas.renderer;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.CrossbowItem;
@@ -32,9 +31,10 @@ public class VariantItemsClientRenderer {
             if (entity == null || entity.getActiveItem() != stack) {
                 return 0.0f;
             }
-            return (float)(entity.getItemUseTimeLeft() % 10) / 10.0f;
+            return (float) (entity.getItemUseTimeLeft() % 10) / 10.0f;
         });
     }
+
     // Crossbow
     public static void registerCrossbowPredicates(Item crossbowItem) {
         ModelPredicateProviderRegistry.register(crossbowItem, new Identifier("pull"), (itemStack, clientWorld, livingEntity, seed) -> {
@@ -63,7 +63,7 @@ public class VariantItemsClientRenderer {
                 if (livingEntity.getMainHandStack().getItem() instanceof FishingRodItem) {
                     bl2 = false;
                 }
-                return (bl || bl2) && livingEntity instanceof PlayerEntity && ((PlayerEntity)livingEntity).fishHook != null ? 1.0F : 0.0F;
+                return (bl || bl2) && livingEntity instanceof PlayerEntity && ((PlayerEntity) livingEntity).fishHook != null ? 1.0F : 0.0F;
             }
         });
     }

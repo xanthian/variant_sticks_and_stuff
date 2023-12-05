@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chair",
+  "key": {
+    "#": {
+      "item": "betterend:pythadendron_slab"
+    },
+    "I": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "pattern": [
+    "I ",
+    "##",
+    "II"
+  ],
+  "result": {
+    "item": "betterend:pythadendron_chair"
+  },
+  "show_notification": true
+}

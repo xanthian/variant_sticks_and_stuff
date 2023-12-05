@@ -2,7 +2,6 @@ package net.xanthian.vsas.mixin;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntityType;
-
 import net.xanthian.vsas.blocks.blocktypes.VariantCampfireBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

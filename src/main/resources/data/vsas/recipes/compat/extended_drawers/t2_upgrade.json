@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "extended_drawers"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "extended_drawers:t1_upgrade"
+    },
+    "M": {
+      "item": "minecraft:iron_block"
+    },
+    "S": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "BMB",
+    "SSS"
+  ],
+  "result": {
+    "item": "extended_drawers:t2_upgrade"
+  },
+  "show_notification": true
+}

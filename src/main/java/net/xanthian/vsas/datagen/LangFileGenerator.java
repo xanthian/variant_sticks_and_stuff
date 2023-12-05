@@ -2,12 +2,10 @@ package net.xanthian.vsas.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.entity.EntityInit;
 import net.xanthian.vsas.items.*;
@@ -15,6 +13,44 @@ import net.xanthian.vsas.items.*;
 public class LangFileGenerator extends FabricLanguageProvider {
     public LangFileGenerator(FabricDataOutput dataOutput) {
         super(dataOutput);
+    }
+
+    public static String generateBlockDisplayName(String prefix, Block block) {
+        Identifier name = Registries.BLOCK.getId(block);
+        String blockName = name.getPath();
+        // Check if the block name starts with the specified prefix
+        if (blockName.startsWith(prefix)) {
+            // Remove the prefix
+            String typeName = blockName.substring(prefix.length());
+            // Replace underscores with spaces and capitalize the first letter
+            String[] parts = typeName.split("_");
+            StringBuilder displayName = new StringBuilder();
+            for (String part : parts) {
+                displayName.append(Character.toUpperCase(part.charAt(0)))
+                        .append(part.substring(1))
+                        .append(" ");
+            }
+            return displayName.toString().trim();
+        }
+        // Return a default value or handle cases where the prefix doesn't match
+        return "Unknown Block";
+    }
+
+    public static String generateItemDisplayName(String prefix, Item item) {
+        Identifier name = Registries.ITEM.getId(item);
+        String itemName = name.getPath();
+        if (itemName.startsWith(prefix)) {
+            String typeName = itemName.substring(prefix.length());
+            String[] parts = typeName.split("_");
+            StringBuilder displayName = new StringBuilder();
+            for (String part : parts) {
+                displayName.append(Character.toUpperCase(part.charAt(0)))
+                        .append(part.substring(1))
+                        .append(" ");
+            }
+            return displayName.toString().trim();
+        }
+        return "Unknown Item";
     }
 
     @Override
@@ -130,43 +166,5 @@ public class LangFileGenerator extends FabricLanguageProvider {
         translationBuilder.add(EntityInit.MANGROVE_ARROW, "Mangrove Arrow");
         translationBuilder.add(EntityInit.OAK_ARROW, "Oak Arrow");
         translationBuilder.add(EntityInit.WARPED_ARROW, "Warped Arrow");
-    }
-
-    public static String generateBlockDisplayName(String prefix, Block block) {
-        Identifier name = Registries.BLOCK.getId(block);
-        String blockName = name.getPath();
-        // Check if the block name starts with the specified prefix
-        if (blockName.startsWith(prefix)) {
-            // Remove the prefix
-            String typeName = blockName.substring(prefix.length());
-            // Replace underscores with spaces and capitalize the first letter
-            String[] parts = typeName.split("_");
-            StringBuilder displayName = new StringBuilder();
-            for (String part : parts) {
-                displayName.append(Character.toUpperCase(part.charAt(0)))
-                        .append(part.substring(1))
-                        .append(" ");
-            }
-            return displayName.toString().trim();
-        }
-        // Return a default value or handle cases where the prefix doesn't match
-        return "Unknown Block";
-    }
-
-    public static String generateItemDisplayName(String prefix, Item item) {
-        Identifier name = Registries.ITEM.getId(item);
-        String itemName = name.getPath();
-        if (itemName.startsWith(prefix)) {
-            String typeName = itemName.substring(prefix.length());
-            String[] parts = typeName.split("_");
-            StringBuilder displayName = new StringBuilder();
-            for (String part : parts) {
-                displayName.append(Character.toUpperCase(part.charAt(0)))
-                        .append(part.substring(1))
-                        .append(" ");
-            }
-            return displayName.toString().trim();
-        }
-        return "Unknown Item";
     }
 }

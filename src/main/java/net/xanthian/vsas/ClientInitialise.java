@@ -5,11 +5,9 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.Item;
-
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.entity.EntityInit;
 import net.xanthian.vsas.items.Bows;

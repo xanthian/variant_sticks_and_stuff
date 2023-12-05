@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sign",
+  "key": {
+    "#": {
+      "item": "betterend:tenanea_planks"
+    },
+    "I": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " I "
+  ],
+  "result": {
+    "count": 3,
+    "item": "betterend:tenanea_sign"
+  },
+  "show_notification": true
+}

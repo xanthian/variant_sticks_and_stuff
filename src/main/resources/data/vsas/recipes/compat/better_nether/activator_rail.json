@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "activator_rail",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_torch"
+    },
+    "S": {
+      "tag": "c:wood_sticks"
+    },
+    "X": {
+      "item": "betternether:cincinnasite_ingot"
+    }
+  },
+  "pattern": [
+    "XSX",
+    "X#X",
+    "XSX"
+  ],
+  "result": {
+    "count": 6,
+    "item": "minecraft:activator_rail"
+  },
+  "show_notification": true
+}

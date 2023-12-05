@@ -1,18 +1,17 @@
 package net.xanthian.vsas.util;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-
+import net.xanthian.vsas.blocks.Ladders;
 import net.xanthian.vsas.items.*;
-import net.xanthian.vsas.blocks.*;
 
 public class ModRegistries {
 
     public static void registerFuels() {
         registerFuel();
     }
+
     private static void registerFuel() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
@@ -40,7 +39,7 @@ public class ModRegistries {
         registry.add(Axes.JUNGLE_WOODEN_AXE, 200);
         registry.add(Axes.MANGROVE_WOODEN_AXE, 200);
         registry.add(Axes.SPRUCE_WOODEN_AXE, 200);
-        
+
         registry.add(Hoes.ACACIA_WOODEN_HOE, 200);
         registry.add(Hoes.BAMBOO_WOODEN_HOE, 200);
         registry.add(Hoes.BIRCH_WOODEN_HOE, 200);

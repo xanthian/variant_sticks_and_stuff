@@ -1,8 +1,10 @@
 package net.xanthian.vsas.blocks.blocktypes;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-
-import net.minecraft.block.*;
+import net.minecraft.block.AbstractRailBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
@@ -10,10 +12,10 @@ import net.minecraft.state.property.Property;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 
-public class VariantRailBlock  extends AbstractRailBlock {
+public class VariantRailBlock extends AbstractRailBlock {
     public VariantRailBlock() {
         super(false, FabricBlockSettings.copyOf(Blocks.RAIL).nonOpaque());
-        this.setDefaultState(this.stateManager.getDefaultState().with(Properties.RAIL_SHAPE, RailShape.NORTH_SOUTH).with(Properties.WATERLOGGED,false));
+        this.setDefaultState(this.stateManager.getDefaultState().with(Properties.RAIL_SHAPE, RailShape.NORTH_SOUTH).with(Properties.WATERLOGGED, false));
     }
 
     @Override

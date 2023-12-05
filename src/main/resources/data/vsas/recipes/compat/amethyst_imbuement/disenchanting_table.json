@@ -1,0 +1,37 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "amethyst_imbuement"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "OEO",
+    "OSO"
+  ],
+  "key": {
+    "A": {
+      "item": "amethyst_imbuement:moonstone"
+    },
+    "B": {
+      "item": "minecraft:writable_book"
+    },
+    "E": {
+      "item": "amethyst_imbuement:altar_of_experience"
+    },
+    "S": {
+      "tag": "vsas:grindstones"
+    },
+    "O": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "result": {
+    "item": "amethyst_imbuement:disenchanting_table"
+  }
+}
+

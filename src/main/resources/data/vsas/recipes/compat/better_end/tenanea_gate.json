@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "gate",
+  "key": {
+    "#": {
+      "item": "betterend:tenanea_planks"
+    },
+    "I": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "pattern": [
+    "I#I",
+    "I#I"
+  ],
+  "result": {
+    "item": "betterend:tenanea_gate"
+  },
+  "show_notification": true
+}

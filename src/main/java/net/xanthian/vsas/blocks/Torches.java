@@ -2,14 +2,12 @@ package net.xanthian.vsas.blocks;
 
 import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.VerticallyAttachableBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.blocks.blocktypes.VariantTorchBlock;
 import net.xanthian.vsas.blocks.blocktypes.VariantWallTorchBlock;
@@ -17,8 +15,6 @@ import net.xanthian.vsas.blocks.blocktypes.VariantWallTorchBlock;
 import java.util.Map;
 
 public class Torches {
-
-    public static Map<Identifier, Block> MOD_TORCHES = Maps.newHashMap();
 
     public static final Block ACACIA_TORCH = new VariantTorchBlock();
     public static final Block WALL_ACACIA_TORCH = new VariantWallTorchBlock();
@@ -40,6 +36,7 @@ public class Torches {
     public static final Block WALL_SPRUCE_TORCH = new VariantWallTorchBlock();
     public static final Block WARPED_TORCH = new VariantTorchBlock();
     public static final Block WALL_WARPED_TORCH = new VariantWallTorchBlock();
+    public static Map<Identifier, Block> MOD_TORCHES = Maps.newHashMap();
 
     public static void registerTorchBlocks() {
         initTorchBlock("torches/acacia_torch", ACACIA_TORCH, "torches/wall_acacia_torch", WALL_ACACIA_TORCH);

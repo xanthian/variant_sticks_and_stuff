@@ -1,0 +1,38 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "darkblades"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:netherite_block"
+    },
+    "3": {
+      "item": "darkblades:dark_ingot"
+    },
+    "4": {
+      "item": "darkblades:dark_diamond_sword"
+    },
+    "6": {
+      "tag": "c:wood_sticks"
+    },
+    "7": {
+      "item": "darkblades:dark_ingot"
+    }
+  },
+  "result": {
+    "item": "darkblades:dark_netherite_sword",
+    "count": 1
+  }
+}

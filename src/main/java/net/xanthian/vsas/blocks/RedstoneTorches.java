@@ -2,14 +2,12 @@ package net.xanthian.vsas.blocks;
 
 import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.VerticallyAttachableBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.blocks.blocktypes.VariantRedstoneTorchBlock;
 import net.xanthian.vsas.blocks.blocktypes.VariantWallRedstoneTorchBlock;
@@ -17,8 +15,6 @@ import net.xanthian.vsas.blocks.blocktypes.VariantWallRedstoneTorchBlock;
 import java.util.Map;
 
 public class RedstoneTorches {
-
-    public static Map<Identifier, Block> MOD_REDSTONE_TORCHES = Maps.newHashMap();
 
     public static final Block ACACIA_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
     public static final Block WALL_ACACIA_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
@@ -36,11 +32,11 @@ public class RedstoneTorches {
     public static final Block WALL_JUNGLE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
     public static final Block MANGROVE_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
     public static final Block WALL_MANGROVE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
-
     public static final Block SPRUCE_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
     public static final Block WALL_SPRUCE_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
     public static final Block WARPED_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
     public static final Block WALL_WARPED_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
+    public static Map<Identifier, Block> MOD_REDSTONE_TORCHES = Maps.newHashMap();
 
     public static void registerRedstoneTorchBlocks() {
         initTorchBlock("torches/acacia_redstone_torch", ACACIA_REDSTONE_TORCH, "torches/wall_acacia_redstone_torch", WALL_ACACIA_REDSTONE_TORCH);

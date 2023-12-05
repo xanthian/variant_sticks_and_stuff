@@ -29,8 +29,11 @@ public class ActivatorRails {
 
     private static Block registerRailBlock(String name, Block block) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, name);
-        Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
         MOD_ACTIVATOR_RAILS.put(identifier, block);
-        return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
+        return Registry.register(Registries.BLOCK, identifier, block);
+    }
+
+    public static void registerActivatorRails() {
     }
 }

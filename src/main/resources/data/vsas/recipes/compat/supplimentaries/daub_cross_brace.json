@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "supplementaries"
+      ]
+    }
+  ],
+  "conditions": [
+    {
+      "type": "supplementaries:flag",
+      "flag": "wattle_and_daub"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "1 1",
+    " 2 ",
+    "1 1"
+  ],
+  "key": {
+    "1": {
+      "tag": "c:wood_sticks"
+    },
+    "2": {
+      "item": "supplementaries:daub"
+    }
+  },
+  "result": {
+    "item": "supplementaries:daub_cross_brace",
+    "count": 1
+  }
+}

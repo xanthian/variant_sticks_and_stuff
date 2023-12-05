@@ -36,4 +36,6 @@ public class Campfires {
         return Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, name), block);
     }
 
+    public static void registerCampfires() {
+    }
 }

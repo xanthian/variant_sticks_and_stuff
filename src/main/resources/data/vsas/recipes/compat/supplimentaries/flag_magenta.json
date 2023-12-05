@@ -1,0 +1,35 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "supplementaries"
+      ]
+    }
+  ],
+  "group": "flag",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "111",
+    "111",
+    "2  "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:magenta_wool"
+    },
+    "2": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "result": {
+    "item": "supplementaries:flag_magenta",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "supplementaries:flag",
+      "flag": "flag"
+    }
+  ]
+}

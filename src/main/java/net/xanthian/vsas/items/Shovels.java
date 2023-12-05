@@ -6,7 +6,6 @@ import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.items.itemtypes.VariantShovelItem;
 import net.xanthian.vsas.materials.VariantMaterials;
@@ -89,11 +88,13 @@ public class Shovels {
     public static final Item MANGROVE_NETHERITE_SHOVEL = registerItem("shovels/mangrove_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE));
     public static final Item SPRUCE_NETHERITE_SHOVEL = registerItem("shovels/spruce_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE));
     public static final Item WARPED_NETHERITE_SHOVEL = registerItem("shovels/warped_netherite_shovel", new VariantShovelItem(ToolMaterials.NETHERITE));
-    
+
     private static Item registerItem(String name, Item item) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         MOD_SHOVELS.put(identifier, item);
         return Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, name), item);
     }
-    public static void registerShovelItems() {}
+
+    public static void registerShovelItems() {
+    }
 }

@@ -1,8 +1,9 @@
 package net.xanthian.vsas.blocks.blocktypes;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-
-import net.minecraft.block.*;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.PoweredRailBlock;
 import net.minecraft.block.enums.RailShape;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -25,7 +26,7 @@ public class VariantPoweredRailBlock extends PoweredRailBlock {
             } else if (shape == RailShape.NORTH_SOUTH && (railShape == RailShape.EAST_WEST || railShape == RailShape.ASCENDING_EAST || railShape == RailShape.ASCENDING_WEST)) {
                 return false;
             } else if (blockState.get(POWERED)) {
-                return world.isReceivingRedstonePower(pos) ? true : this.isPoweredByOtherRails(world, pos, blockState, bl, distance + 1);
+                return world.isReceivingRedstonePower(pos) || this.isPoweredByOtherRails(world, pos, blockState, bl, distance + 1);
             } else {
                 return false;
             }

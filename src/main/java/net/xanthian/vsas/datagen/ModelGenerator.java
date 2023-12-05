@@ -2,18 +2,15 @@ package net.xanthian.vsas.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.enums.WallMountLocation;
 import net.minecraft.data.client.*;
-
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.Direction;
-
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.items.*;
 import net.xanthian.vsas.util.ModModel;
@@ -26,6 +23,10 @@ import static net.minecraft.data.client.BlockStateModelGenerator.*;
 public class ModelGenerator extends FabricModelProvider {
     public ModelGenerator(FabricDataOutput output) {
         super(output);
+    }
+
+    public static Identifier getMCBlockId(String id) {
+        return new Identifier(id);
     }
 
     @Override
@@ -331,9 +332,5 @@ public class ModelGenerator extends FabricModelProvider {
         bowModel.upload(identifier0, textureMap0, itemModelGenerator.writer);
         bowModel.upload(identifier1, textureMap1, itemModelGenerator.writer);
         bowModel.upload(identifier2, textureMap2, itemModelGenerator.writer);
-    }
-
-    public static Identifier getMCBlockId(String id) {
-        return new Identifier(id);
     }
 }

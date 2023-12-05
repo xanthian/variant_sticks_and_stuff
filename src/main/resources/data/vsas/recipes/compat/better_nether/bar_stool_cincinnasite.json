@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bar_stool",
+  "key": {
+    "#": {
+      "item": "betternether:cincinnasite_slab"
+    },
+    "I": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "pattern": [
+    "##",
+    "II",
+    "II"
+  ],
+  "result": {
+    "item": "betternether:bar_stool_cincinnasite"
+  },
+  "show_notification": true
+}

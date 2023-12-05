@@ -1,7 +1,6 @@
 package net.xanthian.vsas.util;
 
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
-
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -9,7 +8,6 @@ import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.items.Sticks;
 
 public class LootTableModifiers {
@@ -130,7 +128,7 @@ public class LootTableModifiers {
                     tableBuilder.pool(poolBuilder);
                 }
             }
-            });
+        });
 
     }
 }

@@ -1,21 +1,19 @@
 package net.xanthian.vsas.util;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.world.poi.PointOfInterestType;
 import net.minecraft.world.poi.PointOfInterestTypes;
-
 import net.xanthian.vsas.blocks.Grindstones;
 import net.xanthian.vsas.mixin.PointOfInterestTypesAccessor;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class ModPOITypes {
     public static void init() {

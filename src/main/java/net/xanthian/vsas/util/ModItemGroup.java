@@ -1,7 +1,6 @@
 package net.xanthian.vsas.util;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -10,15 +9,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.vsas.Initialise;
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.items.*;
 
 public class ModItemGroup {
-
-    public static void registerGroup() {
-    }
 
     public static final ItemGroup ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Initialise.MOD_ID, "variant_sticks_and_stuff"),
@@ -128,7 +123,7 @@ public class ModItemGroup {
                         entries.add(Swords.BAMBOO_DIAMOND_SWORD);
                         entries.add(Swords.BAMBOO_NETHERITE_SWORD);
                         entries.add(Torches.BAMBOO_TORCH);
-                        
+
                         entries.add(Arrows.BIRCH_ARROW_ITEM);
                         entries.add(Axes.BIRCH_WOODEN_AXE);
                         entries.add(Axes.BIRCH_STONE_AXE);
@@ -588,5 +583,8 @@ public class ModItemGroup {
                         entries.add(Swords.WARPED_NETHERITE_SWORD);
                         entries.add(Torches.WARPED_TORCH);
                     })
-                    .build());
+                    .texture("vsas.png").noRenderedName().build());
+
+    public static void registerGroup() {
+    }
 }

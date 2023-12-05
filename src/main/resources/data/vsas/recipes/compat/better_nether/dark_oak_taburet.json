@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "taburet",
+  "key": {
+    "#": {
+      "item": "minecraft:dark_oak_slab"
+    },
+    "I": {
+      "item": "vsas:sticks/dark_oak_stick"
+    }
+  },
+  "pattern": [
+    "##",
+    "II"
+  ],
+  "result": {
+    "item": "betternether:dark_oak_taburet"
+  },
+  "show_notification": true
+}

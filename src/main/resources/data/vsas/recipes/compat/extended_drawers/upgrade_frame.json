@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "extended_drawers"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "S": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "pattern": [
+    "SCS",
+    "C C",
+    "SCS"
+  ],
+  "result": {
+    "item": "extended_drawers:upgrade_frame"
+  },
+  "show_notification": true
+}

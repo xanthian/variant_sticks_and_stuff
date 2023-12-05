@@ -2,14 +2,12 @@ package net.xanthian.vsas.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-
 import net.minecraft.block.Block;
 import net.minecraft.data.server.loottable.vanilla.VanillaBlockLootTableGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
-
 import net.xanthian.vsas.blocks.*;
 
 public class LootTableGenerator extends FabricBlockLootTableProvider {

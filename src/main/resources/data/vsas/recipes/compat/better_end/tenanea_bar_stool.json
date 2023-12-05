@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bar_stool",
+  "key": {
+    "#": {
+      "item": "betterend:tenanea_slab"
+    },
+    "I": {
+      "tag": "c:wood_sticks"
+    }
+  },
+  "pattern": [
+    "##",
+    "II",
+    "II"
+  ],
+  "result": {
+    "item": "betterend:tenanea_bar_stool"
+  },
+  "show_notification": true
+}

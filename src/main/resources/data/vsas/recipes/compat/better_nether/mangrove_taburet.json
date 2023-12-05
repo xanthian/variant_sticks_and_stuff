@@ -1,0 +1,29 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "taburet",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_slab"
+    },
+    "I": {
+      "item": "vsas:sticks/mangrove_stick"
+    }
+  },
+  "pattern": [
+    "##",
+    "II"
+  ],
+  "result": {
+    "item": "betternether:mangrove_taburet"
+  },
+  "show_notification": true
+}
