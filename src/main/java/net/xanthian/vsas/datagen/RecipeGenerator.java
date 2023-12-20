@@ -10,9 +10,13 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.Registries;
 import net.minecraft.registry.tag.ItemTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.items.*;
+import net.xanthian.vsas.util.ModItemTags;
 
 import java.util.function.Consumer;
 
@@ -336,7 +340,14 @@ public class RecipeGenerator extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, torch, 4)
                 .input('#', stick).input('X', Ingredient.ofItems(Items.COAL, Items.CHARCOAL))
                 .pattern("X").pattern("#")
-                .criterion("has_stone_pickaxe", VanillaRecipeProvider.conditionsFromItem(Items.STONE_PICKAXE)).offerTo(exporter);
+                .criterion("has_coal", VanillaRecipeProvider.conditionsFromTag(ItemTags.COALS)).offerTo(exporter);
+    }
+
+    public static void offerStickSwapRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible stick) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, stick, 9)
+                .input('X', stick).input('#', Ingredient.fromTag(TagKey.of(Registries.ITEM.getKey(), new Identifier("c:wood_sticks"))))
+                .pattern("###").pattern("#X#").pattern("###")
+                .criterion("has_sticks", VanillaRecipeProvider.conditionsFromTag(ModItemTags.STICKS)).offerTo(exporter, getItemPath(stick) + "_swap");
     }
 
     @Override
@@ -393,6 +404,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.ACACIA_REDSTONE_TORCH, Sticks.ACACIA_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.ACACIA_SOUL_TORCH, Sticks.ACACIA_STICK);
         offerTorchRecipe(exporter, Torches.ACACIA_TORCH, Sticks.ACACIA_STICK);
+        offerStickSwapRecipe(exporter, Sticks.ACACIA_STICK);
 
         // BAMBOO
         offerArrowRecipe(exporter, Arrows.BAMBOO_ARROW_ITEM, Sticks.BAMBOO_STICK);
@@ -445,6 +457,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.BAMBOO_REDSTONE_TORCH, Sticks.BAMBOO_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.BAMBOO_SOUL_TORCH, Sticks.BAMBOO_STICK);
         offerTorchRecipe(exporter, Torches.BAMBOO_TORCH, Sticks.BAMBOO_STICK);
+        offerStickSwapRecipe(exporter, Sticks.BAMBOO_STICK);
 
         // BIRCH
         offerArrowRecipe(exporter, Arrows.BIRCH_ARROW_ITEM, Sticks.BIRCH_STICK);
@@ -497,6 +510,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.BIRCH_REDSTONE_TORCH, Sticks.BIRCH_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.BIRCH_SOUL_TORCH, Sticks.BIRCH_STICK);
         offerTorchRecipe(exporter, Torches.BIRCH_TORCH, Sticks.BIRCH_STICK);
+        offerStickSwapRecipe(exporter, Sticks.BIRCH_STICK);
 
         // CHERRY
         offerArrowRecipe(exporter, Arrows.CHERRY_ARROW_ITEM, Sticks.CHERRY_STICK);
@@ -549,6 +563,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.CHERRY_REDSTONE_TORCH, Sticks.CHERRY_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.CHERRY_SOUL_TORCH, Sticks.CHERRY_STICK);
         offerTorchRecipe(exporter, Torches.CHERRY_TORCH, Sticks.CHERRY_STICK);
+        offerStickSwapRecipe(exporter, Sticks.CHERRY_STICK);
 
         // CRIMSON
         offerArrowRecipe(exporter, Arrows.CRIMSON_ARROW_ITEM, Sticks.CRIMSON_STICK);
@@ -601,6 +616,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.CRIMSON_REDSTONE_TORCH, Sticks.CRIMSON_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.CRIMSON_SOUL_TORCH, Sticks.CRIMSON_STICK);
         offerTorchRecipe(exporter, Torches.CRIMSON_TORCH, Sticks.CRIMSON_STICK);
+        offerStickSwapRecipe(exporter, Sticks.CRIMSON_STICK);
 
         // DARK_OAK
         offerArrowRecipe(exporter, Arrows.DARK_OAK_ARROW_ITEM, Sticks.DARK_OAK_STICK);
@@ -653,6 +669,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.DARK_OAK_REDSTONE_TORCH, Sticks.DARK_OAK_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.DARK_OAK_SOUL_TORCH, Sticks.DARK_OAK_STICK);
         offerTorchRecipe(exporter, Torches.DARK_OAK_TORCH, Sticks.DARK_OAK_STICK);
+        offerStickSwapRecipe(exporter, Sticks.DARK_OAK_STICK);
 
         // JUNGLE
         offerArrowRecipe(exporter, Arrows.JUNGLE_ARROW_ITEM, Sticks.JUNGLE_STICK);
@@ -705,6 +722,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.JUNGLE_REDSTONE_TORCH, Sticks.JUNGLE_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.JUNGLE_SOUL_TORCH, Sticks.JUNGLE_STICK);
         offerTorchRecipe(exporter, Torches.JUNGLE_TORCH, Sticks.JUNGLE_STICK);
+        offerStickSwapRecipe(exporter, Sticks.JUNGLE_STICK);
 
         // MANGROVE
         offerArrowRecipe(exporter, Arrows.MANGROVE_ARROW_ITEM, Sticks.MANGROVE_STICK);
@@ -757,6 +775,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.MANGROVE_REDSTONE_TORCH, Sticks.MANGROVE_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.MANGROVE_SOUL_TORCH, Sticks.MANGROVE_STICK);
         offerTorchRecipe(exporter, Torches.MANGROVE_TORCH, Sticks.MANGROVE_STICK);
+        offerStickSwapRecipe(exporter, Sticks.MANGROVE_STICK);
 
         // OAK
         offerArrowRecipe(exporter, Arrows.OAK_ARROW_ITEM, Items.STICK);
@@ -809,6 +828,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         //offerRedstoneTorchRecipe(exporter, RedstoneTorches.OAK_REDSTONE_TORCH, Items.STICK);
         //offerSoulTorchRecipe(exporter, SoulTorches.OAK_SOUL_TORCH, Items.STICK);
         //offerTorchRecipe(exporter, Torches.OAK_TORCH, Items.STICK);
+        //offerStickSwapRecipe(exporter, Items.STICK);
 
         // SPRUCE
         //offerArrowRecipe(exporter, Arrows.SPRUCE_ARROW_ITEM, Sticks.SPRUCE_STICK);
@@ -861,6 +881,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.SPRUCE_REDSTONE_TORCH, Sticks.SPRUCE_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.SPRUCE_SOUL_TORCH, Sticks.SPRUCE_STICK);
         offerTorchRecipe(exporter, Torches.SPRUCE_TORCH, Sticks.SPRUCE_STICK);
+        offerStickSwapRecipe(exporter, Sticks.SPRUCE_STICK);
 
         // WARPED
         offerArrowRecipe(exporter, Arrows.WARPED_ARROW_ITEM, Sticks.WARPED_STICK);
@@ -913,7 +934,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerRedstoneTorchRecipe(exporter, RedstoneTorches.WARPED_REDSTONE_TORCH, Sticks.WARPED_STICK);
         offerSoulTorchRecipe(exporter, SoulTorches.WARPED_SOUL_TORCH, Sticks.WARPED_STICK);
         offerTorchRecipe(exporter, Torches.WARPED_TORCH, Sticks.WARPED_STICK);
-
-
+        offerStickSwapRecipe(exporter, Sticks.WARPED_STICK);
     }
 }

@@ -10,6 +10,7 @@
     "vsas:sticks/mangrove_stick",
     "vsas:sticks/dark_oak_stick",
     "vsas:sticks/spruce_stick",
-    "vsas:sticks/birch_stick"
+    "vsas:sticks/birch_stick",
+    "minecraft:stick"
   ]
 }

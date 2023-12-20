@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_coal": {
+    "has_sticks": {
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:coals"
+            "tag": "vsas:sticks"
           }
         ]
       },
@@ -13,20 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "vsas:torches/cherry_torch"
+        "recipe": "minecraft:sticks/acacia_stick_swap"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_coal",
+      "has_sticks",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "vsas:torches/cherry_torch"
+      "minecraft:sticks/acacia_stick_swap"
     ]
   },
   "sends_telemetry_event": false

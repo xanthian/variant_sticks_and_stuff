@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
@@ -11,6 +12,7 @@ import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.xanthian.vsas.blocks.*;
 import net.xanthian.vsas.items.*;
+import net.xanthian.vsas.util.ModItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -46,7 +48,6 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
     private static final TagKey<Item> NETHERITE_SHOVELS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "netherite_shovels"));
     private static final TagKey<Item> SOUL_CAMPFIRES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "soul_campfires"));
     private static final TagKey<Item> SOUL_TORCHES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "soul_torches"));
-    private static final TagKey<Item> STICKS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "sticks"));
     private static final TagKey<Item> STONE_SWORDS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "stone_swords"));
     private static final TagKey<Item> NETHERITE_SWORDS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "netherite_swords"));
     private static final TagKey<Item> TORCHES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "torches"));
@@ -219,13 +220,17 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
         }
 
         for (Item item : Sticks.MOD_STICKS.values()) {
-            getOrCreateTagBuilder(STICKS)
+            getOrCreateTagBuilder(ModItemTags.STICKS)
                     .add(item);
             getOrCreateTagBuilder(C_WOOD_STICKS)
                     .add(item);
             getOrCreateTagBuilder(C_WOODEN_RODS)
                     .add(item);
         }
+        getOrCreateTagBuilder(C_WOOD_STICKS)
+                .add(Items.STICK);
+        getOrCreateTagBuilder(C_WOODEN_RODS)
+                .add(Items.STICK);
 
         for (Item item : Swords.MOD_SWORDS.values()) {
             getOrCreateTagBuilder(ItemTags.TOOLS)

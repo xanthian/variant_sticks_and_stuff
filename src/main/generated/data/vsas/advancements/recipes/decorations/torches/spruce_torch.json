@@ -1,13 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stone_pickaxe": {
+    "has_coal": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:stone_pickaxe"
-            ]
+            "tag": "minecraft:coals"
           }
         ]
       },
@@ -22,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_stone_pickaxe",
+      "has_coal",
       "has_the_recipe"
     ]
   ],
