@@ -53,7 +53,9 @@ public class RedstoneTorches {
 
     private static void initTorchBlock(String torchName, Block torch, String wallTorchName, Block wallTorch) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, torchName);
+        Identifier identifier2 = new Identifier(Initialise.MOD_ID, wallTorchName);
         MOD_REDSTONE_TORCHES.put(identifier, torch);
+        MOD_REDSTONE_TORCHES.put(identifier2, wallTorch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, torchName), torch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, wallTorchName), wallTorch);
         Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, torchName), new VerticallyAttachableBlockItem(torch, wallTorch, new FabricItemSettings(), Direction.DOWN));

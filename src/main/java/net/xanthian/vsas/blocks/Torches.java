@@ -16,6 +16,7 @@ import java.util.Map;
 
 public class Torches {
 
+    public static Map<Identifier, Block> MOD_TORCHES = Maps.newHashMap();
     public static final Block ACACIA_TORCH = new VariantTorchBlock();
     public static final Block WALL_ACACIA_TORCH = new VariantWallTorchBlock();
     public static final Block BAMBOO_TORCH = new VariantTorchBlock();
@@ -36,7 +37,6 @@ public class Torches {
     public static final Block WALL_SPRUCE_TORCH = new VariantWallTorchBlock();
     public static final Block WARPED_TORCH = new VariantTorchBlock();
     public static final Block WALL_WARPED_TORCH = new VariantWallTorchBlock();
-    public static Map<Identifier, Block> MOD_TORCHES = Maps.newHashMap();
 
     public static void registerTorchBlocks() {
         initTorchBlock("torches/acacia_torch", ACACIA_TORCH, "torches/wall_acacia_torch", WALL_ACACIA_TORCH);
@@ -53,7 +53,9 @@ public class Torches {
 
     private static void initTorchBlock(String torchName, Block torch, String wallTorchName, Block wallTorch) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, torchName);
+        Identifier identifier2 = new Identifier(Initialise.MOD_ID, wallTorchName);
         MOD_TORCHES.put(identifier, torch);
+        MOD_TORCHES.put(identifier2, wallTorch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, torchName), torch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, wallTorchName), wallTorch);
         Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, torchName), new VerticallyAttachableBlockItem(torch, wallTorch, new FabricItemSettings(), Direction.DOWN));
