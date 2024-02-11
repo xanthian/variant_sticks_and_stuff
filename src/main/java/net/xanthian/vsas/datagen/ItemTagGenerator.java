@@ -21,6 +21,7 @@ import static net.xanthian.vsas.Initialise.MOD_ID;
 public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
     private static final TagKey<Item> ARROWS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "arrows"));
+    private static final TagKey<Item> BOWS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "bows"));
     private static final TagKey<Item> WOODEN_AXES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "wooden_axes"));
     private static final TagKey<Item> STONE_AXES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "stone_axes"));
     private static final TagKey<Item> IRON_AXES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "iron_axes"));
@@ -48,6 +49,7 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
     private static final TagKey<Item> NETHERITE_SHOVELS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "netherite_shovels"));
     private static final TagKey<Item> SOUL_CAMPFIRES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "soul_campfires"));
     private static final TagKey<Item> SOUL_TORCHES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "soul_torches"));
+    private static final TagKey<Item> WALL_SOUL_TORCHES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "wall_soul_torches"));
     private static final TagKey<Item> STONE_SWORDS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "stone_swords"));
     private static final TagKey<Item> NETHERITE_SWORDS = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "netherite_swords"));
     private static final TagKey<Item> TORCHES = TagKey.of(Registries.ITEM.getKey(), new Identifier(MOD_ID, "torches"));
@@ -130,6 +132,10 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
             getOrCreateTagBuilder(SOUL_TORCHES)
                     .add(block.asItem());
         }
+        for (Block block : SoulTorches.MOD_SOUL_WALL_TORCHES.values()) {
+            getOrCreateTagBuilder(WALL_SOUL_TORCHES)
+                    .add(block.asItem());
+        }
 
         for (Block block : Torches.MOD_TORCHES.values()) {
             getOrCreateTagBuilder(TORCHES)
@@ -157,6 +163,8 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
         }
 
         for (Item item : Bows.MOD_BOWS.values()) {
+            getOrCreateTagBuilder(BOWS)
+                    .add(item);
             getOrCreateTagBuilder(C_BOWS)
                     .add(item);
             getOrCreateTagBuilder(ARCHER_AFHA)
@@ -547,7 +555,8 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.PIGLIN_REPELLENTS)
                 .addTag(SOUL_CAMPFIRES)
-                .addTag(SOUL_TORCHES);
+                .addTag(SOUL_TORCHES)
+                .addTag(WALL_SOUL_TORCHES);
 
 
         getOrCreateTagBuilder(C_JOB_SITE)

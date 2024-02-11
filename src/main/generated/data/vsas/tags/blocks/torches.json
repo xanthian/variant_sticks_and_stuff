@@ -1,25 +1,15 @@
 {
   "replace": false,
   "values": [
-    "vsas:torches/wall_cherry_torch",
+    "vsas:torches/birch_torch",
     "vsas:torches/mangrove_torch",
     "vsas:torches/cherry_torch",
     "vsas:torches/crimson_torch",
     "vsas:torches/acacia_torch",
-    "vsas:torches/wall_crimson_torch",
-    "vsas:torches/wall_jungle_torch",
-    "vsas:torches/wall_acacia_torch",
-    "vsas:torches/wall_mangrove_torch",
-    "vsas:torches/birch_torch",
-    "vsas:torches/wall_dark_oak_torch",
-    "vsas:torches/wall_spruce_torch",
-    "vsas:torches/wall_warped_torch",
     "vsas:torches/warped_torch",
-    "vsas:torches/wall_birch_torch",
     "vsas:torches/dark_oak_torch",
     "vsas:torches/jungle_torch",
     "vsas:torches/bamboo_torch",
-    "vsas:torches/wall_bamboo_torch",
     "vsas:torches/spruce_torch"
   ]
 }

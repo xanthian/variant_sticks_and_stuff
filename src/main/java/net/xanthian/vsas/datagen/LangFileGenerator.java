@@ -103,6 +103,7 @@ public class LangFileGenerator extends FabricLanguageProvider {
             translationBuilder.add(block, generateBlockDisplayName("torches/", block));
         }
 
+
         for (Block block : Torches.MOD_TORCHES.values()) {
             translationBuilder.add(block, generateBlockDisplayName("torches/", block));
         }

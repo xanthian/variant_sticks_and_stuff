@@ -37,6 +37,7 @@ public class SoulTorches {
     public static final Block WARPED_SOUL_TORCH = new VariantSoulTorchBlock();
     public static final Block WALL_WARPED_SOUL_TORCH = new VariantWallSoulTorchBlock();
     public static Map<Identifier, Block> MOD_SOUL_TORCHES = Maps.newHashMap();
+    public static Map<Identifier, Block> MOD_SOUL_WALL_TORCHES = Maps.newHashMap();
 
     public static void registerSoulTorchBlocks() {
         initTorchBlock("torches/acacia_soul_torch", ACACIA_SOUL_TORCH, "torches/wall_acacia_soul_torch", WALL_ACACIA_SOUL_TORCH);
@@ -55,7 +56,7 @@ public class SoulTorches {
         Identifier identifier = new Identifier(Initialise.MOD_ID, torchName);
         Identifier identifier2 = new Identifier(Initialise.MOD_ID, wallTorchName);
         MOD_SOUL_TORCHES.put(identifier, torch);
-        MOD_SOUL_TORCHES.put(identifier2, wallTorch);
+        MOD_SOUL_WALL_TORCHES.put(identifier2, wallTorch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, torchName), torch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, wallTorchName), wallTorch);
         Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, torchName), new VerticallyAttachableBlockItem(torch, wallTorch, new FabricItemSettings(), Direction.DOWN));

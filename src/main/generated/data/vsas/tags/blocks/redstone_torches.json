@@ -1,25 +1,15 @@
 {
   "replace": false,
   "values": [
-    "vsas:torches/wall_spruce_redstone_torch",
-    "vsas:torches/wall_acacia_redstone_torch",
-    "vsas:torches/bamboo_redstone_torch",
-    "vsas:torches/wall_crimson_redstone_torch",
-    "vsas:torches/warped_redstone_torch",
-    "vsas:torches/wall_mangrove_redstone_torch",
-    "vsas:torches/crimson_redstone_torch",
-    "vsas:torches/cherry_redstone_torch",
     "vsas:torches/dark_oak_redstone_torch",
-    "vsas:torches/wall_birch_redstone_torch",
+    "vsas:torches/bamboo_redstone_torch",
     "vsas:torches/birch_redstone_torch",
     "vsas:torches/jungle_redstone_torch",
-    "vsas:torches/wall_cherry_redstone_torch",
-    "vsas:torches/wall_warped_redstone_torch",
     "vsas:torches/acacia_redstone_torch",
-    "vsas:torches/wall_bamboo_redstone_torch",
     "vsas:torches/spruce_redstone_torch",
-    "vsas:torches/wall_dark_oak_redstone_torch",
     "vsas:torches/mangrove_redstone_torch",
-    "vsas:torches/wall_jungle_redstone_torch"
+    "vsas:torches/warped_redstone_torch",
+    "vsas:torches/crimson_redstone_torch",
+    "vsas:torches/cherry_redstone_torch"
   ]
 }

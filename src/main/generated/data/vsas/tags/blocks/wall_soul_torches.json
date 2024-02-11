@@ -1,13 +1,15 @@
 {
   "replace": false,
   "values": [
-    "vsas:torches/wall_acacia_soul_torch",
-    "vsas:torches/wall_birch_soul_torch",
-    "vsas:torches/wall_crimson_soul_torch",
-    "vsas:torches/wall_dark_oak_soul_torch",
-    "vsas:torches/wall_jungle_soul_torch",
-    "vsas:torches/wall_mangrove_soul_torch",
+    "vsas:torches/wall_warped_soul_torch",
     "vsas:torches/wall_spruce_soul_torch",
-    "vsas:torches/wall_warped_soul_torch"
+    "vsas:torches/wall_acacia_soul_torch",
+    "vsas:torches/wall_mangrove_soul_torch",
+    "vsas:torches/wall_cherry_soul_torch",
+    "vsas:torches/wall_dark_oak_soul_torch",
+    "vsas:torches/wall_birch_soul_torch",
+    "vsas:torches/wall_bamboo_soul_torch",
+    "vsas:torches/wall_crimson_soul_torch",
+    "vsas:torches/wall_jungle_soul_torch"
   ]
 }

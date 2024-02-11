@@ -96,5 +96,16 @@ public class ClientInitialise implements ClientModInitializer {
         for (Block torch : Torches.MOD_TORCHES.values()) {
             BlockRenderLayerMap.INSTANCE.putBlock(torch, RenderLayer.getCutout());
         }
+        for (Block redstonetorch : RedstoneTorches.MOD_REDSTONE_WALL_TORCHES.values()) {
+            BlockRenderLayerMap.INSTANCE.putBlock(redstonetorch, RenderLayer.getCutout());
+        }
+
+        for (Block soultorch : SoulTorches.MOD_SOUL_WALL_TORCHES.values()) {
+            BlockRenderLayerMap.INSTANCE.putBlock(soultorch, RenderLayer.getCutout());
+        }
+
+        for (Block torch : Torches.MOD_WALL_TORCHES.values()) {
+            BlockRenderLayerMap.INSTANCE.putBlock(torch, RenderLayer.getCutout());
+        }
     }
 }

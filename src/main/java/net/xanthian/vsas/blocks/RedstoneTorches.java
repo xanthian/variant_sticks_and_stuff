@@ -37,6 +37,7 @@ public class RedstoneTorches {
     public static final Block WARPED_REDSTONE_TORCH = new VariantRedstoneTorchBlock();
     public static final Block WALL_WARPED_REDSTONE_TORCH = new VariantWallRedstoneTorchBlock();
     public static Map<Identifier, Block> MOD_REDSTONE_TORCHES = Maps.newHashMap();
+    public static Map<Identifier, Block> MOD_REDSTONE_WALL_TORCHES = Maps.newHashMap();
 
     public static void registerRedstoneTorchBlocks() {
         initTorchBlock("torches/acacia_redstone_torch", ACACIA_REDSTONE_TORCH, "torches/wall_acacia_redstone_torch", WALL_ACACIA_REDSTONE_TORCH);
@@ -55,7 +56,7 @@ public class RedstoneTorches {
         Identifier identifier = new Identifier(Initialise.MOD_ID, torchName);
         Identifier identifier2 = new Identifier(Initialise.MOD_ID, wallTorchName);
         MOD_REDSTONE_TORCHES.put(identifier, torch);
-        MOD_REDSTONE_TORCHES.put(identifier2, wallTorch);
+        MOD_REDSTONE_WALL_TORCHES.put(identifier2, wallTorch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, torchName), torch);
         Registry.register(Registries.BLOCK, new Identifier(Initialise.MOD_ID, wallTorchName), wallTorch);
         Registry.register(Registries.ITEM, new Identifier(Initialise.MOD_ID, torchName), new VerticallyAttachableBlockItem(torch, wallTorch, new FabricItemSettings(), Direction.DOWN));

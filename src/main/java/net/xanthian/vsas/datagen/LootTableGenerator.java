@@ -53,6 +53,9 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         for (Block redstonetorch : RedstoneTorches.MOD_REDSTONE_TORCHES.values()) {
             addDrop(redstonetorch);
         }
+        for (Block redstonetorch : RedstoneTorches.MOD_REDSTONE_WALL_TORCHES.values()) {
+            addDrop(redstonetorch);
+        }
 
         for (Block campfires : SoulCampfires.MOD_SOUL_CAMPFIRES.values()) {
             addDrop(campfires, (Block block) -> VanillaBlockLootTableGenerator.dropsWithSilkTouch(block, this.addSurvivesExplosionCondition(block, ItemEntry.builder(Items.SOUL_SOIL).apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1.0f))))));
@@ -61,8 +64,14 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         for (Block soultorch : SoulTorches.MOD_SOUL_TORCHES.values()) {
             addDrop(soultorch);
         }
+        for (Block soultorch : SoulTorches.MOD_SOUL_WALL_TORCHES.values()) {
+            addDrop(soultorch);
+        }
 
         for (Block torch : Torches.MOD_TORCHES.values()) {
+            addDrop(torch);
+        }
+        for (Block torch : Torches.MOD_WALL_TORCHES.values()) {
             addDrop(torch);
         }
     }

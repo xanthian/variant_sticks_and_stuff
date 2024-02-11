@@ -81,21 +81,15 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
             getOrCreateTagBuilder(SOUL_TORCHES)
                     .add(block);
         }
+        for (Block block : SoulTorches.MOD_SOUL_WALL_TORCHES.values()) {
+            getOrCreateTagBuilder(WALL_SOUL_TORCHES)
+                    .add(block);
+        }
 
         for (Block block : Torches.MOD_TORCHES.values()) {
             getOrCreateTagBuilder(TORCHES)
                     .add(block);
         }
-
-        getOrCreateTagBuilder(WALL_SOUL_TORCHES)
-                .add(SoulTorches.WALL_ACACIA_SOUL_TORCH)
-                .add(SoulTorches.WALL_BIRCH_SOUL_TORCH)
-                .add(SoulTorches.WALL_CRIMSON_SOUL_TORCH)
-                .add(SoulTorches.WALL_DARK_OAK_SOUL_TORCH)
-                .add(SoulTorches.WALL_JUNGLE_SOUL_TORCH)
-                .add(SoulTorches.WALL_MANGROVE_SOUL_TORCH)
-                .add(SoulTorches.WALL_SPRUCE_SOUL_TORCH)
-                .add(SoulTorches.WALL_WARPED_SOUL_TORCH);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .addTag(LADDERS)
